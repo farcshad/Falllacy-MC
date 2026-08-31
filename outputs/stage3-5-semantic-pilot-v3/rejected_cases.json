@@ -1,0 +1,872 @@
+[
+  {
+    "id": "case_0002",
+    "source_schema_id": "mafalda_gold_000123",
+    "source_schema_decision": "ACCEPT",
+    "domain": "biology",
+    "fallacy": "Hasty generalization",
+    "original_fallacy": "hasty generalization",
+    "fallacy_schema": {
+      "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+      "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+      "conclusion_pattern": "Therefore, X does not cause Y."
+    },
+    "original_case": {
+      "situation": "In a health class, students are learning about nutrition and disease prevention. The teacher explains that a diet high in fiber is associated with a lower risk of colon cancer. A student remembers that their uncle ate a high-fiber diet for many years but was still diagnosed with colon cancer. The student thinks, 'If eating fiber for so long didn't protect my uncle from colon cancer, then fiber probably doesn't reduce the risk at all.'",
+      "question": "Based on the evidence from your uncle's experience, does a high-fiber diet reduce the risk of colon cancer?",
+      "student_reasoning": "My uncle ate a high-fiber diet for 20 years and still got colon cancer. So, if fiber really reduced the risk, he wouldn't have gotten it. Since he did, fiber must not reduce the risk.",
+      "student_answer": "No, a high-fiber diet does not reduce the risk of colon cancer.",
+      "misconception": "Students may believe that a single personal observation is enough to disprove a general biological trend, without considering that individual variation, genetics, and other factors can influence outcomes."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 44,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:22:22.343133+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916118-VZl4YIsogwKoLDBp4L0W",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 589,
+        "completion_tokens": 241,
+        "total_tokens": 830,
+        "cost": 4.177e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.177e-05,
+          "upstream_inference_prompt_cost": 1.767e-05,
+          "upstream_inference_completions_cost": 2.41e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REJECT",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The required schema defines an inference about a causative agent ('engaged in X and does not have Y, therefore X does not cause Y'), whereas the case models a protective/preventative factor ('engaged in protective factor X and still got disease Y, therefore X does not prevent Y').",
+        "Fixing the schema mismatch would require altering the intervention and observed outcome (e.g., changing high-fiber diet preventing cancer to an unhealthy exposure causing cancer), which violates the revision boundary.",
+        "The misconception uses forbidden lead-in framing ('Students may believe that...')."
+      ]
+    },
+    "final_case": null,
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 44,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v3",
+      "prompt_sha256": "12e2461f3020579410bf27f4e80a1c7b373f39cc7378f19ba39fa62ccba2dde2",
+      "timestamp": "2026-08-28T11:49:03.478732+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917731-eltEVKA6sPmkyQuKsq1N",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1760,
+        "completion_tokens": 1118,
+        "total_tokens": 2878,
+        "cost": 0.00275625,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00275625,
+          "upstream_inference_prompt_cost": 0.00066,
+          "upstream_inference_completions_cost": 0.00209625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 897,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0011",
+    "source_schema_id": "mafalda_gold_000097",
+    "source_schema_decision": "ACCEPT",
+    "domain": "economics",
+    "fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification",
+    "fallacy_schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "original_case": {
+      "situation": "In a high school economics class, students are studying factors that influence consumer behavior and public safety. The teacher presents a dataset showing a strong positive correlation between ice cream sales and drowning incidents over a year. The teacher asks students to interpret the relationship.",
+      "question": "A student observes that in a small town, ice cream sales and the number of drowning incidents both increase during the summer months. The student concludes that eating ice cream causes drowning. Which of the following best explains why this conclusion is flawed?",
+      "student_reasoning": "The student believes that because two variables move together in time, one must cause the other. They ignore the possibility of a third factor (e.g., hot weather) that independently increases both ice cream consumption and swimming activity, leading to more drownings. This is a classic example of mistaking correlation for causation.",
+      "student_answer": "The student says, 'Since ice cream sales and drowning incidents rise together, ice cream sales must cause more drownings. Therefore, to reduce drownings, we should ban ice cream sales during summer.'",
+      "misconception": "Correlation implies causation"
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 53,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:25:08.110207+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916284-cW785T4zKBvypi5ZZhqJ",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 346,
+        "completion_tokens": 242,
+        "total_tokens": 588,
+        "cost": 3.458e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.458e-05,
+          "upstream_inference_prompt_cost": 1.038e-05,
+          "upstream_inference_completions_cost": 2.42e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REJECT",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": false,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The scenario models a classic third-variable correlation vs. causation problem between aggregate variables rather than the required schema involving a person performing two specific actions (X and Y) to achieve an outcome (O).",
+        "The student reasoning is written entirely from an evaluator/meta perspective ('The student believes...', 'This is a classic example of mistaking correlation for causation') rather than reflecting sincere first-person student thinking.",
+        "The question asks to explain why a conclusion is flawed, whereas the student answer directly commits the flaw.",
+        "The misconception field is merely a generic fallacy label ('Correlation implies causation').",
+        "Fixing the schema mismatch would require fundamentally replacing the scenario and causal structure, which exceeds the revision boundary."
+      ]
+    },
+    "final_case": null,
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 53,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v3",
+      "prompt_sha256": "12e2461f3020579410bf27f4e80a1c7b373f39cc7378f19ba39fa62ccba2dde2",
+      "timestamp": "2026-08-28T11:50:13.260901+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917806-XTpRCW7C955pQ6mS7HYo",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1784,
+        "completion_tokens": 601,
+        "total_tokens": 2385,
+        "cost": 0.001795875,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001795875,
+          "upstream_inference_prompt_cost": 0.000669,
+          "upstream_inference_completions_cost": 0.001126875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 348,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0012",
+    "source_schema_id": "mafalda_gold_000097",
+    "source_schema_decision": "ACCEPT",
+    "domain": "economics",
+    "fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification",
+    "fallacy_schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "original_case": {
+      "situation": "In a high school economics class, students are studying factors that influence public safety and resource allocation. The teacher presents a dataset showing a strong positive correlation between the number of lifeguards on duty and the number of drowning rescues over the summer months. The teacher asks students to interpret the relationship.",
+      "question": "A student observes that in a coastal town, the number of lifeguards on duty and the number of drowning rescues both increase during the summer. The student concludes that hiring more lifeguards causes more drownings. Which of the following best explains why this conclusion is flawed?",
+      "student_reasoning": "The student believes that because two variables increase together, one must cause the other. They ignore the possibility that a third factor (e.g., more people swimming in summer) independently increases both the need for lifeguards and the number of drownings. This is a classic example of mistaking correlation for causation.",
+      "student_answer": "The student says, 'Since more lifeguards are hired and more drownings occur at the same time, hiring more lifeguards must cause more drownings. Therefore, to reduce drownings, we should reduce the number of lifeguards.'",
+      "misconception": "Correlation implies causation"
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 54,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:25:37.599046+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916309-NryPIaAGXUpBlMrMB1aL",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 610,
+        "completion_tokens": 269,
+        "total_tokens": 879,
+        "cost": 4.52e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.52e-05,
+          "upstream_inference_prompt_cost": 1.83e-05,
+          "upstream_inference_completions_cost": 2.69e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REJECT",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": false,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The schema requires a specific causal template ('A person did X and Y, and then achieved O. Therefore, if a person does X and Y, they will achieve O'), but the scenario is a correlation-causation case involving observational time-series/environmental counts (lifeguards and drownings) rather than an individual taking two actions X and Y to guarantee outcome O.",
+        "Student reasoning is written entirely in the third person as an external critique and meta-evaluator diagnosing the student's error, rather than first-person sincere student thinking.",
+        "The question asks the student to explain why the conclusion is flawed, but the student answer actually commits the flawed conclusion rather than answering the prompt.",
+        "The misconception field merely names the standard fallacy label ('Correlation implies causation') instead of expressing a domain-specific declarative belief.",
+        "Fixing the schema mismatch would require completely rewriting the core anchors, evidence, and intervention, which exceeds the revision boundary."
+      ]
+    },
+    "final_case": null,
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 54,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v3",
+      "prompt_sha256": "12e2461f3020579410bf27f4e80a1c7b373f39cc7378f19ba39fa62ccba2dde2",
+      "timestamp": "2026-08-28T11:50:18.104227+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917814-nVJuhRT3Nc0KOWNfNS5G",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1804,
+        "completion_tokens": 302,
+        "total_tokens": 2106,
+        "cost": 0.00124275,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00124275,
+          "upstream_inference_prompt_cost": 0.0006765,
+          "upstream_inference_completions_cost": 0.00056625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0015",
+    "source_schema_id": "mafalda_gold_000095",
+    "source_schema_decision": "REVISE",
+    "domain": "general science",
+    "fallacy": "False dilemma",
+    "original_fallacy": "false dilemma",
+    "fallacy_schema": {
+      "premise_pattern": "Result R occurred.",
+      "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+      "conclusion_pattern": "It must be either because C or because D."
+    },
+    "original_case": {
+      "situation": "A school conducted a survey and found a strong positive correlation between eating breakfast at the cafeteria and higher test scores. The school then implemented a policy requiring all students to eat breakfast at the cafeteria, expecting test scores to rise. However, after a semester, test scores did not improve significantly.",
+      "question": "A school notices that students who eat breakfast at the cafeteria tend to have higher test scores than those who skip breakfast. The school concludes that eating breakfast at the cafeteria causes higher test scores. What is the most likely flaw in this reasoning?",
+      "student_reasoning": "The school saw that eating breakfast at the cafeteria and higher test scores happened together. They concluded that breakfast caused the higher scores. But that's like saying that because ice cream sales and drowning deaths both increase in summer, ice cream causes drowning. There could be a third factor, like socioeconomic status or overall health, that influences both. So the school's reasoning is a false dilemma because they only considered breakfast as the cause, ignoring other possible causes.",
+      "student_answer": "The school's conclusion is flawed because it assumes that eating breakfast at the cafeteria is the only possible cause of higher test scores. But there could be other reasons, like students who eat breakfast at the cafeteria might come from families with more resources or have better sleep habits, which also affect test scores. So the school's policy didn't work because they ignored these other causes.",
+      "misconception": "Many students believe that if two variables are correlated, one must be the direct cause of the other, ignoring the possibility of confounding variables or coincidence."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 57,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:27:00.197014+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916389-AET21FliMMhcGFg1T5dI",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 303,
+        "completion_tokens": 332,
+        "total_tokens": 635,
+        "cost": 4.229e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.229e-05,
+          "upstream_inference_prompt_cost": 9.09e-06,
+          "upstream_inference_completions_cost": 3.32e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REJECT",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The supplied schema is for False Dilemma ('Presupposing without justification that the only possible causes for R are C or D', conclusion: 'It must be either C or D'), but the scenario and misconception are about Correlation Proves Causation / Confounding Variables.",
+        "The student reasoning explicitly names and evaluates the flaw ('So the school's reasoning is a false dilemma...') rather than sincerely making the fallacious reasoning error themselves.",
+        "The misconception is formulated with meta-framing ('Many students believe that...') rather than as a direct declarative domain belief.",
+        "Because the core scenario models correlation vs causation rather than a false dilemma schema, the case suffers from a fundamental schema mismatch that cannot be fixed by local edits."
+      ]
+    },
+    "final_case": null,
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 57,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v3",
+      "prompt_sha256": "12e2461f3020579410bf27f4e80a1c7b373f39cc7378f19ba39fa62ccba2dde2",
+      "timestamp": "2026-08-28T11:50:31.491468+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917828-5WA3dGSgPwJKDy1GMyfy",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1838,
+        "completion_tokens": 255,
+        "total_tokens": 2093,
+        "cost": 0.001167375,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001167375,
+          "upstream_inference_prompt_cost": 0.00068925,
+          "upstream_inference_completions_cost": 0.000478125
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0016",
+    "source_schema_id": "mafalda_gold_000095",
+    "source_schema_decision": "REVISE",
+    "domain": "general science",
+    "fallacy": "False dilemma",
+    "original_fallacy": "false dilemma",
+    "fallacy_schema": {
+      "premise_pattern": "Result R occurred.",
+      "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+      "conclusion_pattern": "It must be either because C or because D."
+    },
+    "original_case": {
+      "situation": "A town noticed that on days when more ice cream is sold, there are more cases of sunburn. They concluded that eating ice cream causes sunburn.",
+      "question": "A town noticed that on days when more ice cream is sold, there are more cases of sunburn. They concluded that eating ice cream causes sunburn. What is the most likely flaw in this reasoning?",
+      "student_reasoning": "The town saw that ice cream sales and sunburn cases happened together. They concluded that ice cream caused sunburn. But that's like saying that because ice cream sales and sunburn cases both increase in summer, ice cream causes sunburn. There could be a third factor, like hot sunny weather, that influences both. So the town's reasoning is a false dilemma because they only considered ice cream as the cause, ignoring other possible causes.",
+      "student_answer": "The town's conclusion is flawed because it assumes that ice cream is the only possible cause of sunburn. But there could be other reasons, like spending more time in the sun, that cause both more ice cream sales and more sunburns. So the town's reasoning is a false dilemma because they only considered ice cream as the cause, ignoring other possible causes.",
+      "misconception": "Many students think that when two events are correlated, one must be the direct cause of the other, overlooking the possibility of a third factor or coincidence."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 58,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:27:31.047831+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916424-gQijEepgSP50LE2D5qhN",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 659,
+        "completion_tokens": 299,
+        "total_tokens": 958,
+        "cost": 4.967e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.967e-05,
+          "upstream_inference_prompt_cost": 1.977e-05,
+          "upstream_inference_completions_cost": 2.99e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REJECT",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The case does not instantiate the False Dilemma fallacy schema (premise: Result R occurred; invalid inference: only possible causes for R are C or D; conclusion: it must be either C or D). Instead, the case is about confusing correlation with causation (cum hoc ergo propter hoc).",
+        "The student reasoning and answer act as an evaluator critiquing the town's reasoning and naming the fallacy ('false dilemma') rather than sincerely exhibiting the misconception.",
+        "The misconception field uses meta-framing ('Many students think that...') and describes correlation-causation confusion rather than a False Dilemma belief."
+      ]
+    },
+    "final_case": null,
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 58,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v3",
+      "prompt_sha256": "12e2461f3020579410bf27f4e80a1c7b373f39cc7378f19ba39fa62ccba2dde2",
+      "timestamp": "2026-08-28T11:50:35.174476+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917832-QDY108l7nFx89S6hZNys",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1794,
+        "completion_tokens": 234,
+        "total_tokens": 2028,
+        "cost": 0.0011115,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0011115,
+          "upstream_inference_prompt_cost": 0.00067275,
+          "upstream_inference_completions_cost": 0.00043875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0021",
+    "source_schema_id": "mafalda_gold_000089",
+    "source_schema_decision": "ACCEPT",
+    "domain": "general science",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "original_case": {
+      "situation": "In a class discussion about what makes a scientific theory, a student argues that evolution by natural selection is a valid scientific theory because it is the best explanation for the diversity of life. When asked for evidence, the student says, 'Well, evolution is true because it's the theory that best explains the facts, and we know it's the best because it's the theory that scientists accept.'",
+      "question": "Why is the theory of evolution by natural selection considered a scientific theory?",
+      "student_reasoning": "The student is assuming the conclusion (that evolution is the best explanation) in the premise (that scientists accept it as the best). The reasoning goes in a circle: it's true because it's the best, and it's the best because it's true (accepted). No independent evidence is provided to break the circularity.",
+      "student_answer": "Evolution by natural selection is a scientific theory because it is the best explanation for the diversity of life, and we know it's the best because it is the theory that scientists accept.",
+      "misconception": "Circular reasoning"
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 63,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:30:19.105773+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916597-acazkuaZvVRWW3GQ4asz",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 295,
+        "completion_tokens": 236,
+        "total_tokens": 531,
+        "cost": 3.245e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.245e-05,
+          "upstream_inference_prompt_cost": 8.85e-06,
+          "upstream_inference_completions_cost": 2.36e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REJECT",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The required schema ('X is a Y -> X is a good Y') is an evaluative/normative fallacy schema, whereas the current case describes standard circular reasoning (justifying acceptance by consensus/theory fit).",
+        "student_reasoning is written entirely from an evaluator/meta-critique perspective ('The student is assuming the conclusion...', 'No independent evidence is provided...').",
+        "misconception is just the fallacy name ('Circular reasoning') rather than a domain-specific content belief or rule.",
+        "Fitting this case to the required schema would require rewriting the core logical structure and educational setup, which exceeds valid revision boundaries."
+      ]
+    },
+    "final_case": null,
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 63,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v3",
+      "prompt_sha256": "12e2461f3020579410bf27f4e80a1c7b373f39cc7378f19ba39fa62ccba2dde2",
+      "timestamp": "2026-08-28T11:51:01.200471+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917856-2M66je9EubutmGJexpx8",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1734,
+        "completion_tokens": 237,
+        "total_tokens": 1971,
+        "cost": 0.001094625,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001094625,
+          "upstream_inference_prompt_cost": 0.00065025,
+          "upstream_inference_completions_cost": 0.000444375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0022",
+    "source_schema_id": "mafalda_gold_000089",
+    "source_schema_decision": "ACCEPT",
+    "domain": "general science",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "original_case": {
+      "situation": "In a class discussion about the evidence for plate tectonics, a student argues that plate tectonics is a valid scientific theory because it is the most widely accepted explanation among geologists. When asked for evidence, the student says, 'Plate tectonics is true because it is the theory that geologists accept, and we know it is the theory they accept because it is the best explanation for the movement of continents.'",
+      "question": "Why is the theory of plate tectonics considered a valid scientific theory?",
+      "student_reasoning": "The student is assuming the conclusion (that plate tectonics is the best explanation) in the premise (that geologists accept it as the best). The reasoning goes in a circle: it is true because it is accepted, and it is accepted because it is true. No independent evidence is provided to break the circularity.",
+      "student_answer": "Plate tectonics is a valid scientific theory because it is the most widely accepted explanation among geologists, and we know it is the most accepted because it is the best explanation for the movement of continents.",
+      "misconception": "A student may think that a hypothesis is automatically valid simply because it is widely accepted by experts, without requiring independent evidence."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 64,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:30:55.745158+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916620-q1NsjtsTpimY3Z1JdgDR",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 554,
+        "completion_tokens": 261,
+        "total_tokens": 815,
+        "cost": 4.272e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.272e-05,
+          "upstream_inference_prompt_cost": 1.662e-05,
+          "upstream_inference_completions_cost": 2.61e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REJECT",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The supplied schema defines circular reasoning / definitional tautology as 'X is a Y -> therefore X is a good Y', but the case presents an appeal to consensus / circular justification ('true because accepted, accepted because best explanation').",
+        "student_reasoning is written from an external evaluator perspective diagnosing the fallacy ('The student is assuming the conclusion... The reasoning goes in a circle... No independent evidence is provided') rather than representing a sincere student's internal reasoning.",
+        "The misconception uses banned meta-framing ('A student may think that...') and describes an appeal to authority/expert consensus rather than the schema's pattern."
+      ]
+    },
+    "final_case": null,
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 64,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v3",
+      "prompt_sha256": "12e2461f3020579410bf27f4e80a1c7b373f39cc7378f19ba39fa62ccba2dde2",
+      "timestamp": "2026-08-28T11:51:04.855879+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917862-abmcp0nApw8j5wCX75Tc",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1754,
+        "completion_tokens": 235,
+        "total_tokens": 1989,
+        "cost": 0.001098375,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001098375,
+          "upstream_inference_prompt_cost": 0.00065775,
+          "upstream_inference_completions_cost": 0.000440625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0028",
+    "source_schema_id": "mafalda_gold_000118",
+    "source_schema_decision": "ACCEPT",
+    "domain": "economics",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is P",
+      "invalid_inference": "X is P because X is P",
+      "conclusion_pattern": "X is P"
+    },
+    "original_case": {
+      "situation": "The student is asked to explain why a market with many sellers (often considered competitive) has persistently high prices.",
+      "question": "In an economics class, the teacher presents a case study of a small town with many gas stations. Despite the large number of firms, prices are consistently higher than in nearby towns. The teacher asks: 'Why are prices so high in this competitive market?'",
+      "student_reasoning": "The student assumes that because the market is labeled 'competitive,' it must be the cause of the high prices. They do not consider other factors such as collusion, high entry barriers, or lack of price transparency that could undermine actual competition. The reasoning is circular: the market is competitive, so it must be the reason for the outcome, without examining the actual competitive conditions.",
+      "student_answer": "The prices are high because the market is competitive, and competitive markets always lead to high prices due to the intense rivalry among sellers.",
+      "misconception": "The student believes that if a market is labeled 'competitive,' it must automatically produce efficient outcomes, so any observed inefficiency must be due to external interference, not the market structure itself."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 70,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:32:42.877673+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916741-glZIli2rFEClNFsdlIag",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 544,
+        "completion_tokens": 247,
+        "total_tokens": 791,
+        "cost": 4.102e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.102e-05,
+          "upstream_inference_prompt_cost": 1.632e-05,
+          "upstream_inference_completions_cost": 2.47e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REJECT",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The student's reasoning and answer do not follow the circular reasoning schema ('X is P because X is P'); instead, they make an incorrect substantive causal claim that competition causes high prices.",
+        "The student_reasoning is written from an evaluator's third-person analytical perspective rather than as a sincere student's internal reasoning, explicitly diagnosing circularity.",
+        "The misconception contains teacher-framing language ('The student believes that...') and contradicts the student's actual answer (the misconception discusses efficient outcomes/inefficiency, whereas the student claimed competition causes high prices)."
+      ]
+    },
+    "final_case": null,
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 70,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v3",
+      "prompt_sha256": "12e2461f3020579410bf27f4e80a1c7b373f39cc7378f19ba39fa62ccba2dde2",
+      "timestamp": "2026-08-28T11:51:48.619046+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917897-AY2S4LGcA3fbTeKnD8O7",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1731,
+        "completion_tokens": 853,
+        "total_tokens": 2584,
+        "cost": 0.0022485,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0022485,
+          "upstream_inference_prompt_cost": 0.000649125,
+          "upstream_inference_completions_cost": 0.001599375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 630,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+]

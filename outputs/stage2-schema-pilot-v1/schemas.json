@@ -1,0 +1,738 @@
+[
+  {
+    "source_id": "mafalda_gold_000026",
+    "source_text": "TITLE: Bar in Thurles in trouble over ad featuring Jesus with a pint. Christians are slowly becoming bigger snowflakes than Muslims. POST: So was the bar burned by a mob and the owner killed? If not, Christians have a ways to go before they are on par with Muslims.\n",
+    "canonical_fallacy": "Hasty generalization",
+    "original_fallacy": "hasty generalization",
+    "original_fallacy_labels": [
+      "hasty generalization"
+    ],
+    "schema": {
+      "premise_pattern": "A member of category C reacts to event A with a less severe outcome O1, while a member of category D reacts to a similar event with a more severe outcome O2.",
+      "invalid_inference": "Because one member of C did not react as severely as one member of D, it is inferred that all members of C are less extreme than all members of D.",
+      "conclusion_pattern": "Therefore, category C as a whole is less extreme than category D."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:49:54.769374+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914192-80T3XAl0UTr3CYgWwt5q",
+      "provider": "Ambient",
+      "usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 108,
+        "total_tokens": 358,
+        "cost": 3.944e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.944e-05,
+          "upstream_inference_prompt_cost": 2e-05,
+          "upstream_inference_completions_cost": 1.944e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000050",
+    "source_text": "TITLE: Thirty years after Tiananmen, protesters' goals further away than ever:\"Now, democracy is not only facing problems in China. Democracy cannot survive if China is the global power.\" POST: Well, democracy gave us Trump to the whole world. I'll let others judge what democracy is. POST: Lets see what other system gave us. Communism gave us the Kim dynasty that destroyed their own country. Fascism gave us Franco that kept his country decades in the past in every manner. Monarchism gave us Leopold II of Belgium who committed genocides in Africa Theocracy gave us Pope John XII who fucked half of rome So as we can easily gather, every for of government had its share of shitty figureheads. That doesnt prove anything. At least in democracy we have the chance to switch them, you know what they do in other forms of government? Wait. North korea is still waiting on the Kim dynasty to die off, Spain had to wait until Franco dies to start modernizing, the people of Congo had to wait until Leo II died so they can stop getting killed, and the catholic world had to wait until John XII to normalize again.\n",
+    "canonical_fallacy": "Hasty generalization",
+    "original_fallacy": "hasty generalization",
+    "original_fallacy_labels": [
+      "hasty generalization"
+    ],
+    "schema": {
+      "premise_pattern": "For each of several categories C (e.g., C1, C2, C3, C4), there exists at least one member M_C that has a negative property P (e.g., causing harm, being corrupt, or being ineffective).",
+      "invalid_inference": "From the existence of such negative members in each category, it is inferred that every member of every category has property P, or that the categories themselves are fundamentally flawed in the same way.",
+      "conclusion_pattern": "Therefore, all members of all categories C have property P, or all categories C are equally bad with respect to P."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:50:03.155511+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914195-qekQ3aAdieSFopUWxQbO",
+      "provider": "Morph",
+      "usage": {
+        "prompt_tokens": 543,
+        "completion_tokens": 137,
+        "total_tokens": 680,
+        "cost": 9.170725e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 9.170725e-05,
+          "upstream_inference_prompt_cost": 5.362125e-05,
+          "upstream_inference_completions_cost": 3.8086e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000123",
+    "source_text": "He has smoked cigarettes his entire life and he doesn't have lung cancer. Therefore smoking doesn't cause lung cancer.\n",
+    "canonical_fallacy": "Hasty generalization",
+    "original_fallacy": "hasty generalization",
+    "original_fallacy_labels": [
+      "hasty generalization"
+    ],
+    "schema": {
+      "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+      "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+      "conclusion_pattern": "Therefore, X does not cause Y."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:50:13.127855+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914203-YQcDrqFTjmvePmgguSCO",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 213,
+        "completion_tokens": 70,
+        "total_tokens": 283,
+        "cost": 1.339e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 1.339e-05,
+          "upstream_inference_prompt_cost": 6.39e-06,
+          "upstream_inference_completions_cost": 7e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000010",
+    "source_text": "The last Democrat winner of the New Hampshire primary won the general election. This year, the winner of the New Hampshire primary will win the general election.\n",
+    "canonical_fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification | false causality",
+    "original_fallacy_labels": [
+      "causal oversimplification",
+      "false causality"
+    ],
+    "schema": {
+      "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+      "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+      "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:50:16.513981+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914213-d1wEyARXqpr201gSUPXa",
+      "provider": "AkashML",
+      "usage": {
+        "prompt_tokens": 226,
+        "completion_tokens": 106,
+        "total_tokens": 332,
+        "cost": 5.228e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 5.228e-05,
+          "upstream_inference_prompt_cost": 2.26e-05,
+          "upstream_inference_completions_cost": 2.968e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000042",
+    "source_text": "According to Freud, your belief in God stems from your need for a strong father figure. So don't you see that it's silly to continue believing in God?\n",
+    "canonical_fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification",
+    "original_fallacy_labels": [
+      "causal oversimplification"
+    ],
+    "schema": {
+      "premise_pattern": "A person's belief in X is caused by a psychological need for Y.",
+      "invalid_inference": "From the fact that a belief in X has a psychological cause (Y), it is inferred that the belief is false or unjustified, and that one should abandon it.",
+      "conclusion_pattern": "Therefore, it is silly to continue believing in X."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:50:20.725870+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914217-s9beu0xfv3KIknkPai8U",
+      "provider": "Inceptron",
+      "usage": {
+        "prompt_tokens": 227,
+        "completion_tokens": 85,
+        "total_tokens": 312,
+        "cost": 5.331e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 5.331e-05,
+          "upstream_inference_prompt_cost": 2.951e-05,
+          "upstream_inference_completions_cost": 2.38e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000097",
+    "source_text": "TITLE: This though... POST: So freaking true...I recently got a $100k+ job without a college degree, before my 30th birthday. I did it because I worked my ass off and learned a skill in the military. It's not that hard you just got to do the best you can.\n",
+    "canonical_fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification",
+    "original_fallacy_labels": [
+      "causal oversimplification"
+    ],
+    "schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:50:31.445573+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914221-TLpmywdhMScI6FI4txBd",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 259,
+        "completion_tokens": 97,
+        "total_tokens": 356,
+        "cost": 1.747e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 1.747e-05,
+          "upstream_inference_prompt_cost": 7.77e-06,
+          "upstream_inference_completions_cost": 9.7e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000034",
+    "source_text": "Everybody who's looked at it, 500 economists, seven Nobel prize winners, say it's bad for the economy. It's going to blow a hole in the deficit It's going to raise taxes on nine million people and require bigger cuts than the one I vetoed. Our plan is better, it will take us into the future with a growing economy and healthier families.\n",
+    "canonical_fallacy": "False dilemma",
+    "original_fallacy": "false dilemma",
+    "original_fallacy_labels": [
+      "false dilemma"
+    ],
+    "schema": {
+      "premise_pattern": "There is a set of experts who support option X, and there is an alternative option Y proposed by someone else.",
+      "invalid_inference": "Because the expert-supported option X is said to have negative consequences, the only acceptable alternative is option Y, ignoring other possible choices or modifications.",
+      "conclusion_pattern": "Therefore, option Y should be accepted as the uniquely correct course of action."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:50:38.811468+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914232-CldUDSyEFrZn2WLKNHYD",
+      "provider": "Wafer",
+      "usage": {
+        "prompt_tokens": 263,
+        "completion_tokens": 91,
+        "total_tokens": 354,
+        "cost": 0.0001246,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0001246,
+          "upstream_inference_prompt_cost": 7.364e-05,
+          "upstream_inference_completions_cost": 5.096e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000082",
+    "source_text": "But irrespective of whether he thinks it is or not means less than fact that this country cannot morally and socially and economically accept an economy running out the clock on the 20th Century. We're treading water. We have families that are hurting. We have people who are unemployed. We have people with no property. We have an administration that is demolishing public housing in our inner cities and not providing anything else but more public housing. Their solution to the inner city is more -- excuse the expression but it's true,\"socialism.\"\n",
+    "canonical_fallacy": "False dilemma",
+    "original_fallacy": "false dilemma",
+    "original_fallacy_labels": [
+      "false dilemma"
+    ],
+    "schema": {
+      "premise_pattern": "[Current approach] has failed to address [problem], and [option] is presented as the only other possible approach.",
+      "invalid_inference": "Because [option] is the only alternative to [current failed approach], and [current failed approach] is unacceptable, [option] must be the solution.",
+      "conclusion_pattern": "The solution to [problem] is [option]."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:50:49.424154+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914239-stWtuHDj27TqA58mtUXW",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 297,
+        "completion_tokens": 90,
+        "total_tokens": 387,
+        "cost": 1.791e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 1.791e-05,
+          "upstream_inference_prompt_cost": 8.91e-06,
+          "upstream_inference_completions_cost": 9e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000095",
+    "source_text": "These test results are clearly wrong, and it must be either because the client was malingering or because I bungled the test administration. Taking another look at the test manual, I see now that I bungled the test administration. Therefore the client was not malingering.\n",
+    "canonical_fallacy": "False dilemma",
+    "original_fallacy": "false dilemma",
+    "original_fallacy_labels": [
+      "false dilemma"
+    ],
+    "schema": {
+      "premise_pattern": "Either C or D. D is true. Therefore, not C.",
+      "invalid_inference": "The disjunction is false because the second disjunct is true, so the first disjunct must be false.",
+      "conclusion_pattern": "Therefore, not C."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:50:57.430453+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914250-L32dabf9o6bY0Vz3EU30",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 246,
+        "completion_tokens": 66,
+        "total_tokens": 312,
+        "cost": 1.398e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 1.398e-05,
+          "upstream_inference_prompt_cost": 7.38e-06,
+          "upstream_inference_completions_cost": 6.6e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000015",
+    "source_text": "Iran has moved forward with its nuclear weapons program. They're more dangerous today than they were four years ago. North Korea has moved forward with their nuclear weapons program, gone from one to two nuclear weapons to six to eight nuclear weapons. This vice president has been an advocate for over a decade for lifting sanctions against Iran, the largest state sponsor of terrorism on the planet. It's a mistake.\n",
+    "canonical_fallacy": "Faulty analogy",
+    "original_fallacy": "false analogy",
+    "original_fallacy_labels": [
+      "false analogy"
+    ],
+    "schema": {
+      "premise_pattern": "X has property P. Y has property P. Person Z has advocated for action A regarding X.",
+      "invalid_inference": "Because X has property P (e.g., being dangerous or advancing a program) and Y also has property P, and because a person Z has advocated for action A regarding X, it follows that action A regarding X is wrong.",
+      "conclusion_pattern": "Therefore, it is a mistake to support or engage in action A regarding X."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:51:08.315573+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914258-MbqMb20zC1JfpthOMgeB",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 268,
+        "completion_tokens": 107,
+        "total_tokens": 375,
+        "cost": 1.874e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 1.874e-05,
+          "upstream_inference_prompt_cost": 8.04e-06,
+          "upstream_inference_completions_cost": 1.07e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000078",
+    "source_text": "TITLE: Abstinence vs. those who chose to have sex, a dilemma I'd like to understand! POST: I dont wait until marriage, because I'm not even sure if I want to get married. Used to care about how many people the girl sleeped with, now I really dont give a shit. Ive collectively had sex hundreds of times with my partners over the years, that doesn't make me better than someone who's had sex with more people, one time each. POST: Almost everyone in the world will look more favorably on a person who has had sex 100x times with one person versus having sex 1x each with 100 different people. As they should.\n",
+    "canonical_fallacy": "Faulty analogy",
+    "original_fallacy": "false analogy",
+    "original_fallacy_labels": [
+      "false analogy"
+    ],
+    "schema": {
+      "premise_pattern": "Person X has done action A many times with one partner. Person Y has done action A once each with many different partners. Both have done action A the same total number of times.",
+      "invalid_inference": "Because the first person has done action A many times total, they are morally or socially superior to the second person, even though the second person has also done action A many times total (just with different partners).",
+      "conclusion_pattern": "People will look more favorably on a person who has done action A many times with one partner than on a person who has done action A once each with many different partners."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:51:22.141983+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914269-vUBPxYzemeB0IOcnq8wy",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 330,
+        "completion_tokens": 139,
+        "total_tokens": 469,
+        "cost": 2.38e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 2.38e-05,
+          "upstream_inference_prompt_cost": 9.9e-06,
+          "upstream_inference_completions_cost": 1.39e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000124",
+    "source_text": "Clearly, uh it was maybe the right thing to do, but we did not go in with enough information. We caused problems in the first place by denying Caribbean countries and third-world countries a chance to trade freely in the United States. It causes economic problems and turmoil, and then we turn around, as we did in Mexico, having to bail them out. We caused the problem in the first place, and it cost us 20 to 50 billion to bail them out.\n",
+    "canonical_fallacy": "Faulty analogy",
+    "original_fallacy": "false analogy",
+    "original_fallacy_labels": [
+      "false analogy"
+    ],
+    "schema": {
+      "premise_pattern": "Action A (e.g., imposing a restriction) on category C leads to negative outcome O for C, and later a costly intervention B is required to address O.",
+      "invalid_inference": "Because action A on C caused O and required B, it is inferred that action A is analogous to a different action D on a different category C' that also leads to O' and requires B', without establishing relevant similarities between A and D or between C and C'.",
+      "conclusion_pattern": "Therefore, action D on C' is also wrong or harmful in the same way as action A on C, and should be avoided or condemned."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:51:25.414035+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914283-sYiFP3Hn4klpIdD9cWlM",
+      "provider": "Ambient",
+      "usage": {
+        "prompt_tokens": 285,
+        "completion_tokens": 142,
+        "total_tokens": 427,
+        "cost": 4.836e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.836e-05,
+          "upstream_inference_prompt_cost": 2.28e-05,
+          "upstream_inference_completions_cost": 2.556e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000036",
+    "source_text": "You should drive on the right side of the road because that is what the law says, and the law is the law.\n",
+    "canonical_fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "original_fallacy_labels": [
+      "circular reasoning"
+    ],
+    "schema": {
+      "premise_pattern": "X is asserted to be the case by an authority, and that authority is defined as being correct because X is the case.",
+      "invalid_inference": "The justification for X is that X is asserted to be the case by an authority, and that authority is defined as being correct because X is the case.",
+      "conclusion_pattern": "X is the case because X is the case."
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:51:36.870851+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914286-t1l5aR3bP3DM0mL1vsIQ",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 213,
+        "completion_tokens": 91,
+        "total_tokens": 304,
+        "cost": 1.549e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 1.549e-05,
+          "upstream_inference_prompt_cost": 6.39e-06,
+          "upstream_inference_completions_cost": 9.1e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000089",
+    "source_text": "The president of Honduras is a good leader because he is a leader of the country.\n",
+    "canonical_fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "original_fallacy_labels": [
+      "circular reasoning"
+    ],
+    "schema": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:51:44.142448+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914297-fWl1NUGR3mNXuVyjr1pt",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 205,
+        "completion_tokens": 48,
+        "total_tokens": 253,
+        "cost": 1.095e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 1.095e-05,
+          "upstream_inference_prompt_cost": 6.15e-06,
+          "upstream_inference_completions_cost": 4.8e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000118",
+    "source_text": "\"The Cardinals are the best football team because they're better than all the other teams. They're better than all the other teams because they're the best.\"\n",
+    "canonical_fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "original_fallacy_labels": [
+      "circular reasoning"
+    ],
+    "schema": {
+      "premise_pattern": "X is P",
+      "invalid_inference": "X is P because X is P",
+      "conclusion_pattern": "X is P"
+    },
+    "generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.0,
+      "seed": 42,
+      "prompt_version": "stage2-schema-v1",
+      "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c",
+      "timestamp": "2026-08-28T10:51:50.112528+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787914304-maGWRTobrKlMz3sqmQgH",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 220,
+        "completion_tokens": 41,
+        "total_tokens": 261,
+        "cost": 1.07e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 1.07e-05,
+          "upstream_inference_prompt_cost": 6.6e-06,
+          "upstream_inference_completions_cost": 4.1e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+]

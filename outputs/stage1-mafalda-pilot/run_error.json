@@ -1,0 +1,8 @@
+{
+  "run_id": "stage1-mafalda-pilot",
+  "stage": 1,
+  "stage_name": "load_source",
+  "failed_at": "2026-08-28T10:41:47Z",
+  "error_type": "URLError",
+  "error": "The sandbox could not resolve the official source host; the run was retried with permitted network access under a new run ID."
+}

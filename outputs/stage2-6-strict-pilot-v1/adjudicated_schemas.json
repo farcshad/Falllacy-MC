@@ -1,0 +1,855 @@
+[
+  {
+    "source_id": "mafalda_gold_000026",
+    "source_text": "TITLE: Bar in Thurles in trouble over ad featuring Jesus with a pint. Christians are slowly becoming bigger snowflakes than Muslims. POST: So was the bar burned by a mob and the owner killed? If not, Christians have a ways to go before they are on par with Muslims.\n",
+    "annotated_span": "So was the bar burned by a mob and the owner killed? If not, Christians have a ways to go before they are on par with Muslims.",
+    "canonical_fallacy": "Hasty generalization",
+    "original_fallacy": "hasty generalization",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "A member of category C reacts to event A with a less severe outcome O1, while a member of category D reacts to a similar event with a more severe outcome O2.",
+      "invalid_inference": "Because one member of C did not react as severely as one member of D, it is inferred that all members of C are less extreme than all members of D.",
+      "conclusion_pattern": "Therefore, category C as a whole is less extreme than category D."
+    },
+    "adjudication": {
+      "decision": "REJECT",
+      "source_suitable": false,
+      "schema_faithful": false,
+      "reason": "The span relies on a rhetorical conditional rebuttal to an external claim without explicitly providing the contrasting comparative evidence, making the logical structure incomplete and highly context-dependent."
+    },
+    "final_schema": null,
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:10:13.405839+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915409-DICvXxksK6eD3afpbcSh",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 899,
+        "completion_tokens": 315,
+        "total_tokens": 1214,
+        "cost": 0.00092775,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00092775,
+          "upstream_inference_prompt_cost": 0.000337125,
+          "upstream_inference_completions_cost": 0.000590625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 240,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000050",
+    "source_text": "TITLE: Thirty years after Tiananmen, protesters' goals further away than ever:\"Now, democracy is not only facing problems in China. Democracy cannot survive if China is the global power.\" POST: Well, democracy gave us Trump to the whole world. I'll let others judge what democracy is. POST: Lets see what other system gave us. Communism gave us the Kim dynasty that destroyed their own country. Fascism gave us Franco that kept his country decades in the past in every manner. Monarchism gave us Leopold II of Belgium who committed genocides in Africa Theocracy gave us Pope John XII who fucked half of rome So as we can easily gather, every for of government had its share of shitty figureheads. That doesnt prove anything. At least in democracy we have the chance to switch them, you know what they do in other forms of government? Wait. North korea is still waiting on the Kim dynasty to die off, Spain had to wait until Franco dies to start modernizing, the people of Congo had to wait until Leo II died so they can stop getting killed, and the catholic world had to wait until John XII to normalize again.\n",
+    "annotated_span": "Well, democracy gave us Trump to the whole world. I'll let others judge what democracy is.",
+    "canonical_fallacy": "Hasty generalization",
+    "original_fallacy": "hasty generalization",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "For each of several categories C (e.g., C1, C2, C3, C4), there exists at least one member M_C that has a negative property P (e.g., causing harm, being corrupt, or being ineffective).",
+      "invalid_inference": "From the existence of such negative members in each category, it is inferred that every member of every category has property P, or that the categories themselves are fundamentally flawed in the same way.",
+      "conclusion_pattern": "Therefore, all members of all categories C have property P, or all categories C are equally bad with respect to P."
+    },
+    "adjudication": {
+      "decision": "REJECT",
+      "source_suitable": false,
+      "schema_faithful": false,
+      "reason": "The annotated span is an ironic rhetorical quip ('Well, democracy gave us Trump to the whole world. I'll let others judge what democracy is.') that lacks an explicit argumentative structure and deductive/inductive inference. Furthermore, the provided schema was mistakenly constructed from the subsequent rebuttal post ('Communism gave us..., Fascism gave us...') rather than the annotated span itself."
+    },
+    "final_schema": null,
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:10:16.739780+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915414-VpOWP8DcA2FsBIst2Lui",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1098,
+        "completion_tokens": 117,
+        "total_tokens": 1215,
+        "cost": 0.000631125,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000631125,
+          "upstream_inference_prompt_cost": 0.00041175,
+          "upstream_inference_completions_cost": 0.000219375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000123",
+    "source_text": "He has smoked cigarettes his entire life and he doesn't have lung cancer. Therefore smoking doesn't cause lung cancer.\n",
+    "annotated_span": "He has smoked cigarettes his entire life and he doesn't have lung cancer. Therefore smoking doesn't cause lung cancer.",
+    "canonical_fallacy": "Hasty generalization",
+    "original_fallacy": "hasty generalization",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+      "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+      "conclusion_pattern": "Therefore, X does not cause Y."
+    },
+    "adjudication": {
+      "decision": "ACCEPT",
+      "source_suitable": true,
+      "schema_faithful": true,
+      "reason": "The source is a clear, textbook instance of hasty generalization drawing a broad causal conclusion from a single anecdotal case. The schema accurately captures the premises, invalid inductive step, and conclusion."
+    },
+    "final_schema": {
+      "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+      "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+      "conclusion_pattern": "Therefore, X does not cause Y."
+    },
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:10:25.343351+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915419-sGCGx9KIy6967z4hpP95",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 824,
+        "completion_tokens": 309,
+        "total_tokens": 1133,
+        "cost": 0.000888375,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000888375,
+          "upstream_inference_prompt_cost": 0.000309,
+          "upstream_inference_completions_cost": 0.000579375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 157,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000010",
+    "source_text": "The last Democrat winner of the New Hampshire primary won the general election. This year, the winner of the New Hampshire primary will win the general election.\n",
+    "annotated_span": "The last Democrat winner of the New Hampshire primary won the general election. This year, the winner of the New Hampshire primary will win the general election.",
+    "canonical_fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification | false causality",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+      "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+      "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+    },
+    "adjudication": {
+      "decision": "ACCEPT",
+      "source_suitable": true,
+      "schema_faithful": true,
+      "reason": "The text clearly illustrates a false causal/post hoc inference from a single past correlation to a definitive future prediction. The schema faithfully captures the premise, the faulty inference mechanism, and the conclusion pattern."
+    },
+    "final_schema": {
+      "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+      "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+      "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+    },
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:10:32.985228+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915426-ucJsLgNxRczB5RXMERmk",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 877,
+        "completion_tokens": 501,
+        "total_tokens": 1378,
+        "cost": 0.00126825,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00126825,
+          "upstream_inference_prompt_cost": 0.000328875,
+          "upstream_inference_completions_cost": 0.000939375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 310,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000042",
+    "source_text": "According to Freud, your belief in God stems from your need for a strong father figure. So don't you see that it's silly to continue believing in God?\n",
+    "annotated_span": "According to Freud, your belief in God stems from your need for a strong father figure. So don't you see that it's silly to continue believing in God?",
+    "canonical_fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "A person's belief in X is caused by a psychological need for Y.",
+      "invalid_inference": "From the fact that a belief in X has a psychological cause (Y), it is inferred that the belief is false or unjustified, and that one should abandon it.",
+      "conclusion_pattern": "Therefore, it is silly to continue believing in X."
+    },
+    "adjudication": {
+      "decision": "REJECT",
+      "source_suitable": false,
+      "schema_faithful": false,
+      "reason": "The source text instantiates the genetic fallacy (Bulverism / dismissing a belief based on its psychological origin) rather than a causal fallacy / false cause."
+    },
+    "final_schema": null,
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:10:38.133838+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915433-NqWBTmDZzlfXIm6k6wlR",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 863,
+        "completion_tokens": 326,
+        "total_tokens": 1189,
+        "cost": 0.000934875,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000934875,
+          "upstream_inference_prompt_cost": 0.000323625,
+          "upstream_inference_completions_cost": 0.00061125
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 251,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000097",
+    "source_text": "TITLE: This though... POST: So freaking true...I recently got a $100k+ job without a college degree, before my 30th birthday. I did it because I worked my ass off and learned a skill in the military. It's not that hard you just got to do the best you can.\n",
+    "annotated_span": "I did it because I worked my ass off and learned a skill in the military. It's not that hard you just got to do the best you can.",
+    "canonical_fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "adjudication": {
+      "decision": "ACCEPT",
+      "source_suitable": true,
+      "schema_faithful": true,
+      "reason": "The source clearly exhibits causal oversimplification by attributing personal career success entirely to hard work and learning a specific skill, concluding that anyone can achieve the same outcome simply by doing their best. The schema accurately models this premise-to-conclusion inference."
+    },
+    "final_schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:10:52.709535+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915438-6O8WkqQsKvlyBVgn8CyD",
+      "provider": "Google AI Studio",
+      "usage": {
+        "prompt_tokens": 596,
+        "completion_tokens": 649,
+        "total_tokens": 1245,
+        "cost": 0.00288075,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00288075,
+          "upstream_inference_prompt_cost": 0.000447,
+          "upstream_inference_completions_cost": 0.00243375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 457,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000034",
+    "source_text": "Everybody who's looked at it, 500 economists, seven Nobel prize winners, say it's bad for the economy. It's going to blow a hole in the deficit It's going to raise taxes on nine million people and require bigger cuts than the one I vetoed. Our plan is better, it will take us into the future with a growing economy and healthier families.\n",
+    "annotated_span": "It's going to blow a hole in the deficit It's going to raise taxes on nine million people and require bigger cuts than the one I vetoed. Our plan is better, it will take us into the future with a growing economy and healthier families.",
+    "canonical_fallacy": "False dilemma",
+    "original_fallacy": "false dilemma",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "A plan (X) is described as having negative consequences (e.g., blowing a hole in the deficit, raising taxes, requiring bigger cuts).",
+      "invalid_inference": "Because plan X has negative consequences, it is implied that the only alternative is another plan (Y), which is presented as better, without considering other possible plans or modifications.",
+      "conclusion_pattern": "Therefore, plan Y should be accepted as the better or correct choice."
+    },
+    "adjudication": {
+      "decision": "REJECT",
+      "source_suitable": false,
+      "schema_faithful": false,
+      "reason": "The source text is standard political discourse contrasting the opponent's policy proposal with the speaker's own plan rather than an explicit or clear instance of a false dilemma."
+    },
+    "final_schema": null,
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:10:59.074187+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915453-q92NR3TkzzdO9tAg3F6R",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 941,
+        "completion_tokens": 376,
+        "total_tokens": 1317,
+        "cost": 0.001057875,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001057875,
+          "upstream_inference_prompt_cost": 0.000352875,
+          "upstream_inference_completions_cost": 0.000705
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 299,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000082",
+    "source_text": "But irrespective of whether he thinks it is or not means less than fact that this country cannot morally and socially and economically accept an economy running out the clock on the 20th Century. We're treading water. We have families that are hurting. We have people who are unemployed. We have people with no property. We have an administration that is demolishing public housing in our inner cities and not providing anything else but more public housing. Their solution to the inner city is more -- excuse the expression but it's true,\"socialism.\"\n",
+    "annotated_span": "Their solution to the inner city is more -- excuse the expression but it's true,\"socialism.\"",
+    "canonical_fallacy": "False dilemma",
+    "original_fallacy": "false dilemma",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "[Speaker] criticizes [current state] and characterizes [proposed solution] as [negative label].",
+      "invalid_inference": "Because [proposed solution] is labeled as [negative label], it is thereby dismissed as unacceptable without considering its merits.",
+      "conclusion_pattern": "The solution proposed by [speaker's opponent] is [negative label] and therefore should be rejected."
+    },
+    "adjudication": {
+      "decision": "REJECT",
+      "source_suitable": false,
+      "schema_faithful": false,
+      "reason": "The annotated span does not instantiate a false dilemma. It is a rhetorical dismissal / name-calling (labeling public housing policy as 'socialism') rather than a forced choice between two mutually exclusive alternatives."
+    },
+    "final_schema": null,
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:11:01.695294+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915459-YWEIKr8SVxdry99Wrkln",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 924,
+        "completion_tokens": 85,
+        "total_tokens": 1009,
+        "cost": 0.000505875,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000505875,
+          "upstream_inference_prompt_cost": 0.0003465,
+          "upstream_inference_completions_cost": 0.000159375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000095",
+    "source_text": "These test results are clearly wrong, and it must be either because the client was malingering or because I bungled the test administration. Taking another look at the test manual, I see now that I bungled the test administration. Therefore the client was not malingering.\n",
+    "annotated_span": "These test results are clearly wrong, and it must be either because the client was malingering or because I bungled the test administration.",
+    "canonical_fallacy": "False dilemma",
+    "original_fallacy": "false dilemma",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "Either C or D. D is true. Therefore, not C.",
+      "invalid_inference": "The disjunction is false because the second disjunct is true, so the first disjunct must be false.",
+      "conclusion_pattern": "Therefore, not C."
+    },
+    "adjudication": {
+      "decision": "REVISE",
+      "source_suitable": true,
+      "schema_faithful": false,
+      "reason": "The annotated span is suitable as an instance of false dilemma (limiting the explanation to two alternatives), but the current schema conflates false dilemma with affirming an alternative / exclusive disjunction fallacy and includes steps (D is true, therefore not C) not present in the primary annotated span."
+    },
+    "final_schema": {
+      "premise_pattern": "Result R occurred.",
+      "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+      "conclusion_pattern": "It must be either because C or because D."
+    },
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:11:18.141685+00:00",
+      "attempts": 2,
+      "response_id": "gen-1787915474-wgyCNmSnrGX98KnP5dMQ",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 903,
+        "completion_tokens": 160,
+        "total_tokens": 1063,
+        "cost": 0.000638625,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000638625,
+          "upstream_inference_prompt_cost": 0.000338625,
+          "upstream_inference_completions_cost": 0.0003
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000015",
+    "source_text": "Iran has moved forward with its nuclear weapons program. They're more dangerous today than they were four years ago. North Korea has moved forward with their nuclear weapons program, gone from one to two nuclear weapons to six to eight nuclear weapons. This vice president has been an advocate for over a decade for lifting sanctions against Iran, the largest state sponsor of terrorism on the planet. It's a mistake.\n",
+    "annotated_span": "North Korea has moved forward with their nuclear weapons program, gone from one to two nuclear weapons to six to eight nuclear weapons. This vice president has been an advocate for over a decade for lifting sanctions against Iran, the largest state sponsor of terrorism on the planet. It's a mistake.",
+    "canonical_fallacy": "Faulty analogy",
+    "original_fallacy": "false analogy",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "X has property P. Y has property P. Person Z has advocated for action A regarding X.",
+      "invalid_inference": "Because X has property P (e.g., being dangerous or advancing a program) and Y also has property P, and because a person Z has advocated for action A regarding X, it follows that action A regarding X is wrong.",
+      "conclusion_pattern": "Therefore, it is a mistake to support or engage in action A regarding X."
+    },
+    "adjudication": {
+      "decision": "REJECT",
+      "source_suitable": false,
+      "schema_faithful": false,
+      "reason": "The selected span and source text lack a clear, complete analogical argument structure required for a Faulty Analogy fallacy. The text simply juxtaposes facts about North Korea and Iran alongside criticism of the Vice President's foreign policy position, without establishing an explicit analogical inference."
+    },
+    "final_schema": null,
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:11:21.589869+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915478-hLb7Vm0ezkij4WCzBVTA",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 951,
+        "completion_tokens": 99,
+        "total_tokens": 1050,
+        "cost": 0.00054225,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00054225,
+          "upstream_inference_prompt_cost": 0.000356625,
+          "upstream_inference_completions_cost": 0.000185625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000078",
+    "source_text": "TITLE: Abstinence vs. those who chose to have sex, a dilemma I'd like to understand! POST: I dont wait until marriage, because I'm not even sure if I want to get married. Used to care about how many people the girl sleeped with, now I really dont give a shit. Ive collectively had sex hundreds of times with my partners over the years, that doesn't make me better than someone who's had sex with more people, one time each. POST: Almost everyone in the world will look more favorably on a person who has had sex 100x times with one person versus having sex 1x each with 100 different people. As they should.\n",
+    "annotated_span": "Ive collectively had sex hundreds of times with my partners over the years, that doesn't make me better than someone who's had sex with more people, one time each.",
+    "canonical_fallacy": "Faulty analogy",
+    "original_fallacy": "false analogy",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "Person X has done action A many times with one partner. Person Y has done action A once each with many different partners. Both have done action A the same total number of times.",
+      "invalid_inference": "Because the first person has done action A many times total, they are morally or socially superior to the second person, even though the second person has also done action A many times total (just with different partners).",
+      "conclusion_pattern": "People will look more favorably on a person who has done action A many times with one partner than on a person who has done action A once each with many different partners."
+    },
+    "adjudication": {
+      "decision": "REJECT",
+      "source_suitable": false,
+      "schema_faithful": false,
+      "reason": "The annotated span is an expression of personal opinion rejecting a moral hierarchy ('that doesn't make me better than someone...'), rather than a clear instantiation of a faulty analogy. Furthermore, the existing schema draws its conclusion directly from a completely different subsequent post in the surrounding context, reversing the reasoning in the annotated span."
+    },
+    "final_schema": null,
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:11:27.600512+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915482-ADYTwPbMvX4mE74QVvRm",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1026,
+        "completion_tokens": 476,
+        "total_tokens": 1502,
+        "cost": 0.00127725,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00127725,
+          "upstream_inference_prompt_cost": 0.00038475,
+          "upstream_inference_completions_cost": 0.0008925
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 369,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000124",
+    "source_text": "Clearly, uh it was maybe the right thing to do, but we did not go in with enough information. We caused problems in the first place by denying Caribbean countries and third-world countries a chance to trade freely in the United States. It causes economic problems and turmoil, and then we turn around, as we did in Mexico, having to bail them out. We caused the problem in the first place, and it cost us 20 to 50 billion to bail them out.\n",
+    "annotated_span": "It causes economic problems and turmoil, and then we turn around, as we did in Mexico, having to bail them out.",
+    "canonical_fallacy": "Faulty analogy",
+    "original_fallacy": "false analogy",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "Action A (e.g., imposing a restriction) on category C leads to negative outcome O for C, and later a costly intervention B is required to address O.",
+      "invalid_inference": "Because action A on C caused O and required B, it is inferred that action A is analogous to a different action D on a different category C' that also leads to O' and requires B', without establishing relevant similarities between A and D or between C and C'.",
+      "conclusion_pattern": "Therefore, action D on C' is also wrong or harmful in the same way as action A on C, and should be avoided or condemned."
+    },
+    "adjudication": {
+      "decision": "REJECT",
+      "source_suitable": false,
+      "schema_faithful": false,
+      "reason": "The annotated span is an informal, conversational reference ('as we did in Mexico') rather than a clearly developed analogical argument with distinct base and target domains and a recoverable fallacious inference."
+    },
+    "final_schema": null,
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:11:33.437550+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915488-IjdsuF8ErHVWafKkybNu",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 971,
+        "completion_tokens": 419,
+        "total_tokens": 1390,
+        "cost": 0.00114975,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00114975,
+          "upstream_inference_prompt_cost": 0.000364125,
+          "upstream_inference_completions_cost": 0.000785625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 338,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000036",
+    "source_text": "You should drive on the right side of the road because that is what the law says, and the law is the law.\n",
+    "annotated_span": "You should drive on the right side of the road because that is what the law says, and the law is the law.",
+    "canonical_fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "X is asserted to be the case by an authority, and that authority is defined as being correct because X is the case.",
+      "invalid_inference": "The justification for X is that X is asserted to be the case by an authority, and that authority is defined as being correct because X is the case.",
+      "conclusion_pattern": "X is the case because X is the case."
+    },
+    "adjudication": {
+      "decision": "REVISE",
+      "source_suitable": true,
+      "schema_faithful": false,
+      "reason": "The source is a clear example of circular/tautological reasoning ('the law is the law' used to justify following the law), but the existing schema mischaracterizes the argument as defining authority correctness symmetrically rather than capturing the tautological justification for the normative claim."
+    },
+    "final_schema": {
+      "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+      "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+      "conclusion_pattern": "One should do action X"
+    },
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:11:42.062455+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915494-JCHnnjpWmlPzmB2ER0FT",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 844,
+        "completion_tokens": 482,
+        "total_tokens": 1326,
+        "cost": 0.00122025,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00122025,
+          "upstream_inference_prompt_cost": 0.0003165,
+          "upstream_inference_completions_cost": 0.00090375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 305,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000089",
+    "source_text": "The president of Honduras is a good leader because he is a leader of the country.\n",
+    "annotated_span": "The president of Honduras is a good leader because he is a leader of the country.",
+    "canonical_fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "adjudication": {
+      "decision": "ACCEPT",
+      "source_suitable": true,
+      "schema_faithful": true,
+      "reason": "The source is a clear and self-contained instance of circular/tautological reasoning asserting that someone is a good leader simply because they are a leader. The schema faithfully represents the premise, inference step, and conclusion without introducing outside concepts."
+    },
+    "final_schema": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:11:47.042321+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915502-4drLUfKQsYlOLPnVjjag",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 785,
+        "completion_tokens": 397,
+        "total_tokens": 1182,
+        "cost": 0.00103875,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00103875,
+          "upstream_inference_prompt_cost": 0.000294375,
+          "upstream_inference_completions_cost": 0.000744375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 255,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "source_id": "mafalda_gold_000118",
+    "source_text": "\"The Cardinals are the best football team because they're better than all the other teams. They're better than all the other teams because they're the best.\"\n",
+    "annotated_span": "The Cardinals are the best football team because they're better than all the other teams. They're better than all the other teams because they're the best.",
+    "canonical_fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "final_schema_from_stage_2_5": {
+      "premise_pattern": "X is P",
+      "invalid_inference": "X is P because X is P",
+      "conclusion_pattern": "X is P"
+    },
+    "adjudication": {
+      "decision": "ACCEPT",
+      "source_suitable": true,
+      "schema_faithful": true,
+      "reason": "The source is an explicit textbook example of circular reasoning where the premise and conclusion are synonymous restatements of each other."
+    },
+    "final_schema": {
+      "premise_pattern": "X is P",
+      "invalid_inference": "X is P because X is P",
+      "conclusion_pattern": "X is P"
+    },
+    "adjudication_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 42,
+      "reasoning_effort": "low",
+      "prompt_version": "stage2.6-strict-adjudication-v1",
+      "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf",
+      "timestamp": "2026-08-28T11:11:51.438543+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787915507-vuid930GCmzzmyNy6BV1",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 813,
+        "completion_tokens": 454,
+        "total_tokens": 1267,
+        "cost": 0.001156125,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001156125,
+          "upstream_inference_prompt_cost": 0.000304875,
+          "upstream_inference_completions_cost": 0.00085125
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 343,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+]

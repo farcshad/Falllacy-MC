@@ -1,0 +1,94 @@
+{
+  "run_id": "stage3-educational-pilot-v1",
+  "stage": 3,
+  "stage_name": "educational_misconception_case_generation",
+  "created_at": "2026-08-28T11:32:44.152223+00:00",
+  "input": {
+    "path": "/Users/Farshad/Documents/Academic/Falllacy MC/outputs/stage2-6-strict-pilot-v1/adjudicated_schemas.json",
+    "sha256": "5cc898287f20ce650b9ebd01c0d8bdea222410142cc7e705e56b6c67caf2a5b8",
+    "usable_schema_count": 7,
+    "ignored_rejected_schema_count": 8,
+    "usable_source_ids": [
+      "mafalda_gold_000123",
+      "mafalda_gold_000010",
+      "mafalda_gold_000097",
+      "mafalda_gold_000095",
+      "mafalda_gold_000036",
+      "mafalda_gold_000089",
+      "mafalda_gold_000118"
+    ]
+  },
+  "pilot_design": {
+    "available_domains": [
+      "biology",
+      "physics",
+      "psychology",
+      "economics",
+      "general science"
+    ],
+    "domains_per_schema": 2,
+    "cases_per_domain": 2,
+    "domain_assignments": {
+      "mafalda_gold_000123": [
+        "biology",
+        "psychology"
+      ],
+      "mafalda_gold_000010": [
+        "biology",
+        "economics"
+      ],
+      "mafalda_gold_000097": [
+        "biology",
+        "economics"
+      ],
+      "mafalda_gold_000095": [
+        "psychology",
+        "general science"
+      ],
+      "mafalda_gold_000036": [
+        "general science",
+        "economics"
+      ],
+      "mafalda_gold_000089": [
+        "general science",
+        "economics"
+      ],
+      "mafalda_gold_000118": [
+        "general science",
+        "economics"
+      ]
+    }
+  },
+  "generation": {
+    "provider": "OpenRouter",
+    "requested_model": "deepseek/deepseek-v4-flash-0731",
+    "temperature": 0.2,
+    "base_seed": 42,
+    "seed_strategy": "base_seed + one-based planned case position",
+    "max_tokens": 800,
+    "max_attempts_per_case": 3,
+    "prompt_version": "stage3-case-generation-v1",
+    "prompt_path": "/Users/Farshad/Documents/Academic/Falllacy MC/data_creation/prompts/case_generation_prompt.txt",
+    "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547"
+  },
+  "total_requested": 28,
+  "successfully_generated": 28,
+  "structural_failure_count": 0,
+  "retry_count": 2,
+  "duplicate_attempt_count": 2,
+  "final_exact_duplicate_count": 0,
+  "raw_attempt_count": 30,
+  "usage_totals": {
+    "prompt_tokens": 14682,
+    "completion_tokens": 8005,
+    "total_tokens": 22687,
+    "cost": 0.0018825539999999998
+  },
+  "outputs": {
+    "generated_cases": "generated_cases.json",
+    "raw_responses": "raw_responses.jsonl",
+    "failures": "stage_3_failures.jsonl",
+    "review": "stage_3_review.md",
+    "generation_plan": "generation_plan.json"
+  }
+}

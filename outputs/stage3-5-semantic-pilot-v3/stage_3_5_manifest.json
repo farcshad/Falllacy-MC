@@ -1,0 +1,47 @@
+{
+  "run_id": "stage3-5-semantic-pilot-v3",
+  "stage": 3.5,
+  "stage_name": "semantic_case_validation_and_refinement",
+  "created_at": "2026-08-28T11:51:48.628785+00:00",
+  "input": {
+    "path": "/Users/Farshad/Documents/Academic/Falllacy MC/outputs/stage3-educational-pilot-v1/generated_cases.json",
+    "sha256": "d92b429d9f0068e32196b354d2ff374fc5fe461aad55241757c1c82e22a45eaa",
+    "record_count": 28
+  },
+  "validation": {
+    "provider": "OpenRouter",
+    "requested_model": "google/gemini-3.7-flash",
+    "temperature": 0.0,
+    "base_seed": 42,
+    "seed_strategy": "base_seed + one-based input position",
+    "reasoning_effort": "low",
+    "max_tokens": 1400,
+    "max_attempts_per_case": 3,
+    "prompt_version": "stage3.5-case-validation-v3",
+    "prompt_path": "/Users/Farshad/Documents/Academic/Falllacy MC/data_creation/prompts/case_validation_prompt.txt",
+    "prompt_sha256": "12e2461f3020579410bf27f4e80a1c7b373f39cc7378f19ba39fa62ccba2dde2"
+  },
+  "total_record_count": 28,
+  "completed_validation_count": 28,
+  "accepted_unchanged_count": 1,
+  "revised_count": 19,
+  "rejected_count": 8,
+  "failure_count": 0,
+  "raw_attempt_count": 29,
+  "retry_count": 1,
+  "usage_totals": {
+    "prompt_tokens": 51709,
+    "completion_tokens": 15410,
+    "total_tokens": 67119,
+    "cost": 0.048284625
+  },
+  "outputs": {
+    "validated_cases": "validated_cases.json",
+    "accepted_cases": "accepted_cases.json",
+    "revised_cases": "revised_cases.json",
+    "rejected_cases": "rejected_cases.json",
+    "raw_validation_responses": "raw_validation_responses.jsonl",
+    "failures": "stage_3_5_failures.jsonl",
+    "review": "stage_3_5_review.md"
+  }
+}

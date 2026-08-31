@@ -1,0 +1,3149 @@
+[
+  {
+    "id": "case_0001",
+    "source_schema_id": "mafalda_gold_000123",
+    "source_schema_decision": "ACCEPT",
+    "domain": "biology",
+    "fallacy": "Hasty generalization",
+    "original_fallacy": "hasty generalization",
+    "fallacy_schema": {
+      "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+      "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+      "conclusion_pattern": "Therefore, X does not cause Y."
+    },
+    "original_case": {
+      "situation": "In a biology class, students are learning about the effects of exercise on heart health. The teacher mentions that regular aerobic exercise strengthens the heart muscle and reduces the risk of heart disease. A student recalls that their grandfather, who has been a long-distance runner for over 40 years, recently had a heart attack. The student thinks, 'If running for so long didn't prevent my grandfather's heart attack, then exercise must not really prevent heart disease.'",
+      "question": "Based on the evidence from your grandfather's experience, does regular aerobic exercise cause a reduction in heart disease risk?",
+      "student_reasoning": "My grandfather ran every day for 40 years and still had a heart attack. So, if exercise really prevented heart disease, he wouldn't have had one. Since he did, exercise must not prevent heart disease.",
+      "student_answer": "No, exercise does not reduce the risk of heart disease.",
+      "misconception": "Students may believe that a single counterexample is sufficient to disprove a causal relationship, ignoring the need for controlled studies and the multifactorial nature of disease risk (e.g., genetics, diet, other lifestyle factors)."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 43,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:21:57.051167+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916114-ipp7GgI8YHtR0q3m9Qcg",
+      "provider": "Ambient",
+      "usage": {
+        "prompt_tokens": 317,
+        "completion_tokens": 248,
+        "total_tokens": 565,
+        "cost": 7e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 7e-05,
+          "upstream_inference_prompt_cost": 2.536e-05,
+          "upstream_inference_completions_cost": 4.464e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception field uses meta-framing ('Students may believe that...') instead of being phrased as a concise declarative belief."
+      ]
+    },
+    "final_case": {
+      "situation": "In a biology class, students are learning about the effects of exercise on heart health. The teacher mentions that regular aerobic exercise strengthens the heart muscle and reduces the risk of heart disease. A student recalls that their grandfather, who has been a long-distance runner for over 40 years, recently had a heart attack. The student thinks, 'If running for so long didn't prevent my grandfather's heart attack, then exercise must not really prevent heart disease.'",
+      "question": "Based on the evidence from your grandfather's experience, does regular aerobic exercise cause a reduction in heart disease risk?",
+      "student_reasoning": "My grandfather ran every day for 40 years and still had a heart attack. So, if exercise really prevented heart disease, he wouldn't have had one. Since he did, exercise must not prevent heart disease.",
+      "student_answer": "No, exercise does not reduce the risk of heart disease.",
+      "misconception": "A single counterexample disproves a causal health benefit because preventive biological factors must provide complete, deterministic protection for every individual."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 43,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:40:05.074958+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917196-6kS4PtdNlR7vCInfPBSP",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1499,
+        "completion_tokens": 872,
+        "total_tokens": 2371,
+        "cost": 0.002197125,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002197125,
+          "upstream_inference_prompt_cost": 0.000562125,
+          "upstream_inference_completions_cost": 0.001635
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 502,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0002",
+    "source_schema_id": "mafalda_gold_000123",
+    "source_schema_decision": "ACCEPT",
+    "domain": "biology",
+    "fallacy": "Hasty generalization",
+    "original_fallacy": "hasty generalization",
+    "fallacy_schema": {
+      "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+      "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+      "conclusion_pattern": "Therefore, X does not cause Y."
+    },
+    "original_case": {
+      "situation": "In a health class, students are learning about nutrition and disease prevention. The teacher explains that a diet high in fiber is associated with a lower risk of colon cancer. A student remembers that their uncle ate a high-fiber diet for many years but was still diagnosed with colon cancer. The student thinks, 'If eating fiber for so long didn't protect my uncle from colon cancer, then fiber probably doesn't reduce the risk at all.'",
+      "question": "Based on the evidence from your uncle's experience, does a high-fiber diet reduce the risk of colon cancer?",
+      "student_reasoning": "My uncle ate a high-fiber diet for 20 years and still got colon cancer. So, if fiber really reduced the risk, he wouldn't have gotten it. Since he did, fiber must not reduce the risk.",
+      "student_answer": "No, a high-fiber diet does not reduce the risk of colon cancer.",
+      "misconception": "Students may believe that a single personal observation is enough to disprove a general biological trend, without considering that individual variation, genetics, and other factors can influence outcomes."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 44,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:22:22.343133+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916118-VZl4YIsogwKoLDBp4L0W",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 589,
+        "completion_tokens": 241,
+        "total_tokens": 830,
+        "cost": 4.177e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.177e-05,
+          "upstream_inference_prompt_cost": 1.767e-05,
+          "upstream_inference_completions_cost": 2.41e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The current case inverts the schema: it describes a protective factor failing to prevent an outcome rather than an individual engaging in a risk factor X without developing disease Y to conclude X does not cause Y.",
+        "The misconception uses the forbidden framing 'Students may believe that' and describes reasoning/fallacy critique rather than a concise declarative content-level belief."
+      ]
+    },
+    "final_case": {
+      "situation": "In a biology and health class, students are studying lifestyle risk factors for noncommunicable diseases. The teacher presents epidemiological evidence showing that frequent consumption of processed meats increases the risk of developing colon cancer. A student recalls that their grandfather ate processed meats daily for fifty years and never developed colon cancer.",
+      "question": "Based on the grandfather's experience, does eating processed meat cause colon cancer?",
+      "student_reasoning": "My grandfather ate processed meat every single day for 50 years and never got colon cancer. If processed meat really caused colon cancer, he would have developed it after eating so much for so long. Since he stayed healthy, processed meat does not cause colon cancer.",
+      "student_answer": "No, eating processed meat does not cause colon cancer.",
+      "misconception": "A biological factor only causes a disease if every individual exposed to that factor inevitably develops the disease."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 44,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:40:30.119926+00:00",
+      "attempts": 2,
+      "response_id": "gen-1787917219-qqdqXaazW1cbKnFhsgKg",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1539,
+        "completion_tokens": 1224,
+        "total_tokens": 2763,
+        "cost": 0.002872125,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002872125,
+          "upstream_inference_prompt_cost": 0.000577125,
+          "upstream_inference_completions_cost": 0.002295
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 850,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0003",
+    "source_schema_id": "mafalda_gold_000123",
+    "source_schema_decision": "ACCEPT",
+    "domain": "psychology",
+    "fallacy": "Hasty generalization",
+    "original_fallacy": "hasty generalization",
+    "fallacy_schema": {
+      "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+      "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+      "conclusion_pattern": "Therefore, X does not cause Y."
+    },
+    "original_case": {
+      "situation": "In a psychology class, students are discussing whether violent video games cause aggressive behavior. A student mentions that their older brother has played violent video games for over ten years and has never shown any aggressive behavior. The class is asked to evaluate the claim that violent video games cause aggression.",
+      "question": "Based on the evidence that the student's brother plays violent video games and is not aggressive, what can you conclude about the relationship between violent video games and aggression?",
+      "student_reasoning": "My brother has played violent video games for a long time and he is not aggressive. So if violent video games really caused aggression, he would be aggressive by now. Since he isn't, violent video games must not cause aggression.",
+      "student_answer": "Violent video games do not cause aggression.",
+      "misconception": "A single counterexample is sufficient to disprove a causal claim; the student fails to recognize that causal relationships are probabilistic and that individual differences (e.g., personality, environment) can moderate effects, so one non-aggressive gamer does not rule out a general causal link."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 45,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:22:29.693224+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916144-OIOhPs4LSh47WTeJQc2d",
+      "provider": "Together",
+      "usage": {
+        "prompt_tokens": 317,
+        "completion_tokens": 233,
+        "total_tokens": 550,
+        "cost": 0.00010962,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00010962,
+          "upstream_inference_prompt_cost": 4.438e-05,
+          "upstream_inference_completions_cost": 6.524e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception contains meta-level critique and explanation ('the student fails to recognize that...') and specific case details rather than being a concise declarative statement of the underlying incorrect belief."
+      ]
+    },
+    "final_case": {
+      "situation": "In a psychology class, students are discussing whether violent video games cause aggressive behavior. A student mentions that their older brother has played violent video games for over ten years and has never shown any aggressive behavior. The class is asked to evaluate the claim that violent video games cause aggression.",
+      "question": "Based on the evidence that the student's brother plays violent video games and is not aggressive, what can you conclude about the relationship between violent video games and aggression?",
+      "student_reasoning": "My brother has played violent video games for a long time and he is not aggressive. So if violent video games really caused aggression, he would be aggressive by now. Since he isn't, violent video games must not cause aggression.",
+      "student_answer": "Violent video games do not cause aggression.",
+      "misconception": "A single counterexample is sufficient to disprove a general or probabilistic causal relationship."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 45,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:40:37.856864+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917230-MSrTy14366sWkOTwwGfl",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1478,
+        "completion_tokens": 725,
+        "total_tokens": 2203,
+        "cost": 0.001913625,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001913625,
+          "upstream_inference_prompt_cost": 0.00055425,
+          "upstream_inference_completions_cost": 0.001359375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 387,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0004",
+    "source_schema_id": "mafalda_gold_000123",
+    "source_schema_decision": "ACCEPT",
+    "domain": "psychology",
+    "fallacy": "Hasty generalization",
+    "original_fallacy": "hasty generalization",
+    "fallacy_schema": {
+      "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+      "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+      "conclusion_pattern": "Therefore, X does not cause Y."
+    },
+    "original_case": {
+      "situation": "In a psychology class discussing the effects of caffeine on mental health, a student mentions that their grandfather has drunk several cups of coffee every day for over 40 years and has never experienced anxiety. The class is asked to evaluate the claim that caffeine consumption causes anxiety.",
+      "question": "Based on the evidence that your grandfather has been a heavy coffee drinker for decades and does not have anxiety, what can you conclude about the relationship between caffeine consumption and anxiety?",
+      "student_reasoning": "My grandfather has drunk coffee for a very long time and he doesn't have anxiety. If caffeine really caused anxiety, he would have developed it by now. Since he hasn't, caffeine must not cause anxiety.",
+      "student_answer": "Caffeine consumption does not cause anxiety.",
+      "misconception": "The student believes that a single case of prolonged exposure to a factor without the expected outcome is enough to disprove a causal relationship, ignoring that causal effects are probabilistic and can be moderated by individual differences or other variables."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 46,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:22:34.782654+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916150-6F1PZfnCZiOyzMeTrZVV",
+      "provider": "Inceptron",
+      "usage": {
+        "prompt_tokens": 574,
+        "completion_tokens": 216,
+        "total_tokens": 790,
+        "cost": 0.0001351,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0001351,
+          "upstream_inference_prompt_cost": 7.462e-05,
+          "upstream_inference_completions_cost": 6.048e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception field uses meta-framing ('The student believes that...') rather than a direct, concise declarative belief statement."
+      ]
+    },
+    "final_case": {
+      "situation": "In a psychology class discussing the effects of caffeine on mental health, a student mentions that their grandfather has drunk several cups of coffee every day for over 40 years and has never experienced anxiety. The class is asked to evaluate the claim that caffeine consumption causes anxiety.",
+      "question": "Based on the evidence that your grandfather has been a heavy coffee drinker for decades and does not have anxiety, what can you conclude about the relationship between caffeine consumption and anxiety?",
+      "student_reasoning": "My grandfather has drunk coffee for a very long time and he doesn't have anxiety. If caffeine really caused anxiety, he would have developed it by now. Since he hasn't, caffeine must not cause anxiety.",
+      "student_answer": "Caffeine consumption does not cause anxiety.",
+      "misconception": "A single individual's long-term exposure to a factor without developing an outcome disproves a causal relationship between that factor and the outcome, ignoring individual differences and probabilistic causation."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 46,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:40:41.305333+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917238-GEiFOM6rNkQgGYCbL7FS",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1461,
+        "completion_tokens": 343,
+        "total_tokens": 1804,
+        "cost": 0.001191,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001191,
+          "upstream_inference_prompt_cost": 0.000547875,
+          "upstream_inference_completions_cost": 0.000643125
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0005",
+    "source_schema_id": "mafalda_gold_000010",
+    "source_schema_decision": "ACCEPT",
+    "domain": "biology",
+    "fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification | false causality",
+    "fallacy_schema": {
+      "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+      "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+      "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+    },
+    "original_case": {
+      "situation": "In a biology class, students are learning about plant responses to environmental stimuli. The teacher presents a case study: a particular tomato plant variety that, when exposed to a specific fungal pathogen, showed increased production of a defensive chemical called jasmonic acid. The teacher notes that in that single documented case, the plant survived the infection. Now, the teacher asks the class to predict what will happen when a different tomato plant of the same variety is exposed to the same pathogen in the school's greenhouse.",
+      "question": "Based on the case study, what will happen to the new tomato plant when it is exposed to the same fungal pathogen?",
+      "student_reasoning": "The case study showed that when a tomato plant of this variety was exposed to the pathogen, it produced jasmonic acid and survived. So, if I expose this new plant to the same pathogen, it will also produce jasmonic acid and survive. The case study is evidence that this variety is resistant.",
+      "student_answer": "The new tomato plant will produce jasmonic acid and survive the infection.",
+      "misconception": "Students may believe that a single observed correlation between a plant's response and a positive outcome is sufficient to establish a causal and generalizable defense mechanism, ignoring genetic variation, environmental conditions, pathogen strain differences, and the need for replicated experiments."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 47,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:22:46.589567+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916157-SPRmhMnzM2i4hipkaWP3",
+      "provider": "AkashML",
+      "usage": {
+        "prompt_tokens": 355,
+        "completion_tokens": 283,
+        "total_tokens": 638,
+        "cost": 0.00011474,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00011474,
+          "upstream_inference_prompt_cost": 3.55e-05,
+          "upstream_inference_completions_cost": 7.924e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception contains teacher-facing evaluator framing ('Students may believe that...') and includes a critical meta-explanation ('ignoring genetic variation...') rather than stating a concise declarative belief."
+      ]
+    },
+    "final_case": {
+      "situation": "In a biology class, students are learning about plant responses to environmental stimuli. The teacher presents a case study: a particular tomato plant variety that, when exposed to a specific fungal pathogen, showed increased production of a defensive chemical called jasmonic acid. The teacher notes that in that single documented case, the plant survived the infection. Now, the teacher asks the class to predict what will happen when a different tomato plant of the same variety is exposed to the same pathogen in the school's greenhouse.",
+      "question": "Based on the case study, what will happen to the new tomato plant when it is exposed to the same fungal pathogen?",
+      "student_reasoning": "The case study showed that when a tomato plant of this variety was exposed to the pathogen, it produced jasmonic acid and survived. So, if I expose this new plant to the same pathogen, it will also produce jasmonic acid and survive. The case study is evidence that this variety is resistant.",
+      "student_answer": "The new tomato plant will produce jasmonic acid and survive the infection.",
+      "misconception": "A single observed instance of an organism surviving after mounting a physiological response is sufficient to establish an invariable, causal defense mechanism across all individuals of that variety."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 47,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:40:49.380787+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917242-DqcGsgU4GbI1AXWxg7iQ",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1567,
+        "completion_tokens": 723,
+        "total_tokens": 2290,
+        "cost": 0.00194325,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00194325,
+          "upstream_inference_prompt_cost": 0.000587625,
+          "upstream_inference_completions_cost": 0.001355625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 312,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0006",
+    "source_schema_id": "mafalda_gold_000010",
+    "source_schema_decision": "ACCEPT",
+    "domain": "biology",
+    "fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification | false causality",
+    "fallacy_schema": {
+      "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+      "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+      "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+    },
+    "original_case": {
+      "situation": "In a biology class, students are learning about animal behavior. The teacher presents an observation: a particular lizard species, when placed in a warm enclosure with a heat lamp, was seen basking under the lamp and then became more active. The teacher notes that in that single observed case, the lizard's activity increased after basking. Now, the teacher asks the class to predict what will happen when a different lizard of the same species is placed in the same enclosure with the heat lamp.",
+      "question": "Based on the observation, what will happen to the new lizard when it is placed in the same enclosure?",
+      "student_reasoning": "The observation showed that when a lizard of this species was placed in the warm enclosure, it basked and then became more active. So, if I place this new lizard in the same enclosure, it will also bask and then become more active. The observation is evidence that this species responds this way.",
+      "student_answer": "The new lizard will bask under the heat lamp and then become more active.",
+      "misconception": "Students may believe that a single observed correlation between a behavior and an outcome is sufficient to establish a causal and generalizable relationship, ignoring individual differences, environmental factors, and the need for controlled experiments."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 48,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:23:39.832896+00:00",
+      "attempts": 2,
+      "response_id": "gen-1787916194-7cHdqwqcfKbw8WOnHJfS",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 692,
+        "completion_tokens": 268,
+        "total_tokens": 960,
+        "cost": 3.5784e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 512,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.5784e-05,
+          "upstream_inference_prompt_cost": 8.984e-06,
+          "upstream_inference_completions_cost": 2.68e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception contains forbidden meta-framing ('Students may believe that...') and describes the reasoning flaw/fallacy rather than expressing a direct declarative content-level mental model."
+      ]
+    },
+    "final_case": {
+      "situation": "In a biology class, students are learning about animal behavior. The teacher presents an observation: a particular lizard species, when placed in a warm enclosure with a heat lamp, was seen basking under the lamp and then became more active. The teacher notes that in that single observed case, the lizard's activity increased after basking. Now, the teacher asks the class to predict what will happen when a different lizard of the same species is placed in the same enclosure with the heat lamp.",
+      "question": "Based on the observation, what will happen to the new lizard when it is placed in the same enclosure?",
+      "student_reasoning": "The observation showed that when a lizard of this species was placed in the warm enclosure, it basked and then became more active. So, if I place this new lizard in the same enclosure, it will also bask and then become more active. The observation is evidence that this species responds this way.",
+      "student_answer": "The new lizard will bask under the heat lamp and then become more active.",
+      "misconception": "A single observed instance of an organism exhibiting a behavioral sequence under specific conditions is sufficient to establish a universal behavioral response for the entire species."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 48,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:40:53.248135+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917250-vtdjMuWQJOzjd4t7f3R5",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1549,
+        "completion_tokens": 398,
+        "total_tokens": 1947,
+        "cost": 0.001327125,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001327125,
+          "upstream_inference_prompt_cost": 0.000580875,
+          "upstream_inference_completions_cost": 0.00074625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0007",
+    "source_schema_id": "mafalda_gold_000010",
+    "source_schema_decision": "ACCEPT",
+    "domain": "economics",
+    "fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification | false causality",
+    "fallacy_schema": {
+      "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+      "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+      "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+    },
+    "original_case": {
+      "situation": "In a high school economics class, students are learning about the effects of government policies on markets. The teacher presents a case study: in 2008, a small country introduced a new subsidy for solar panel installations, and within a year, the number of solar panel installations increased by 30%. The teacher then asks the class to predict the likely effect of a similar subsidy that the country is considering introducing next year.",
+      "question": "Based on the 2008 case, what is the most likely effect of the new subsidy on solar panel installations next year?",
+      "student_reasoning": "The teacher showed us that the 2008 subsidy was followed by a 30% increase in installations. So, if we introduce the same subsidy again, we should expect a similar increase. I don't think we need to consider other factors because the situation is basically the same.",
+      "student_answer": "The new subsidy will cause a 30% increase in solar panel installations next year.",
+      "misconception": "Students may believe that if a policy (or event) was followed by a positive outcome in one historical instance, then the same policy will always produce the same outcome in any similar context, ignoring the influence of other economic conditions, market changes, or external factors. This is a form of oversimplified causal reasoning where correlation is mistaken for causation and past performance is assumed to guarantee future results."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 49,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:23:43.091742+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916220-EJoPIng2RHokTR4bsP81",
+      "provider": "Makora",
+      "usage": {
+        "prompt_tokens": 355,
+        "completion_tokens": 295,
+        "total_tokens": 650,
+        "cost": 8.9475e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 8.9475e-05,
+          "upstream_inference_prompt_cost": 3.195e-05,
+          "upstream_inference_completions_cost": 5.7525e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception field uses meta-framing ('Students may believe that...') and includes meta-commentary/fallacy critique ('This is a form of oversimplified causal reasoning where correlation is mistaken for causation...'). It must be a concise declarative belief."
+      ]
+    },
+    "final_case": {
+      "situation": "In a high school economics class, students are learning about the effects of government policies on markets. The teacher presents a case study: in 2008, a small country introduced a new subsidy for solar panel installations, and within a year, the number of solar panel installations increased by 30%. The teacher then asks the class to predict the likely effect of a similar subsidy that the country is considering introducing next year.",
+      "question": "Based on the 2008 case, what is the most likely effect of the new subsidy on solar panel installations next year?",
+      "student_reasoning": "The teacher showed us that the 2008 subsidy was followed by a 30% increase in installations. So, if we introduce the same subsidy again, we should expect a similar increase. I don't think we need to consider other factors because the situation is basically the same.",
+      "student_answer": "The new subsidy will cause a 30% increase in solar panel installations next year.",
+      "misconception": "An economic policy that was followed by a specific market outcome in the past will produce that exact same outcome whenever it is implemented again."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 49,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:40:58.819778+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917254-jSE8LsinR1Bij9SRrlk0",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1586,
+        "completion_tokens": 412,
+        "total_tokens": 1998,
+        "cost": 0.00136725,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00136725,
+          "upstream_inference_prompt_cost": 0.00059475,
+          "upstream_inference_completions_cost": 0.0007725
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0008",
+    "source_schema_id": "mafalda_gold_000010",
+    "source_schema_decision": "ACCEPT",
+    "domain": "economics",
+    "fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification | false causality",
+    "fallacy_schema": {
+      "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+      "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+      "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+    },
+    "original_case": {
+      "situation": "In a high school economics class, students are learning about the effects of minimum wage laws on employment. The teacher presents a case study: in 2015, a city increased its minimum wage by 20%, and within a year, employment in the fast-food industry increased by 5%. The teacher then asks the class to predict the likely effect of a similar 20% minimum wage increase that the city is considering for next year.",
+      "question": "Based on the 2015 minimum wage increase, what is the most likely effect on employment in the fast-food industry next year?",
+      "student_reasoning": "The teacher showed us that the 2015 minimum wage increase was followed by a 5% increase in fast-food employment. So, if we increase the minimum wage by the same amount again, we should expect the same 5% increase. I don't think we need to consider other factors because the situation is basically the same.",
+      "student_answer": "The minimum wage increase will cause employment in the fast-food industry to increase by 5% next year.",
+      "misconception": "Students may believe that if a policy (or event) was followed by a positive outcome in one historical instance, then the same policy will always produce the same outcome in any similar context, ignoring the influence of other economic conditions, market changes, or external factors. This is a form of oversimplified causal reasoning where correlation is mistaken for causation and past performance is assumed to guarantee future results."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 50,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:24:14.632040+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916227-k4fjRg59TGvune9FbmD8",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 674,
+        "completion_tokens": 315,
+        "total_tokens": 989,
+        "cost": 4.8776e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 128,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.8776e-05,
+          "upstream_inference_prompt_cost": 1.7276e-05,
+          "upstream_inference_completions_cost": 3.15e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception contains teacher-facing meta-framing ('Students may believe that...') and explanatory critique naming fallacy concepts ('This is a form of oversimplified causal reasoning...'). It must be stated as a concise declarative belief."
+      ]
+    },
+    "final_case": {
+      "situation": "In a high school economics class, students are learning about the effects of minimum wage laws on employment. The teacher presents a case study: in 2015, a city increased its minimum wage by 20%, and within a year, employment in the fast-food industry increased by 5%. The teacher then asks the class to predict the likely effect of a similar 20% minimum wage increase that the city is considering for next year.",
+      "question": "Based on the 2015 minimum wage increase, what is the most likely effect on employment in the fast-food industry next year?",
+      "student_reasoning": "The teacher showed us that the 2015 minimum wage increase was followed by a 5% increase in fast-food employment. So, if we increase the minimum wage by the same amount again, we should expect the same 5% increase. I don't think we need to consider other factors because the situation is basically the same.",
+      "student_answer": "The minimum wage increase will cause employment in the fast-food industry to increase by 5% next year.",
+      "misconception": "An economic policy that was followed by a specific outcome in a single past instance will necessarily produce the exact same outcome when implemented again."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 50,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:41:03.755331+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917259-mce3lJS6zBctlCNOhsMu",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1609,
+        "completion_tokens": 601,
+        "total_tokens": 2210,
+        "cost": 0.00173025,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00173025,
+          "upstream_inference_prompt_cost": 0.000603375,
+          "upstream_inference_completions_cost": 0.001126875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 172,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0009",
+    "source_schema_id": "mafalda_gold_000097",
+    "source_schema_decision": "ACCEPT",
+    "domain": "biology",
+    "fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification",
+    "fallacy_schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "original_case": {
+      "situation": "In a biology class, students are learning about plant growth factors. They observe that a classmate's bean plant, which was watered more and given more fertilizer, grew taller than another plant with less water and fertilizer. The classmate concludes that giving more water and fertilizer always makes plants grow better.",
+      "question": "A student has two identical bean plants. Plant A receives 100 ml of water and 5 ml of liquid fertilizer every day. Plant B receives 50 ml of water and 2 ml of fertilizer every day. Both are kept in the same sunlight and temperature. After two weeks, Plant A is taller and greener. Which conclusion is most justified?",
+      "student_reasoning": "I saw that Plant A had more of both inputs and it grew better. That means those two things are the cause. Since they are the only differences, they must be the reason. So more water and fertilizer will always work for any plant.",
+      "student_answer": "Plant A grew taller because it got more water and fertilizer. So if I give any plant more water and fertilizer, it will always grow taller and healthier.",
+      "misconception": "If a plant is given more water and fertilizer, it will always grow taller and healthier, because these two factors directly cause growth."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 51,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:24:40.010947+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916255-cDb1l4sLKSEzIjfGgG0o",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 346,
+        "completion_tokens": 273,
+        "total_tokens": 619,
+        "cost": 3.768e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.768e-05,
+          "upstream_inference_prompt_cost": 1.038e-05,
+          "upstream_inference_completions_cost": 2.73e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": true,
+        "misconception_generalized": false,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception is narrowly tied to the specific items in the question (water and fertilizer) and acts mostly as a paraphrase of the answer rather than a general biological misconception (such as the belief that increasing essential resources/inputs linearly and without limit will always improve organism growth)."
+      ]
+    },
+    "final_case": {
+      "situation": "In a biology class, students are learning about plant growth factors. They observe that a classmate's bean plant, which was watered more and given more fertilizer, grew taller than another plant with less water and fertilizer. The classmate concludes that giving more water and fertilizer always makes plants grow better.",
+      "question": "A student has two identical bean plants. Plant A receives 100 ml of water and 5 ml of liquid fertilizer every day. Plant B receives 50 ml of water and 2 ml of fertilizer every day. Both are kept in the same sunlight and temperature. After two weeks, Plant A is taller and greener. Which conclusion is most justified?",
+      "student_reasoning": "I saw that Plant A had more of both inputs and it grew better. That means those two things are the cause. Since they are the only differences, they must be the reason. So more water and fertilizer will always work for any plant.",
+      "student_answer": "Plant A grew taller because it got more water and fertilizer. So if I give any plant more water and fertilizer, it will always grow taller and healthier.",
+      "misconception": "Increasing the quantity of essential resources provided to a plant will always result in increased growth and health."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 51,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:41:08.903731+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917265-T37CiD1D9SWIwsjS5MxA",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1546,
+        "completion_tokens": 427,
+        "total_tokens": 1973,
+        "cost": 0.001380375,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001380375,
+          "upstream_inference_prompt_cost": 0.00057975,
+          "upstream_inference_completions_cost": 0.000800625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0010",
+    "source_schema_id": "mafalda_gold_000097",
+    "source_schema_decision": "ACCEPT",
+    "domain": "biology",
+    "fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification",
+    "fallacy_schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "original_case": {
+      "situation": "In a biology class, students are studying animal behavior and learning about the effects of environmental factors on reproduction. They observe that a group of frogs in a pond with more algae and warmer water produced more tadpoles than a group in a cooler pond with less algae. A student concludes that warmer water and more algae always lead to more tadpoles.",
+      "question": "Two similar ponds are observed. Pond A has warmer water and more algae, and it has a higher number of tadpoles than Pond B, which is cooler and has less algae. What is the most reasonable conclusion?",
+      "student_reasoning": "The pond with warmer water and more algae had more tadpoles. Since those are the only differences I know about, they must be the cause. So if I make any pond warmer and add more algae, it will always produce more tadpoles.",
+      "student_answer": "Warmer water and more algae cause more tadpoles, so any pond with those conditions will have more tadpoles.",
+      "misconception": "A single observed correlation between an environmental factor and an outcome is sufficient to establish causation, and that the relationship will hold universally regardless of other factors."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 52,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:24:43.892081+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916281-Y3GThOJtlwULRq8g566x",
+      "provider": "Baidu",
+      "usage": {
+        "prompt_tokens": 892,
+        "completion_tokens": 255,
+        "total_tokens": 1147,
+        "cost": 0.00019628,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00019628,
+          "upstream_inference_prompt_cost": 0.00012488,
+          "upstream_inference_completions_cost": 7.14e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The situation description contains the student's conclusion, prematurely spoiling the question and reasoning.",
+        "The misconception is formulated as a general methodological critique of causal inference rather than a domain-level belief about biological variables and reproductive success."
+      ]
+    },
+    "final_case": {
+      "situation": "In a biology class, students are studying environmental influences on amphibian reproduction. They observe field data comparing two nearby ponds: Pond A has warmer water and higher algae levels and contains significantly more tadpoles than Pond B, which is cooler with less algae.",
+      "question": "Based on the observation that Pond A has warmer water, more algae, and more tadpoles than Pond B, what is the most reasonable conclusion about the relationship between these environmental conditions and tadpole population size?",
+      "student_reasoning": "Pond A had warmer water and more algae and produced more tadpoles. Since those are the main differences observed, warmer water and algae must directly drive the increase in tadpoles. Therefore, increasing water temperature and algae concentration in any pond will guarantee a larger tadpole population.",
+      "student_answer": "Warmer water and higher algae levels directly cause increased tadpole populations, so applying these conditions to any pond will always result in more tadpoles.",
+      "misconception": "Observed co-occurrence of specific environmental conditions with higher population size proves those conditions directly and universally determine reproductive success."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 52,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:41:18.262829+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917269-YBTnBJL0oOFLiRfgtefT",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1521,
+        "completion_tokens": 897,
+        "total_tokens": 2418,
+        "cost": 0.00225225,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00225225,
+          "upstream_inference_prompt_cost": 0.000570375,
+          "upstream_inference_completions_cost": 0.001681875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 508,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0011",
+    "source_schema_id": "mafalda_gold_000097",
+    "source_schema_decision": "ACCEPT",
+    "domain": "economics",
+    "fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification",
+    "fallacy_schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "original_case": {
+      "situation": "In a high school economics class, students are studying factors that influence consumer behavior and public safety. The teacher presents a dataset showing a strong positive correlation between ice cream sales and drowning incidents over a year. The teacher asks students to interpret the relationship.",
+      "question": "A student observes that in a small town, ice cream sales and the number of drowning incidents both increase during the summer months. The student concludes that eating ice cream causes drowning. Which of the following best explains why this conclusion is flawed?",
+      "student_reasoning": "The student believes that because two variables move together in time, one must cause the other. They ignore the possibility of a third factor (e.g., hot weather) that independently increases both ice cream consumption and swimming activity, leading to more drownings. This is a classic example of mistaking correlation for causation.",
+      "student_answer": "The student says, 'Since ice cream sales and drowning incidents rise together, ice cream sales must cause more drownings. Therefore, to reduce drownings, we should ban ice cream sales during summer.'",
+      "misconception": "Correlation implies causation"
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 53,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:25:08.110207+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916284-cW785T4zKBvypi5ZZhqJ",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 346,
+        "completion_tokens": 242,
+        "total_tokens": 588,
+        "cost": 3.458e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.458e-05,
+          "upstream_inference_prompt_cost": 1.038e-05,
+          "upstream_inference_completions_cost": 2.42e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REJECT",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": false,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The required schema mandates a specific pattern ('A person did X and Y, and then achieved O... Therefore, if a person does X and Y, they will achieve O'), whereas the current case deals with a classic macro correlation (ice cream sales and drowning) rather than a person executing actions X and Y to achieve outcome O.",
+        "The student_reasoning field is written from the perspective of an external evaluator diagnosing and critiquing the fallacy ('The student believes that...', 'They ignore the possibility...', 'This is a classic example of mistaking correlation for causation') rather than reflecting the first-person plausible reasoning of a sincere student.",
+        "The question asks 'Which of the following best explains why this conclusion is flawed?', but the student_answer presents an assertion/policy proposal rather than answering the multiple-choice style question.",
+        "The misconception field simply states the standard fallacy label ('Correlation implies causation') rather than a declarative domain-specific mental model or incorrect rule."
+      ]
+    },
+    "final_case": null,
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 53,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:41:22.498086+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917279-OuGpEFOmJXNipyXzJqUG",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1513,
+        "completion_tokens": 304,
+        "total_tokens": 1817,
+        "cost": 0.001137375,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001137375,
+          "upstream_inference_prompt_cost": 0.000567375,
+          "upstream_inference_completions_cost": 0.00057
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0012",
+    "source_schema_id": "mafalda_gold_000097",
+    "source_schema_decision": "ACCEPT",
+    "domain": "economics",
+    "fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification",
+    "fallacy_schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "original_case": {
+      "situation": "In a high school economics class, students are studying factors that influence public safety and resource allocation. The teacher presents a dataset showing a strong positive correlation between the number of lifeguards on duty and the number of drowning rescues over the summer months. The teacher asks students to interpret the relationship.",
+      "question": "A student observes that in a coastal town, the number of lifeguards on duty and the number of drowning rescues both increase during the summer. The student concludes that hiring more lifeguards causes more drownings. Which of the following best explains why this conclusion is flawed?",
+      "student_reasoning": "The student believes that because two variables increase together, one must cause the other. They ignore the possibility that a third factor (e.g., more people swimming in summer) independently increases both the need for lifeguards and the number of drownings. This is a classic example of mistaking correlation for causation.",
+      "student_answer": "The student says, 'Since more lifeguards are hired and more drownings occur at the same time, hiring more lifeguards must cause more drownings. Therefore, to reduce drownings, we should reduce the number of lifeguards.'",
+      "misconception": "Correlation implies causation"
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 54,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:25:37.599046+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916309-NryPIaAGXUpBlMrMB1aL",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 610,
+        "completion_tokens": 269,
+        "total_tokens": 879,
+        "cost": 4.52e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.52e-05,
+          "upstream_inference_prompt_cost": 1.83e-05,
+          "upstream_inference_completions_cost": 2.69e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "student_reasoning is written from an external evaluator/diagnostic perspective rather than presenting the first-person flawed reasoning of a sincere student.",
+        "The schema specifically requires a pattern of 'A person did X and Y, and then achieved O. Therefore, if a person does X and Y, they will achieve O.' The current case uses simultaneous observational correlation between two aggregate variables rather than adopting the supplied schema.",
+        "The question is framed as a multiple-choice question testing meta-cognition about a fallacy ('Which of the following best explains why this conclusion is flawed?') rather than asking the student to solve or interpret an economics scenario directly.",
+        "The misconception field merely names the general fallacy ('Correlation implies causation') rather than stating a concise domain-relevant declarative belief."
+      ]
+    },
+    "final_case": {
+      "situation": "In an introductory economics class, students are analyzing business strategies that lead to successful startup growth based on historical case studies.",
+      "question": "A tech startup recently launched an aggressive social media campaign and offered deep initial price discounts, subsequently achieving record-high user acquisition within six months. What will happen if another new startup implements the exact same social media campaign and deep discounting strategy?",
+      "student_reasoning": "The previous company ran an aggressive social media campaign and offered deep discounts, and as a result, they gained record numbers of users. Because that combination of actions led directly to massive user acquisition before, any other startup that adopts the exact same marketing campaign and pricing strategy will achieve record user acquisition as well.",
+      "student_answer": "The new startup is guaranteed to achieve record-high user acquisition if it launches the same social media campaign and offers the same deep price discounts.",
+      "misconception": "Replicating the specific actions of a previously successful firm is sufficient to produce the same market outcome regardless of differing market conditions or product quality."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 54,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:41:30.754406+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917283-75IvJnDqPTjIMJ7rON8q",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1533,
+        "completion_tokens": 489,
+        "total_tokens": 2022,
+        "cost": 0.00149175,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00149175,
+          "upstream_inference_prompt_cost": 0.000574875,
+          "upstream_inference_completions_cost": 0.000916875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0013",
+    "source_schema_id": "mafalda_gold_000095",
+    "source_schema_decision": "REVISE",
+    "domain": "psychology",
+    "fallacy": "False dilemma",
+    "original_fallacy": "false dilemma",
+    "fallacy_schema": {
+      "premise_pattern": "Result R occurred.",
+      "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+      "conclusion_pattern": "It must be either because C or because D."
+    },
+    "original_case": {
+      "situation": "In a psychology class, students are learning about attribution theory. The teacher presents a scenario: Alex, a normally diligent student, failed a major exam. The teacher asks the class to explain why Alex failed, reminding them to consider both internal and external factors.",
+      "question": "A student, Alex, failed a major exam. According to the fundamental attribution error, what is the most likely explanation a classmate would give for Alex's failure?",
+      "student_reasoning": "The teacher said to consider internal and external factors, so those are the only two options. Since Alex is usually diligent, the internal cause (laziness) doesn't fit, so the only remaining cause is the external one (unfair exam).",
+      "student_answer": "Alex must have failed either because he is lazy (internal) or because the exam was unfair (external). Since he is usually diligent, it must be the unfair exam.",
+      "misconception": "Students often believe that if a behavior occurs, it must have a single, identifiable cause, and they assume that cause is either internal (dispositional) or external (situational) with no other possibilities."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 55,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:26:01.675088+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916338-ScbZ22S6iNFoEccscsGG",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 302,
+        "completion_tokens": 249,
+        "total_tokens": 551,
+        "cost": 3.396e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.396e-05,
+          "upstream_inference_prompt_cost": 9.06e-06,
+          "upstream_inference_completions_cost": 2.49e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The question asks about the fundamental attribution error, but the student reasoning and answer address what actually caused the failure rather than answering about observer bias, creating an internal contradiction.",
+        "The schema conclusion pattern requires concluding that the cause must be either C or D, but the current student reasoning and answer proceed to eliminate one option rather than concluding the dilemma.",
+        "The misconception field begins with the prohibited framing phrase 'Students often believe that'."
+      ]
+    },
+    "final_case": {
+      "situation": "In a psychology unit on causal attribution and performance, students analyze reasons behind human behavior and academic outcomes.",
+      "question": "Alex, a student in introductory psychology, unexpectedly failed a midterm exam. What explains Alex's exam failure?",
+      "student_reasoning": "Alex failed the midterm exam. Therefore, the outcome occurred either because Alex lacks innate academic ability or because the instructor designed an unfair exam.",
+      "student_answer": "Alex's failure must be due either to a lack of academic ability or to an unfair test from the instructor.",
+      "misconception": "Academic failure is strictly caused either by fixed personal ability or by external test unfairness, ignoring other factors such as study methods, effort, or transient illness."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 55,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:41:41.940949+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917291-R5WeFBNX4SpTqaczXEpt",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1475,
+        "completion_tokens": 925,
+        "total_tokens": 2400,
+        "cost": 0.0022875,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0022875,
+          "upstream_inference_prompt_cost": 0.000553125,
+          "upstream_inference_completions_cost": 0.001734375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 569,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0014",
+    "source_schema_id": "mafalda_gold_000095",
+    "source_schema_decision": "REVISE",
+    "domain": "psychology",
+    "fallacy": "False dilemma",
+    "original_fallacy": "false dilemma",
+    "fallacy_schema": {
+      "premise_pattern": "Result R occurred.",
+      "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+      "conclusion_pattern": "It must be either because C or because D."
+    },
+    "original_case": {
+      "situation": "In a psychology class, students are learning about attribution theory. The teacher presents a scenario: Jamie, a normally outgoing and talkative student, has been quiet and withdrawn in class all week. The teacher asks the class to explain Jamie's behavior, reminding them to consider both internal and external factors.",
+      "question": "A student, Jamie, who is normally outgoing and talkative, has been quiet and withdrawn in class all week. According to the fundamental attribution error, what is the most likely explanation a classmate would give for Jamie's behavior?",
+      "student_reasoning": "The teacher said to consider internal and external factors, so those are the only two options. Since Jamie is usually outgoing, the internal cause (being shy) doesn't fit, so the only remaining cause is the external one (going through a difficult time).",
+      "student_answer": "Jamie must be either naturally shy (internal) or going through a difficult time (external). Since Jamie is usually outgoing, the internal cause doesn't fit, so it must be the external cause.",
+      "misconception": "Students often believe that if a behavior occurs, it must have a single, identifiable cause, and they assume that cause is either internal (dispositional) or external (situational) with no other possibilities."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 56,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:26:28.140067+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916362-FaDXNCYjtu9BEskT6pZN",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 574,
+        "completion_tokens": 276,
+        "total_tokens": 850,
+        "cost": 4.482e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.482e-05,
+          "upstream_inference_prompt_cost": 1.722e-05,
+          "upstream_inference_completions_cost": 2.76e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception violates the required phrasing style by starting with 'Students often believe that'."
+      ]
+    },
+    "final_case": {
+      "situation": "In a psychology class, students are learning about attribution theory. The teacher presents a scenario: Jamie, a normally outgoing and talkative student, has been quiet and withdrawn in class all week. The teacher asks the class to explain Jamie's behavior, reminding them to consider both internal and external factors.",
+      "question": "A student, Jamie, who is normally outgoing and talkative, has been quiet and withdrawn in class all week. According to the fundamental attribution error, what is the most likely explanation a classmate would give for Jamie's behavior?",
+      "student_reasoning": "The teacher said to consider internal and external factors, so those are the only two options. Since Jamie is usually outgoing, the internal cause (being shy) doesn't fit, so the only remaining cause is the external one (going through a difficult time).",
+      "student_answer": "Jamie must be either naturally shy (internal) or going through a difficult time (external). Since Jamie is usually outgoing, the internal cause doesn't fit, so it must be the external cause.",
+      "misconception": "Observed behavior must stem strictly from either an inherent personality trait or an isolated external circumstance, excluding multi-factor, interactionist, or biological causes."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 56,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:41:46.635257+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917302-iHi61lCDLWSUOiojY16W",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1506,
+        "completion_tokens": 390,
+        "total_tokens": 1896,
+        "cost": 0.001296,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001296,
+          "upstream_inference_prompt_cost": 0.00056475,
+          "upstream_inference_completions_cost": 0.00073125
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0015",
+    "source_schema_id": "mafalda_gold_000095",
+    "source_schema_decision": "REVISE",
+    "domain": "general science",
+    "fallacy": "False dilemma",
+    "original_fallacy": "false dilemma",
+    "fallacy_schema": {
+      "premise_pattern": "Result R occurred.",
+      "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+      "conclusion_pattern": "It must be either because C or because D."
+    },
+    "original_case": {
+      "situation": "A school conducted a survey and found a strong positive correlation between eating breakfast at the cafeteria and higher test scores. The school then implemented a policy requiring all students to eat breakfast at the cafeteria, expecting test scores to rise. However, after a semester, test scores did not improve significantly.",
+      "question": "A school notices that students who eat breakfast at the cafeteria tend to have higher test scores than those who skip breakfast. The school concludes that eating breakfast at the cafeteria causes higher test scores. What is the most likely flaw in this reasoning?",
+      "student_reasoning": "The school saw that eating breakfast at the cafeteria and higher test scores happened together. They concluded that breakfast caused the higher scores. But that's like saying that because ice cream sales and drowning deaths both increase in summer, ice cream causes drowning. There could be a third factor, like socioeconomic status or overall health, that influences both. So the school's reasoning is a false dilemma because they only considered breakfast as the cause, ignoring other possible causes.",
+      "student_answer": "The school's conclusion is flawed because it assumes that eating breakfast at the cafeteria is the only possible cause of higher test scores. But there could be other reasons, like students who eat breakfast at the cafeteria might come from families with more resources or have better sleep habits, which also affect test scores. So the school's policy didn't work because they ignored these other causes.",
+      "misconception": "Many students believe that if two variables are correlated, one must be the direct cause of the other, ignoring the possibility of confounding variables or coincidence."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 57,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:27:00.197014+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916389-AET21FliMMhcGFg1T5dI",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 303,
+        "completion_tokens": 332,
+        "total_tokens": 635,
+        "cost": 4.229e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.229e-05,
+          "upstream_inference_prompt_cost": 9.09e-06,
+          "upstream_inference_completions_cost": 3.32e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REJECT",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The case describes the correlation-implies-causation fallacy rather than the required 'False dilemma' fallacy schema.",
+        "The required schema mandates concluding 'It must be either because C or because D' based on presupposing only two causes, which is entirely absent from the situation, question, reasoning, and answer.",
+        "The student's reasoning acts as an external evaluator critiquing the school's reasoning and explicitly naming a fallacy ('false dilemma'), violating the plausibility requirement that a student must sincerely commit the error rather than diagnose it.",
+        "The misconception begins with meta-framing ('Many students believe that...') and describes correlation vs causation rather than false dilemma."
+      ]
+    },
+    "final_case": null,
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 57,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:41:49.905647+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917307-b5SdWKtLQIKCWmtUje8K",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1567,
+        "completion_tokens": 244,
+        "total_tokens": 1811,
+        "cost": 0.001045125,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001045125,
+          "upstream_inference_prompt_cost": 0.000587625,
+          "upstream_inference_completions_cost": 0.0004575
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0016",
+    "source_schema_id": "mafalda_gold_000095",
+    "source_schema_decision": "REVISE",
+    "domain": "general science",
+    "fallacy": "False dilemma",
+    "original_fallacy": "false dilemma",
+    "fallacy_schema": {
+      "premise_pattern": "Result R occurred.",
+      "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+      "conclusion_pattern": "It must be either because C or because D."
+    },
+    "original_case": {
+      "situation": "A town noticed that on days when more ice cream is sold, there are more cases of sunburn. They concluded that eating ice cream causes sunburn.",
+      "question": "A town noticed that on days when more ice cream is sold, there are more cases of sunburn. They concluded that eating ice cream causes sunburn. What is the most likely flaw in this reasoning?",
+      "student_reasoning": "The town saw that ice cream sales and sunburn cases happened together. They concluded that ice cream caused sunburn. But that's like saying that because ice cream sales and sunburn cases both increase in summer, ice cream causes sunburn. There could be a third factor, like hot sunny weather, that influences both. So the town's reasoning is a false dilemma because they only considered ice cream as the cause, ignoring other possible causes.",
+      "student_answer": "The town's conclusion is flawed because it assumes that ice cream is the only possible cause of sunburn. But there could be other reasons, like spending more time in the sun, that cause both more ice cream sales and more sunburns. So the town's reasoning is a false dilemma because they only considered ice cream as the cause, ignoring other possible causes.",
+      "misconception": "Many students think that when two events are correlated, one must be the direct cause of the other, overlooking the possibility of a third factor or coincidence."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 58,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:27:31.047831+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916424-gQijEepgSP50LE2D5qhN",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 659,
+        "completion_tokens": 299,
+        "total_tokens": 958,
+        "cost": 4.967e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.967e-05,
+          "upstream_inference_prompt_cost": 1.977e-05,
+          "upstream_inference_completions_cost": 2.99e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REJECT",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The case illustrates correlation proving causation (cum hoc ergo propter hoc / third variable problem), not a False Dilemma schema.",
+        "The student reasoning acts as an external evaluator analyzing and critiquing the flaw rather than demonstrating the fallacious thinking directly.",
+        "The student reasoning explicitly names the fallacy ('false dilemma').",
+        "The misconception is framed with 'Many students think that...' rather than as a concise declarative belief."
+      ]
+    },
+    "final_case": null,
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 58,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:41:53.195753+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917310-GCNORtTDoyTnRTEfaQkF",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1523,
+        "completion_tokens": 194,
+        "total_tokens": 1717,
+        "cost": 0.000934875,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000934875,
+          "upstream_inference_prompt_cost": 0.000571125,
+          "upstream_inference_completions_cost": 0.00036375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0017",
+    "source_schema_id": "mafalda_gold_000036",
+    "source_schema_decision": "REVISE",
+    "domain": "general science",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+      "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+      "conclusion_pattern": "One should do action X"
+    },
+    "original_case": {
+      "situation": "During a severe drought, the government passes a law mandating daily lawn watering. A student defends the law by saying, 'We must water our lawns because the law says so, and the law must be obeyed because it is the law.'",
+      "question": "In a certain country, a law requires all citizens to water their lawns every day during a drought. A student argues that this law must be followed because it is the law. What is the main flaw in this reasoning?",
+      "student_reasoning": "The student's reasoning is circular: it assumes the law is valid and must be obeyed without providing any external justification. The premise 'the law must be obeyed because it is the law' is just a restatement of the conclusion 'we must water our lawns because the law says so.' This is a tautology that offers no real support for the action.",
+      "student_answer": "The law must be followed because it is the law, and laws are always right.",
+      "misconception": "Laws are inherently correct and must be obeyed simply because they are laws, without considering their purpose or validity."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 59,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:27:58.563394+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916454-nrfqHZY4FQr5oDdgpKKX",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 323,
+        "completion_tokens": 240,
+        "total_tokens": 563,
+        "cost": 3.369e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.369e-05,
+          "upstream_inference_prompt_cost": 9.69e-06,
+          "upstream_inference_completions_cost": 2.4e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": false,
+        "misconception_valid": true,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The question asks the student to analyze a reasoning flaw rather than asking about the domain scenario.",
+        "The student reasoning is written from an evaluator's perspective, explicitly diagnosing and labeling circular reasoning instead of exhibiting it.",
+        "The student answer contradicts the student reasoning because the reasoning diagnoses a flaw while the answer repeats the flawed premise.",
+        "The setup does not align student reasoning with the schema's conclusion pattern."
+      ]
+    },
+    "final_case": {
+      "situation": "During a severe drought, a local government enacts a regulation mandating that all residents water their lawns every day.",
+      "question": "Should residents water their lawns daily during this drought?",
+      "student_reasoning": "Residents must water their lawns because the regulation requires daily watering, and the regulation must be obeyed simply because it is the regulation.",
+      "student_answer": "Yes, residents should water their lawns daily because the law requires it, and the law must be followed because it is the law.",
+      "misconception": "A legal mandate is self-justifying and obligatory solely by virtue of being a law."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 59,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:42:03.701270+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917314-gRAet4uEOzxnHeCZ29lB",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1489,
+        "completion_tokens": 1143,
+        "total_tokens": 2632,
+        "cost": 0.0027015,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0027015,
+          "upstream_inference_prompt_cost": 0.000558375,
+          "upstream_inference_completions_cost": 0.002143125
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 810,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0018",
+    "source_schema_id": "mafalda_gold_000036",
+    "source_schema_decision": "REVISE",
+    "domain": "general science",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+      "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+      "conclusion_pattern": "One should do action X"
+    },
+    "original_case": {
+      "situation": "In a science class, students are discussing a school policy that requires them to wear a particular lab coat during experiments. One student defends the policy by saying, 'We have to wear these lab coats because the school rule requires it, and school rules must be obeyed because they are school rules.'",
+      "question": "A school has a rule that all students must wear a specific uniform. A student argues, 'We must wear this uniform because the school rule says so, and school rules must be followed because they are school rules.' What is the main flaw in this reasoning?",
+      "student_reasoning": "The student's reasoning is circular: it assumes the rule is valid and must be followed without providing any external justification. The premise 'school rules must be followed because they are school rules' simply restates the conclusion 'we must wear the lab coats because the rule says so.' This offers no real support for why the rule is good or why it should be followed.",
+      "student_answer": "The rule must be followed because it is a rule, and rules are always right.",
+      "misconception": "A rule or law is automatically justified and must be followed simply because it exists, without needing to consider its purpose, consequences, or underlying reasoning."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 60,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:28:25.030200+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916480-foYFYDXyiEur4pPMxF2p",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 586,
+        "completion_tokens": 266,
+        "total_tokens": 852,
+        "cost": 4.418e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.418e-05,
+          "upstream_inference_prompt_cost": 1.758e-05,
+          "upstream_inference_completions_cost": 2.66e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": false,
+        "misconception_valid": true,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The student reasoning speaks from an evaluator perspective diagnosing circular reasoning rather than sincerely demonstrating the fallacy.",
+        "The situation mentions lab coats while the question mentions general school uniforms.",
+        "The student answer does not logically follow from the analytical student reasoning."
+      ]
+    },
+    "final_case": {
+      "situation": "In a science laboratory session, students are discussing whether everyone is strictly required to wear splash goggles during chemical demonstrations.",
+      "question": "Why must all students wear splash goggles during chemical experiments in the laboratory?",
+      "student_reasoning": "Wearing splash goggles is required by the lab safety code, and the lab safety code must be followed because it is the safety code. Therefore, students must wear splash goggles during the experiment.",
+      "student_answer": "Students must wear splash goggles because the lab safety code requires it, and the code must be followed simply because it is the code.",
+      "misconception": "A safety rule or regulation is self-justifying and obligatory purely because it exists as an established rule."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 60,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:42:10.427218+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917324-bXhnShorUrhooXIhTDfd",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1517,
+        "completion_tokens": 669,
+        "total_tokens": 2186,
+        "cost": 0.00182325,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00182325,
+          "upstream_inference_prompt_cost": 0.000568875,
+          "upstream_inference_completions_cost": 0.001254375
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 354,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0019",
+    "source_schema_id": "mafalda_gold_000036",
+    "source_schema_decision": "REVISE",
+    "domain": "economics",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+      "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+      "conclusion_pattern": "One should do action X"
+    },
+    "original_case": {
+      "situation": "In an economics class, students are discussing the role of government intervention in markets. The teacher presents a scenario: a city government enacts a price ceiling on rental apartments to address a housing shortage. A landlord, Mr. Chen, believes the ceiling is unjust and will reduce his profits, so he plans to charge higher rent than allowed. The teacher asks: 'Should Mr. Chen comply with the price ceiling, and why?'",
+      "question": "In a market economy, the government imposes a price ceiling on rental apartments to make housing more affordable. A landlord argues that the price ceiling is unfair and refuses to comply. According to the principle of rule of law, should the landlord comply with the price ceiling?",
+      "student_reasoning": "The teacher said we live under the rule of law, which means everyone must follow the law. The price ceiling is a law passed by the government. Since it is a law, it must be obeyed. There is no need to question whether it is fair or efficient; the law is the law. Therefore, Mr. Chen should comply simply because it is the law.",
+      "student_answer": "Yes, Mr. Chen should comply because the price ceiling is a law, and laws must be followed. The law is the law, so he has no choice but to obey it.",
+      "misconception": "Students often believe that if a law or rule exists, it must be followed simply because it is the law, without considering the underlying rationale or the possibility of legal challenge or change."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 61,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:28:53.118571+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916506-DKo4J46AnWT09yLYpXdl",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 322,
+        "completion_tokens": 322,
+        "total_tokens": 644,
+        "cost": 4.186e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.186e-05,
+          "upstream_inference_prompt_cost": 9.66e-06,
+          "upstream_inference_completions_cost": 3.22e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception contains teacher/evaluator framing ('Students often believe that...') instead of being a direct declarative belief statement."
+      ]
+    },
+    "final_case": {
+      "situation": "In an economics class, students are discussing the role of government intervention in markets. The teacher presents a scenario: a city government enacts a price ceiling on rental apartments to address a housing shortage. A landlord, Mr. Chen, believes the ceiling is unjust and will reduce his profits, so he plans to charge higher rent than allowed. The teacher asks: 'Should Mr. Chen comply with the price ceiling, and why?'",
+      "question": "In a market economy, the government imposes a price ceiling on rental apartments to make housing more affordable. A landlord argues that the price ceiling is unfair and refuses to comply. According to the principle of rule of law, should the landlord comply with the price ceiling?",
+      "student_reasoning": "The teacher said we live under the rule of law, which means everyone must follow the law. The price ceiling is a law passed by the government. Since it is a law, it must be obeyed. There is no need to question whether it is fair or efficient; the law is the law. Therefore, Mr. Chen should comply simply because it is the law.",
+      "student_answer": "Yes, Mr. Chen should comply because the price ceiling is a law, and laws must be followed. The law is the law, so he has no choice but to obey it.",
+      "misconception": "Government regulations and laws must be obeyed solely because they exist as laws, with the obligation justified entirely by the tautological nature of the law itself."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 61,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:42:15.675586+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917331-hbeYjNvYorg3dNGhLbot",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1570,
+        "completion_tokens": 619,
+        "total_tokens": 2189,
+        "cost": 0.001749375,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001749375,
+          "upstream_inference_prompt_cost": 0.00058875,
+          "upstream_inference_completions_cost": 0.001160625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 173,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0020",
+    "source_schema_id": "mafalda_gold_000036",
+    "source_schema_decision": "REVISE",
+    "domain": "economics",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+      "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+      "conclusion_pattern": "One should do action X"
+    },
+    "original_case": {
+      "situation": "In an economics class, students are discussing the role of government intervention in markets. The teacher presents a scenario: a city government imposes a tax on sugary drinks to reduce consumption and fund public health programs. A local beverage distributor, Ms. Alvarez, believes the tax is unjust and will hurt her business, so she plans to stop collecting the tax from her customers. The teacher asks: 'Should Ms. Alvarez comply with the tax, and why?'",
+      "question": "In a market economy, the government imposes a tax on sugary drinks to reduce consumption and fund public health programs. A local beverage distributor, Ms. Alvarez, argues that the tax is unfair and refuses to collect it from her customers. According to the principle of rule of law, should Ms. Alvarez comply with the tax?",
+      "student_reasoning": "The teacher said we live under the rule of law, which means everyone must follow the law. The tax is a law passed by the government. Since it is a law, it must be obeyed. There is no need to question whether it is fair or effective; the law is the law. Therefore, Ms. Alvarez should comply simply because it is the law.",
+      "student_answer": "Yes, Ms. Alvarez should comply because the tax is a law, and laws must be followed. The tax is a law, so she has to obey it.",
+      "misconception": "Students often believe that if a rule or policy is in place, it must be followed simply because it is the rule, without considering the underlying rationale or the possibility of legal challenge or change."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 62,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:29:55.979615+00:00",
+      "attempts": 2,
+      "response_id": "gen-1787916567-jNI7Wp2czXuzktkyBSUk",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 697,
+        "completion_tokens": 334,
+        "total_tokens": 1031,
+        "cost": 4.2534e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 512,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.2534e-05,
+          "upstream_inference_prompt_cost": 9.134e-06,
+          "upstream_inference_completions_cost": 3.34e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception field uses forbidden introductory meta-framing ('Students often believe that...') instead of being phrased directly as a concise declarative belief."
+      ]
+    },
+    "final_case": {
+      "situation": "In an economics class, students are discussing the role of government intervention in markets. The teacher presents a scenario: a city government imposes a tax on sugary drinks to reduce consumption and fund public health programs. A local beverage distributor, Ms. Alvarez, believes the tax is unjust and will hurt her business, so she plans to stop collecting the tax from her customers. The teacher asks: 'Should Ms. Alvarez comply with the tax, and why?'",
+      "question": "In a market economy, the government imposes a tax on sugary drinks to reduce consumption and fund public health programs. A local beverage distributor, Ms. Alvarez, argues that the tax is unfair and refuses to collect it from her customers. According to the principle of rule of law, should Ms. Alvarez comply with the tax?",
+      "student_reasoning": "The teacher said we live under the rule of law, which means everyone must follow the law. The tax is a law passed by the government. Since it is a law, it must be obeyed. There is no need to question whether it is fair or effective; the law is the law. Therefore, Ms. Alvarez should comply simply because it is the law.",
+      "student_answer": "Yes, Ms. Alvarez should comply because the tax is a law, and laws must be followed. The tax is a law, so she has to obey it.",
+      "misconception": "Economic regulations and policies are fundamentally justified solely by their existence as enacted laws rather than by their underlying economic objectives or legal authority."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 62,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:42:20.438809+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917336-e5iNhubEX3LfqEAHPeIV",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1583,
+        "completion_tokens": 458,
+        "total_tokens": 2041,
+        "cost": 0.001452375,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001452375,
+          "upstream_inference_prompt_cost": 0.000593625,
+          "upstream_inference_completions_cost": 0.00085875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0021",
+    "source_schema_id": "mafalda_gold_000089",
+    "source_schema_decision": "ACCEPT",
+    "domain": "general science",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "original_case": {
+      "situation": "In a class discussion about what makes a scientific theory, a student argues that evolution by natural selection is a valid scientific theory because it is the best explanation for the diversity of life. When asked for evidence, the student says, 'Well, evolution is true because it's the theory that best explains the facts, and we know it's the best because it's the theory that scientists accept.'",
+      "question": "Why is the theory of evolution by natural selection considered a scientific theory?",
+      "student_reasoning": "The student is assuming the conclusion (that evolution is the best explanation) in the premise (that scientists accept it as the best). The reasoning goes in a circle: it's true because it's the best, and it's the best because it's true (accepted). No independent evidence is provided to break the circularity.",
+      "student_answer": "Evolution by natural selection is a scientific theory because it is the best explanation for the diversity of life, and we know it's the best because it is the theory that scientists accept.",
+      "misconception": "Circular reasoning"
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 63,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:30:19.105773+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916597-acazkuaZvVRWW3GQ4asz",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 295,
+        "completion_tokens": 236,
+        "total_tokens": 531,
+        "cost": 3.245e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.245e-05,
+          "upstream_inference_prompt_cost": 8.85e-06,
+          "upstream_inference_completions_cost": 2.36e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": false,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The student reasoning does not follow the required schema ('X is a Y, therefore X is a good Y').",
+        "The student reasoning is written from an evaluator's perspective diagnosing circular reasoning rather than expressing sincere student thinking.",
+        "The misconception field merely names the fallacy ('Circular reasoning') instead of stating a content-level domain belief."
+      ]
+    },
+    "final_case": {
+      "situation": "In a general science class discussing the evaluation of scientific explanations, students are asked to assess why the theory of plate tectonics is considered a strong scientific theory.",
+      "question": "Why is plate tectonics considered a strong scientific theory?",
+      "student_reasoning": "Plate tectonics is defined and taught as a scientific theory. Because it is a scientific theory, it automatically must be a good scientific theory that provides a strong explanation.",
+      "student_answer": "Plate tectonics is a strong scientific theory simply because it is a scientific theory.",
+      "misconception": "Any framework classified as a scientific theory is inherently a valid and well-supported explanation."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 63,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:42:29.038561+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917341-uwDn00HoKqLUgiOmTg1e",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1463,
+        "completion_tokens": 995,
+        "total_tokens": 2458,
+        "cost": 0.00241425,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00241425,
+          "upstream_inference_prompt_cost": 0.000548625,
+          "upstream_inference_completions_cost": 0.001865625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 671,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0022",
+    "source_schema_id": "mafalda_gold_000089",
+    "source_schema_decision": "ACCEPT",
+    "domain": "general science",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "original_case": {
+      "situation": "In a class discussion about the evidence for plate tectonics, a student argues that plate tectonics is a valid scientific theory because it is the most widely accepted explanation among geologists. When asked for evidence, the student says, 'Plate tectonics is true because it is the theory that geologists accept, and we know it is the theory they accept because it is the best explanation for the movement of continents.'",
+      "question": "Why is the theory of plate tectonics considered a valid scientific theory?",
+      "student_reasoning": "The student is assuming the conclusion (that plate tectonics is the best explanation) in the premise (that geologists accept it as the best). The reasoning goes in a circle: it is true because it is accepted, and it is accepted because it is true. No independent evidence is provided to break the circularity.",
+      "student_answer": "Plate tectonics is a valid scientific theory because it is the most widely accepted explanation among geologists, and we know it is the most accepted because it is the best explanation for the movement of continents.",
+      "misconception": "A student may think that a hypothesis is automatically valid simply because it is widely accepted by experts, without requiring independent evidence."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 64,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:30:55.745158+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916620-q1NsjtsTpimY3Z1JdgDR",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 554,
+        "completion_tokens": 261,
+        "total_tokens": 815,
+        "cost": 4.272e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.272e-05,
+          "upstream_inference_prompt_cost": 1.662e-05,
+          "upstream_inference_completions_cost": 2.61e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REJECT",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The student_reasoning is written from the perspective of an evaluator diagnosing the fallacy ('The student is assuming...', 'The reasoning goes in a circle...') rather than expressing a sincere first-person student thought process.",
+        "The reasoning does not instantiate the required schema pattern (premise: 'X is a Y', invalid inference: 'X is a Y, therefore X is a good Y', conclusion: 'X is a good Y').",
+        "The misconception uses forbidden meta-framing ('A student may think that...').",
+        "There is a fundamental mismatch between the provided schema and the educational scenario."
+      ]
+    },
+    "final_case": null,
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 64,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:42:36.349373+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917349-2DCpJnhJnEFv5g79R7El",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1483,
+        "completion_tokens": 647,
+        "total_tokens": 2130,
+        "cost": 0.00176925,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00176925,
+          "upstream_inference_prompt_cost": 0.000556125,
+          "upstream_inference_completions_cost": 0.001213125
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 416,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0023",
+    "source_schema_id": "mafalda_gold_000089",
+    "source_schema_decision": "ACCEPT",
+    "domain": "economics",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "original_case": {
+      "situation": "In an economics class, students are discussing the concept of externalities. The teacher gives an example of a factory that produces a popular consumer product, but the production process emits pollution that harms the local community. The teacher asks: 'Why might the market outcome for this product be inefficient?'",
+      "question": "In a market economy, why might the production of a good that is highly valued by consumers still lead to negative externalities?",
+      "student_reasoning": "The product is a good (X is a Y), and since it's a good, it must be good (X is a good Y). Therefore, the production of this good is beneficial overall, and any negative effects are not significant enough to make the market inefficient.",
+      "student_answer": "Because the product is a good, it must be good for everyone, so the market outcome is efficient. The pollution is just a side effect that doesn't really matter.",
+      "misconception": "Students often believe that if something is classified as a 'good' in economics (i.e., a desirable commodity), it must be beneficial for society, ignoring the distinction between private value and social cost."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 65,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:31:22.860691+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916657-KK7l2UCwmVLGmuU1Zi24",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 294,
+        "completion_tokens": 247,
+        "total_tokens": 541,
+        "cost": 3.352e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.352e-05,
+          "upstream_inference_prompt_cost": 8.82e-06,
+          "upstream_inference_completions_cost": 2.47e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The student reasoning explicitly includes schema meta-tags ('(X is a Y)' and '(X is a good Y)'), making it implausible as natural student thought.",
+        "The misconception contains forbidden framing ('Students often believe that...').",
+        "The question field did not fully align with the teacher question presented in the situation."
+      ]
+    },
+    "final_case": {
+      "situation": "In an economics class, students are discussing market efficiency and externalities. A factory produces a popular consumer product, but the production process emits pollution that harms the local community.",
+      "question": "Why might the market outcome for this product be inefficient?",
+      "student_reasoning": "The product is an economic good, and since it is a good, it must be inherently good. Therefore, producing this good is beneficial overall, and any pollution is not enough to make the outcome inefficient.",
+      "student_answer": "The market outcome is efficient because the product is an economic good, meaning it is inherently good and beneficial for everyone despite the pollution.",
+      "misconception": "Any commodity classified as an economic good is inherently beneficial for society overall."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 65,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:42:49.006487+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917357-kT3xbT9AjAt2PSi2UCbh",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1469,
+        "completion_tokens": 1022,
+        "total_tokens": 2491,
+        "cost": 0.002467125,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002467125,
+          "upstream_inference_prompt_cost": 0.000550875,
+          "upstream_inference_completions_cost": 0.00191625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 683,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0024",
+    "source_schema_id": "mafalda_gold_000089",
+    "source_schema_decision": "ACCEPT",
+    "domain": "economics",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "original_case": {
+      "situation": "In an economics class, students are discussing the concept of externalities. The teacher gives an example of a factory that produces a popular consumer product, but the production process emits pollution that harms the local community. The teacher asks: 'Why might the market outcome for this product be inefficient?'",
+      "question": "In a market economy, why might the production of a good that is highly valued by consumers still lead to negative externalities?",
+      "student_reasoning": "The product is a good (X is a Y), and since it's a good, it must be good (X is a good Y). Therefore, the production of this good is beneficial overall, and any negative effects are not significant enough to make the market inefficient.",
+      "student_answer": "Because the product is a good, it must be good for everyone, so the market outcome is efficient. The pollution is just a side effect that doesn't really matter.",
+      "misconception": "Students often confuse the economic concept of a 'good' (a commodity that satisfies wants) with moral or social goodness, leading them to assume that any good that is demanded must be beneficial to society and that its market outcome is efficient."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 66,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:31:45.694715+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916684-tbigtAVkQyarHLpEkit0",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 565,
+        "completion_tokens": 254,
+        "total_tokens": 819,
+        "cost": 4.235e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.235e-05,
+          "upstream_inference_prompt_cost": 1.695e-05,
+          "upstream_inference_completions_cost": 2.54e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The student_reasoning field contains explicit schema meta-labels '(X is a Y)' and '(X is a good Y)', which is unnatural for a sincere student response.",
+        "The misconception field uses pedagogical meta-framing ('Students often confuse...') instead of a direct declarative statement of belief."
+      ]
+    },
+    "final_case": {
+      "situation": "In an economics class, students are discussing the concept of externalities. The teacher gives an example of a factory that produces a popular consumer product, but the production process emits pollution that harms the local community. The teacher asks: 'Why might the market outcome for this product be inefficient?'",
+      "question": "In a market economy, why might the production of a good that is highly valued by consumers still lead to market inefficiency?",
+      "student_reasoning": "The product is an economic good, and because it is a good, it must be inherently good for society. Therefore, the production of this good is beneficial overall, and side effects like pollution are not significant enough to make the market outcome inefficient.",
+      "student_answer": "Because the product is a good, it must be good for everyone, so the market outcome is efficient. The pollution is just a side effect that doesn't really matter.",
+      "misconception": "Any commodity categorized as an economic good is inherently socially beneficial, ensuring that consumer demand makes the market outcome efficient regardless of external harms."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 66,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:42:58.924974+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917369-CYTSSQK2vpORygaHXY7T",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1475,
+        "completion_tokens": 969,
+        "total_tokens": 2444,
+        "cost": 0.00237,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00237,
+          "upstream_inference_prompt_cost": 0.000553125,
+          "upstream_inference_completions_cost": 0.001816875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 572,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0025",
+    "source_schema_id": "mafalda_gold_000118",
+    "source_schema_decision": "ACCEPT",
+    "domain": "general science",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is P",
+      "invalid_inference": "X is P because X is P",
+      "conclusion_pattern": "X is P"
+    },
+    "original_case": {
+      "situation": "In a general science class, students are learning about the water cycle. The teacher asks: 'Why is the water cycle important for life on Earth?' A student, Maria, recalls that the water cycle is often described as essential for ecosystems, but she doesn't remember any specific reasons. She thinks about the phrase 'the water cycle is vital' and decides that its importance must be because it is vital.",
+      "question": "Why is the water cycle important for life on Earth?",
+      "student_reasoning": "The water cycle is important because it is vital for life. Since it is vital, that means it is important. So the reason it is important is that it is vital.",
+      "student_answer": "The water cycle is important because it is vital for life on Earth.",
+      "misconception": "Students may believe that stating a phenomenon is 'important' or 'vital' is a sufficient explanation for its importance, without identifying any actual causal mechanism or consequence (e.g., water distribution, climate regulation, or supporting photosynthesis). This reflects a broader tendency to treat labels or restatements as explanations."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 67,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:31:50.460965+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916707-KLTitwjevKLzdZGcE0Gc",
+      "provider": "DeepInfra",
+      "usage": {
+        "prompt_tokens": 288,
+        "completion_tokens": 238,
+        "total_tokens": 526,
+        "cost": 6.588e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 6.588e-05,
+          "upstream_inference_prompt_cost": 2.304e-05,
+          "upstream_inference_completions_cost": 4.284e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception violates the style guideline by opening with meta-framing ('Students may believe that...') and includes meta-critique rather than a direct, concise declarative belief."
+      ]
+    },
+    "final_case": {
+      "situation": "In a general science class, students are learning about the water cycle. The teacher asks: 'Why is the water cycle important for life on Earth?' A student, Maria, recalls that the water cycle is often described as essential for ecosystems, but she doesn't remember any specific reasons. She thinks about the phrase 'the water cycle is vital' and decides that its importance must be because it is vital.",
+      "question": "Why is the water cycle important for life on Earth?",
+      "student_reasoning": "The water cycle is important because it is vital for life. Since it is vital, that means it is important. So the reason it is important is that it is vital.",
+      "student_answer": "The water cycle is important because it is vital for life on Earth.",
+      "misconception": "Synonymous descriptive terms (such as 'vital' and 'important') constitute sufficient scientific explanations for an ecological phenomenon's necessity without requiring specific causal mechanisms."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 67,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:43:04.546100+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917379-GtHuMsRn7ijZUueRAUPd",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1454,
+        "completion_tokens": 559,
+        "total_tokens": 2013,
+        "cost": 0.001593375,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001593375,
+          "upstream_inference_prompt_cost": 0.00054525,
+          "upstream_inference_completions_cost": 0.001048125
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 207,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0026",
+    "source_schema_id": "mafalda_gold_000118",
+    "source_schema_decision": "ACCEPT",
+    "domain": "general science",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is P",
+      "invalid_inference": "X is P because X is P",
+      "conclusion_pattern": "X is P"
+    },
+    "original_case": {
+      "situation": "In a general science class, students are discussing energy resources. The teacher asks: 'Why is solar energy considered a renewable resource?' A student, Leo, remembers that solar energy is often labeled as renewable, but he doesn't recall the specific reasons. He thinks about the phrase 'solar energy is renewable' and decides that its renewability must be because it is renewable.",
+      "question": "Why is solar energy considered a renewable resource?",
+      "student_reasoning": "Solar energy is renewable. Since it is renewable, that means it can be renewed. So the reason it is renewable is that it is renewable.",
+      "student_answer": "Solar energy is renewable because it is renewable.",
+      "misconception": "Students may think that a property or label (e.g., 'renewable') is self-explanatory and can serve as a cause for itself, without recognizing that a valid explanation must cite a distinct mechanism or evidence (e.g., natural replenishment rates, resource cycles). This reflects a broader tendency to treat a restatement of the claim as a justification."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 68,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:31:54.805539+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916712-ABD4F9ckG6YzJnBK23FD",
+      "provider": "Venice",
+      "usage": {
+        "prompt_tokens": 693,
+        "completion_tokens": 225,
+        "total_tokens": 918,
+        "cost": 0.000200025,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000200025,
+          "upstream_inference_prompt_cost": 0.000121275,
+          "upstream_inference_completions_cost": 7.875e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": [
+        "The misconception violates the formatting rule by beginning with 'Students may think that...' and acts as an analytical critique rather than a concise declarative statement of belief."
+      ]
+    },
+    "final_case": {
+      "situation": "In a general science class, students are discussing energy resources. The teacher asks: 'Why is solar energy considered a renewable resource?' A student, Leo, tries to explain why solar energy fits into that category.",
+      "question": "Why is solar energy considered a renewable resource?",
+      "student_reasoning": "Solar energy is a renewable resource. Because it is renewable, that explains why it belongs in that category. Therefore, solar energy is considered renewable because it is renewable.",
+      "student_answer": "Solar energy is considered a renewable resource because it is renewable.",
+      "misconception": "A scientific classification or category label serves as its own explanation without requiring an underlying physical mechanism or replenishment process."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 68,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:43:11.609932+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917385-uhsc2zMEkqauikte9rSq",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1444,
+        "completion_tokens": 775,
+        "total_tokens": 2219,
+        "cost": 0.001994625,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001994625,
+          "upstream_inference_prompt_cost": 0.0005415,
+          "upstream_inference_completions_cost": 0.001453125
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 483,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0027",
+    "source_schema_id": "mafalda_gold_000118",
+    "source_schema_decision": "ACCEPT",
+    "domain": "economics",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is P",
+      "invalid_inference": "X is P because X is P",
+      "conclusion_pattern": "X is P"
+    },
+    "original_case": {
+      "situation": "The student is asked to explain the negative consequences of a free trade agreement on domestic manufacturing and employment.",
+      "question": "In an economics class, the teacher presents a case study of a country that recently adopted a free trade agreement. The country's domestic manufacturing sector has declined, and unemployment has risen. The teacher asks: 'Why has the free trade agreement led to these negative outcomes?'",
+      "student_reasoning": "The student's reasoning is circular: they assume that the free trade agreement is the cause of the decline simply because it is a free trade agreement, without providing any independent evidence or mechanism. They ignore other possible factors such as technological change, shifts in comparative advantage, or macroeconomic conditions.",
+      "student_answer": "The free trade agreement caused the decline because it is a free trade agreement, and free trade always leads to increased competition, which hurts domestic industries.",
+      "misconception": "The student believes that if a policy is labeled as 'free trade,' it must be beneficial for the economy, and therefore any observed negative effects are due to other factors, not the policy itself."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 69,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:32:16.775085+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916717-8ESl5JfoqBNuAWFGGZRA",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 287,
+        "completion_tokens": 235,
+        "total_tokens": 522,
+        "cost": 3.211e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.211e-05,
+          "upstream_inference_prompt_cost": 8.61e-06,
+          "upstream_inference_completions_cost": 2.35e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": false,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "The student reasoning is written from an external evaluator perspective, explicitly naming and diagnosing circular reasoning.",
+        "The student answer provides an actual causal mechanism (increased competition), undermining the circular reasoning schema.",
+        "The misconception directly contradicts the student's answer by claiming the student believes free trade is always beneficial.",
+        "The misconception violates formatting rules by starting with 'The student believes'."
+      ]
+    },
+    "final_case": {
+      "situation": "A student is asked to explain why a country's adoption of a free trade agreement led to a decline in its domestic manufacturing sector.",
+      "question": "In an economics class, the teacher presents a case study where a country's domestic manufacturing declined following a free trade agreement. The teacher asks: 'Why did the free trade agreement cause domestic manufacturing to decline?'",
+      "student_reasoning": "Free trade agreements cause domestic manufacturing to decline because free trade agreements are inherently policies that reduce domestic manufacturing.",
+      "student_answer": "The free trade agreement caused the decline in domestic manufacturing because entering a free trade agreement is simply a policy that leads to domestic manufacturing declining.",
+      "misconception": "Economic policies produce specific sector outcomes purely by definition rather than through market mechanisms such as comparative advantage, price changes, and resource reallocation."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 69,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:43:21.369558+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917392-TrDTGzQ4ia5DtQAvc0gT",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1450,
+        "completion_tokens": 1039,
+        "total_tokens": 2489,
+        "cost": 0.002491875,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002491875,
+          "upstream_inference_prompt_cost": 0.00054375,
+          "upstream_inference_completions_cost": 0.001948125
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 673,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0028",
+    "source_schema_id": "mafalda_gold_000118",
+    "source_schema_decision": "ACCEPT",
+    "domain": "economics",
+    "fallacy": "Circular reasoning",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is P",
+      "invalid_inference": "X is P because X is P",
+      "conclusion_pattern": "X is P"
+    },
+    "original_case": {
+      "situation": "The student is asked to explain why a market with many sellers (often considered competitive) has persistently high prices.",
+      "question": "In an economics class, the teacher presents a case study of a small town with many gas stations. Despite the large number of firms, prices are consistently higher than in nearby towns. The teacher asks: 'Why are prices so high in this competitive market?'",
+      "student_reasoning": "The student assumes that because the market is labeled 'competitive,' it must be the cause of the high prices. They do not consider other factors such as collusion, high entry barriers, or lack of price transparency that could undermine actual competition. The reasoning is circular: the market is competitive, so it must be the reason for the outcome, without examining the actual competitive conditions.",
+      "student_answer": "The prices are high because the market is competitive, and competitive markets always lead to high prices due to the intense rivalry among sellers.",
+      "misconception": "The student believes that if a market is labeled 'competitive,' it must automatically produce efficient outcomes, so any observed inefficiency must be due to external interference, not the market structure itself."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 70,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:32:42.877673+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916741-glZIli2rFEClNFsdlIag",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 544,
+        "completion_tokens": 247,
+        "total_tokens": 791,
+        "cost": 4.102e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.102e-05,
+          "upstream_inference_prompt_cost": 1.632e-05,
+          "upstream_inference_completions_cost": 2.47e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "REVISE",
+      "checks": {
+        "schema_faithful": false,
+        "student_reasoning_plausible": false,
+        "answer_consistent": true,
+        "misconception_valid": false,
+        "misconception_generalized": true,
+        "internally_consistent": false
+      },
+      "issues": [
+        "student_reasoning is written from a meta/evaluator perspective ('The student assumes...', 'The reasoning is circular...') instead of being first-person student thoughts.",
+        "The reasoning and answer introduce an external causal explanation ('intense rivalry among sellers') rather than cleanly demonstrating the circular reasoning schema ('X is P because X is P').",
+        "misconception uses the forbidden meta-framing 'The student believes that...' and contradicts the student's answer (claims competitive markets produce efficient outcomes / external interference, which does not match the prompt).",
+        "The reasoning does not instantiate the required fallacy schema."
+      ]
+    },
+    "final_case": {
+      "situation": "A student is asked in an economics quiz to explain why a particular local market is classified as highly competitive.",
+      "question": "The town of Oakville has dozens of independent coffee shops operating under identical conditions. How do we know this local market is highly competitive?",
+      "student_reasoning": "The market in Oakville has intense competition among firms because it is a highly competitive market.",
+      "student_answer": "We know the market is competitive because there is intense competition among all the sellers in it.",
+      "misconception": "A market condition can be fully explained and proven simply by restating its classification as the underlying cause."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 70,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v1",
+      "prompt_sha256": "6efa9b3611bae2671f07f705c1550fe4607335b231920825fd1f34cd6806ebf6",
+      "timestamp": "2026-08-28T11:43:25.459942+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787917402-SZ8Py39bFxRGhFRC9bPo",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1460,
+        "completion_tokens": 377,
+        "total_tokens": 1837,
+        "cost": 0.001254375,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001254375,
+          "upstream_inference_prompt_cost": 0.0005475,
+          "upstream_inference_completions_cost": 0.000706875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+]

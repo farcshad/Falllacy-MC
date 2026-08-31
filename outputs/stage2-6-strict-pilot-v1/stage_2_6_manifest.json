@@ -1,0 +1,42 @@
+{
+  "run_id": "stage2-6-strict-pilot-v1",
+  "stage": 2.6,
+  "stage_name": "strict_schema_adjudication",
+  "created_at": "2026-08-28T11:11:51.442585+00:00",
+  "input": {
+    "path": "/Users/Farshad/Documents/Academic/Falllacy MC/outputs/stage2-5-semantic-pilot-v1/validated_schemas.json",
+    "sha256": "c694eda78d25f78bdc4b76dafd83f11f47d740536ed49b5c62e95471be81adcd",
+    "record_count": 15
+  },
+  "adjudication": {
+    "provider": "OpenRouter",
+    "requested_model": "google/gemini-3.7-flash",
+    "temperature": 0.0,
+    "seed": 42,
+    "reasoning_effort": "low",
+    "max_tokens": 900,
+    "max_attempts_per_record": 3,
+    "prompt_version": "stage2.6-strict-adjudication-v1",
+    "prompt_path": "/Users/Farshad/Documents/Academic/Falllacy MC/data_creation/prompts/schema_adjudication_prompt.txt",
+    "prompt_sha256": "8beaacec12913d6775f78ad734dd9daeac83c0a443101dedf87119bf226606bf"
+  },
+  "total_record_count": 15,
+  "completed_adjudication_count": 15,
+  "accepted_count": 5,
+  "revised_count": 2,
+  "rejected_count": 8,
+  "failure_count": 0,
+  "raw_attempt_count": 16,
+  "usage_totals": {
+    "prompt_tokens": 14170,
+    "completion_tokens": 6048,
+    "total_tokens": 20218,
+    "cost": 0.018094125000000003
+  },
+  "outputs": {
+    "adjudicated_schemas": "adjudicated_schemas.json",
+    "review": "stage_2_6_review.md",
+    "raw_responses": "raw_responses.jsonl",
+    "failures": "stage_2_6_failures.jsonl"
+  }
+}

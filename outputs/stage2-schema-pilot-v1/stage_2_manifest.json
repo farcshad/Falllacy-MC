@@ -1,0 +1,50 @@
+{
+  "run_id": "stage2-schema-pilot-v1",
+  "stage": 2,
+  "stage_name": "extract_schema",
+  "created_at": "2026-08-28T10:51:50.116110+00:00",
+  "input": {
+    "path": "/Users/Farshad/Documents/Academic/Falllacy MC/outputs/stage1-mafalda-pilot-verified/source_filtered.json",
+    "sha256": "f9181ab057d20d22617e97ceaadccd9a13c6ed90a3b65ea1ec19bc326b5dcc64",
+    "available_record_count": 101
+  },
+  "sampling": {
+    "method": "independent deterministic stratified random sample",
+    "seed": 42,
+    "records_per_fallacy": 3,
+    "canonical_fallacies": [
+      "Hasty generalization",
+      "False cause / causal fallacy",
+      "False dilemma",
+      "Faulty analogy",
+      "Circular reasoning"
+    ],
+    "selected_record_count": 15
+  },
+  "generation": {
+    "provider": "OpenRouter",
+    "requested_model": "deepseek/deepseek-v4-flash-0731",
+    "temperature": 0.0,
+    "seed": 42,
+    "max_tokens": 400,
+    "max_attempts_per_record": 3,
+    "prompt_version": "stage2-schema-v1",
+    "prompt_path": "/Users/Farshad/Documents/Academic/Falllacy MC/data_creation/prompts/schema_prompt.txt",
+    "prompt_sha256": "7356ee5877c5ee265a3adc5afec8a1c063fac8136c1a19a063d13e9ab117c09c"
+  },
+  "success_count": 15,
+  "failure_count": 0,
+  "raw_attempt_count": 15,
+  "usage_totals": {
+    "prompt_tokens": 4045,
+    "completion_tokens": 1418,
+    "total_tokens": 5463,
+    "is_byok": 0
+  },
+  "outputs": {
+    "schemas": "schemas.json",
+    "raw_responses": "raw_responses.jsonl",
+    "failures": "stage_2_failures.jsonl",
+    "pilot_selection": "pilot_selection.json"
+  }
+}

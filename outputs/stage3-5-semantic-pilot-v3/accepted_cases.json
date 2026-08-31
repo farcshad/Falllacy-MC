@@ -1,0 +1,112 @@
+[
+  {
+    "id": "case_0010",
+    "source_schema_id": "mafalda_gold_000097",
+    "source_schema_decision": "ACCEPT",
+    "domain": "biology",
+    "fallacy": "False cause / causal fallacy",
+    "original_fallacy": "causal oversimplification",
+    "fallacy_schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "original_case": {
+      "situation": "In a biology class, students are studying animal behavior and learning about the effects of environmental factors on reproduction. They observe that a group of frogs in a pond with more algae and warmer water produced more tadpoles than a group in a cooler pond with less algae. A student concludes that warmer water and more algae always lead to more tadpoles.",
+      "question": "Two similar ponds are observed. Pond A has warmer water and more algae, and it has a higher number of tadpoles than Pond B, which is cooler and has less algae. What is the most reasonable conclusion?",
+      "student_reasoning": "The pond with warmer water and more algae had more tadpoles. Since those are the only differences I know about, they must be the cause. So if I make any pond warmer and add more algae, it will always produce more tadpoles.",
+      "student_answer": "Warmer water and more algae cause more tadpoles, so any pond with those conditions will have more tadpoles.",
+      "misconception": "A single observed correlation between an environmental factor and an outcome is sufficient to establish causation, and that the relationship will hold universally regardless of other factors."
+    },
+    "stage_3_generation_metadata": {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 52,
+      "prompt_version": "stage3-case-generation-v1",
+      "prompt_sha256": "b74aa366df077b8be71953d49a7f2395015ba1ce4411ded381b57cdc737e7547",
+      "timestamp": "2026-08-28T11:24:43.892081+00:00",
+      "attempts": 1,
+      "response_id": "gen-1787916281-Y3GThOJtlwULRq8g566x",
+      "provider": "Baidu",
+      "usage": {
+        "prompt_tokens": 892,
+        "completion_tokens": 255,
+        "total_tokens": 1147,
+        "cost": 0.00019628,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00019628,
+          "upstream_inference_prompt_cost": 0.00012488,
+          "upstream_inference_completions_cost": 7.14e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    "validation": {
+      "decision": "ACCEPT",
+      "checks": {
+        "schema_faithful": true,
+        "student_reasoning_plausible": true,
+        "answer_consistent": true,
+        "misconception_valid": true,
+        "misconception_generalized": true,
+        "internally_consistent": true
+      },
+      "issues": []
+    },
+    "final_case": {
+      "situation": "In a biology class, students are studying animal behavior and learning about the effects of environmental factors on reproduction. They observe that a group of frogs in a pond with more algae and warmer water produced more tadpoles than a group in a cooler pond with less algae. A student concludes that warmer water and more algae always lead to more tadpoles.",
+      "question": "Two similar ponds are observed. Pond A has warmer water and more algae, and it has a higher number of tadpoles than Pond B, which is cooler and has less algae. What is the most reasonable conclusion?",
+      "student_reasoning": "The pond with warmer water and more algae had more tadpoles. Since those are the only differences I know about, they must be the cause. So if I make any pond warmer and add more algae, it will always produce more tadpoles.",
+      "student_answer": "Warmer water and more algae cause more tadpoles, so any pond with those conditions will have more tadpoles.",
+      "misconception": "A single observed correlation between an environmental factor and an outcome is sufficient to establish causation, and that the relationship will hold universally regardless of other factors."
+    },
+    "validation_metadata": {
+      "model": "google/gemini-3.7-flash",
+      "requested_model": "google/gemini-3.7-flash",
+      "temperature": 0.0,
+      "seed": 52,
+      "reasoning_effort": "low",
+      "prompt_version": "stage3.5-case-validation-v3",
+      "prompt_sha256": "12e2461f3020579410bf27f4e80a1c7b373f39cc7378f19ba39fa62ccba2dde2",
+      "timestamp": "2026-08-28T11:50:05.636245+00:00",
+      "attempts": 2,
+      "response_id": "gen-1787917801-TlVB22PMBPEZHZkyjJp5",
+      "provider": "Google",
+      "usage": {
+        "prompt_tokens": 1842,
+        "completion_tokens": 582,
+        "total_tokens": 2424,
+        "cost": 0.001782,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001782,
+          "upstream_inference_prompt_cost": 0.00069075,
+          "upstream_inference_completions_cost": 0.00109125
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 485,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+]

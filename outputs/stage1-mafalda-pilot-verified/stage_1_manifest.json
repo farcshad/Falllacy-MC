@@ -1,0 +1,30 @@
+{
+  "run_id": "stage1-mafalda-pilot-verified",
+  "stage": 1,
+  "stage_name": "load_source",
+  "created_at": "2026-08-28T10:42:08.253264+00:00",
+  "source": {
+    "dataset": "MAFALDA gold standard",
+    "repository": "https://github.com/ChadiHelwe/MAFALDA",
+    "location": "https://raw.githubusercontent.com/ChadiHelwe/MAFALDA/main/datasets/gold_standard_dataset.jsonl",
+    "sha256": "f714d58e7a21a66d63bc03ead98f376e2d9ab7a35d3f847d92ac1c2e0179004d"
+  },
+  "selected_fallacies": [
+    "Hasty generalization",
+    "False cause / causal fallacy",
+    "False dilemma",
+    "Faulty analogy",
+    "Circular reasoning"
+  ],
+  "record_count": 101,
+  "counts_by_fallacy": {
+    "Hasty generalization": 28,
+    "Faulty analogy": 11,
+    "False cause / causal fallacy": 34,
+    "Circular reasoning": 11,
+    "False dilemma": 17
+  },
+  "failure_count": 0,
+  "output_file": "source_filtered.json",
+  "failure_file": "stage_1_failures.jsonl"
+}

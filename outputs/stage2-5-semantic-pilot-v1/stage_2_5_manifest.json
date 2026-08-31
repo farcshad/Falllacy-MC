@@ -1,0 +1,46 @@
+{
+  "run_id": "stage2-5-semantic-pilot-v1",
+  "stage": 2.5,
+  "stage_name": "semantic_schema_validation",
+  "created_at": "2026-08-28T11:04:15.297994+00:00",
+  "input": {
+    "path": "/Users/Farshad/Documents/Academic/Falllacy MC/outputs/stage2-schema-pilot-v1/schemas.json",
+    "sha256": "4b90f8d965776e46c3258720df56fdbc597f3068ab9990d80d0ca65d9ce6207e",
+    "record_count": 15
+  },
+  "source_annotations": {
+    "location": "https://raw.githubusercontent.com/ChadiHelwe/MAFALDA/main/datasets/gold_standard_dataset.jsonl",
+    "sha256": "f714d58e7a21a66d63bc03ead98f376e2d9ab7a35d3f847d92ac1c2e0179004d",
+    "records_with_annotated_span": 15,
+    "span_recovery_failure_count": 0
+  },
+  "validation": {
+    "provider": "OpenRouter",
+    "requested_model": "deepseek/deepseek-v4-flash-0731",
+    "temperature": 0.0,
+    "seed": 42,
+    "max_tokens": 700,
+    "max_attempts_per_record": 3,
+    "prompt_version": "stage2.5-schema-validation-v1",
+    "prompt_path": "/Users/Farshad/Documents/Academic/Falllacy MC/data_creation/prompts/schema_validation_prompt.txt",
+    "prompt_sha256": "7944f20ea79bfc120f354867a998987a848ec517f1b3604e83156544c1e88b43"
+  },
+  "total_schema_count": 15,
+  "completed_validation_count": 15,
+  "accepted_unchanged_count": 13,
+  "revised_count": 2,
+  "failure_count": 0,
+  "raw_attempt_count": 15,
+  "usage_totals": {
+    "prompt_tokens": 6625,
+    "completion_tokens": 761,
+    "total_tokens": 7386,
+    "cost": 0.00067538575
+  },
+  "outputs": {
+    "validated_schemas": "validated_schemas.json",
+    "raw_validation_responses": "raw_validation_responses.jsonl",
+    "failures": "stage_2_5_failures.jsonl",
+    "review": "stage_2_5_review.md"
+  }
+}
