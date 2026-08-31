@@ -1,0 +1,1486 @@
+[
+  {
+    "id": "case_0001",
+    "domain": "biology",
+    "context": "In a biology class, students are studying the effects of different diets on animal health. The teacher presents a case study of a single elderly dog named Max. Max has been fed a grain-free diet for 10 years, and he has never developed heart disease. The teacher asks the class to consider what this information suggests about grain-free diets and heart disease in dogs.",
+    "question": "Based on the information about Max, what can you conclude about the relationship between grain-free diets and heart disease in dogs?",
+    "possible_fallacy": "Hasty generalization",
+    "possible_reasoning": "Max is a dog, and he ate grain-free food for 10 years without getting heart disease. So grain-free diets must not cause heart disease in dogs.",
+    "possible_misconception": "Grain-free diets do not cause heart disease in dogs.",
+    "source_schema_id": "mafalda_gold_000123",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "hasty generalization",
+    "fallacy_schema": {
+      "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+      "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+      "conclusion_pattern": "Therefore, X does not cause Y."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 43,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:46:19.538396+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176768-v4dEkBxRENOb6XwOKiKb",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 183,
+        "total_tokens": 693,
+        "cost": 4.458e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.458e-05,
+          "upstream_inference_prompt_cost": 1.53e-05,
+          "upstream_inference_completions_cost": 2.928e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0002",
+    "domain": "biology",
+    "context": "In a marine biology unit, students learn about coral reef ecosystems. The class examines a long-term monitoring report for a single reef site, Reef 7. The report shows that Reef 7 has been exposed to a mild ocean warming event every summer for the past 15 years, yet the coral cover there remains high and bleaching has not occurred. The teacher asks the class to consider what this information suggests about the relationship between mild warming events and coral bleaching.",
+    "question": "Based on the information about Reef 7, what can you conclude about the relationship between mild ocean warming events and coral bleaching?",
+    "possible_fallacy": "Hasty generalization",
+    "possible_reasoning": "Reef 7 is a coral reef, and it experienced mild warming events for 15 years without bleaching. So mild warming events must not cause coral bleaching.",
+    "possible_misconception": "Mild ocean warming events do not cause coral bleaching.",
+    "source_schema_id": "mafalda_gold_000123",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "hasty generalization",
+    "fallacy_schema": {
+      "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+      "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+      "conclusion_pattern": "Therefore, X does not cause Y."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 44,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:46:22.045059+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176780-54KpA7sJH0P6OHGlSWI5",
+      "provider": "Makora",
+      "usage": {
+        "prompt_tokens": 707,
+        "completion_tokens": 202,
+        "total_tokens": 909,
+        "cost": 0.00010302,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00010302,
+          "upstream_inference_prompt_cost": 6.363e-05,
+          "upstream_inference_completions_cost": 3.939e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0003",
+    "domain": "psychology",
+    "context": "In a developmental psychology course, students learn about the effects of early childhood experiences on later development. The instructor presents a case study of a 30-year-old woman named Maya. Maya was raised in a highly neglectful environment during her first five years, with minimal social interaction and limited cognitive stimulation. Despite this, Maya has developed into a well-adjusted adult with strong social skills, a successful career, and no signs of major psychological disorders. The case study is used to illustrate the concept of resilience.",
+    "question": "Based on the case of Maya, what can be concluded about the relationship between early childhood neglect and later psychological outcomes?",
+    "possible_fallacy": "Hasty generalization",
+    "possible_reasoning": "Maya experienced severe neglect for a long time, and she turned out fine. So, early neglect does not cause long-term psychological problems.",
+    "possible_misconception": "Early childhood neglect does not have a lasting negative impact on psychological development.",
+    "source_schema_id": "mafalda_gold_000123",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "hasty generalization",
+    "fallacy_schema": {
+      "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+      "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+      "conclusion_pattern": "Therefore, X does not cause Y."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 45,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:46:27.603685+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176782-Yp1Hcxofvjw8xUim0qGE",
+      "provider": "Parasail",
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 207,
+        "total_tokens": 717,
+        "cost": 0.00012936,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00012936,
+          "upstream_inference_prompt_cost": 7.14e-05,
+          "upstream_inference_completions_cost": 5.796e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0004",
+    "domain": "psychology",
+    "context": "In a cognitive psychology class, students are studying the factors that influence memory retention. The instructor shares a detailed case of an elderly man named Mr. Henderson, who has practiced a specific memory technique—the method of loci—for over 40 years. Despite his advanced age, Mr. Henderson's memory performance on standard tests is no better than that of his peers who do not use the technique. The class is discussing the effectiveness of memory strategies across the lifespan.",
+    "question": "Based on the case of Mr. Henderson, what can be concluded about the effect of using the method of loci on memory performance in older adults?",
+    "possible_fallacy": "Hasty generalization",
+    "possible_reasoning": "Mr. Henderson has used the method of loci for a long time, and his memory is not better than others. So, the method of loci does not improve memory in older adults.",
+    "possible_misconception": "Memory strategies like the method of loci are ineffective for improving memory in older adults.",
+    "source_schema_id": "mafalda_gold_000123",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "hasty generalization",
+    "fallacy_schema": {
+      "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+      "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+      "conclusion_pattern": "Therefore, X does not cause Y."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 46,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:46:30.011431+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176788-rDBtm6d8mwC8Z6w3ebFp",
+      "provider": "Baidu",
+      "usage": {
+        "prompt_tokens": 987,
+        "completion_tokens": 217,
+        "total_tokens": 1204,
+        "cost": 0.000170268,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 256,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000170268,
+          "upstream_inference_prompt_cost": 0.000109508,
+          "upstream_inference_completions_cost": 6.076e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0005",
+    "domain": "biology",
+    "context": "In a biology class, students are learning about the effects of environmental factors on plant growth. The teacher presents a case study: a farmer noticed that after a particularly cold night, his tomato plants produced fewer flowers the following season. The teacher also mentions that the farmer's soil was low in nitrogen, and he had not watered the plants regularly during that period.",
+    "question": "Based on the case study, what can you conclude about the effect of cold nights on flower production in tomato plants?",
+    "possible_fallacy": "False cause / causal fallacy",
+    "possible_reasoning": "The cold night happened before the reduced flower production, so the cold night must have caused the reduction. Since it happened once, it will happen again in the current situation.",
+    "possible_misconception": "Cold nights directly cause reduced flower production in tomato plants, regardless of other factors like soil nutrients or water availability.",
+    "source_schema_id": "mafalda_gold_000010",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "causal oversimplification | false causality",
+    "fallacy_schema": {
+      "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+      "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+      "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 47,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:46:32.144557+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176790-5ZAH7Wgdjc7wNyNP3Lhb",
+      "provider": "Together",
+      "usage": {
+        "prompt_tokens": 550,
+        "completion_tokens": 195,
+        "total_tokens": 745,
+        "cost": 7.121e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 549,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 7.121e-05,
+          "upstream_inference_prompt_cost": 1.661e-05,
+          "upstream_inference_completions_cost": 5.46e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0006",
+    "domain": "biology",
+    "context": "In a biology lesson on animal behavior, students examine a field observation: a researcher noted that one year, a particular pond had a large population of dragonfly nymphs, and shortly afterward, the number of frogs in the pond decreased. The researcher also recorded that the pond's water temperature was unusually high that year and that a new predator fish had been introduced.",
+    "question": "Based on this observation, what can you conclude about the relationship between dragonfly nymphs and frog populations?",
+    "possible_fallacy": "False cause / causal fallacy",
+    "possible_reasoning": "The dragonfly nymphs were present before the frogs decreased, so the dragonfly nymphs must have caused the frog population to drop. Since it happened once, the same thing will happen in any pond where dragonfly nymphs are present.",
+    "possible_misconception": "Dragonfly nymphs are a primary cause of frog population declines in ponds, regardless of other environmental factors such as water temperature or the presence of other predators.",
+    "source_schema_id": "mafalda_gold_000010",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "causal oversimplification | false causality",
+    "fallacy_schema": {
+      "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+      "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+      "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 48,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:46:40.043244+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176792-2mZRK1l7TVJBs85OgkB3",
+      "provider": "DeepInfra",
+      "usage": {
+        "prompt_tokens": 758,
+        "completion_tokens": 218,
+        "total_tokens": 976,
+        "cost": 9.988e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 9.988e-05,
+          "upstream_inference_prompt_cost": 6.064e-05,
+          "upstream_inference_completions_cost": 3.924e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0007",
+    "domain": "economics",
+    "context": "In a small town, the local government decided to increase the minimum wage by 15%. Shortly after, a new coffee shop opened in the town center and reported strong sales in its first month. Some residents noted that the wage increase happened just before the coffee shop's opening.",
+    "question": "Based on the information, what can be concluded about the relationship between the minimum wage increase and the coffee shop's strong sales?",
+    "possible_fallacy": "False cause / causal fallacy",
+    "possible_reasoning": "The minimum wage increase happened before the coffee shop opened and had strong sales, so the wage increase must have caused the coffee shop's success. However, other factors like location, demand, or the owner's marketing could have been responsible.",
+    "possible_misconception": "The minimum wage increase caused the coffee shop's success.",
+    "source_schema_id": "mafalda_gold_000010",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "causal oversimplification | false causality",
+    "fallacy_schema": {
+      "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+      "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+      "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 49,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:46:48.180200+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176800-BOjrTBB6YTh6q4U9Ednp",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 550,
+        "completion_tokens": 184,
+        "total_tokens": 734,
+        "cost": 4.594e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.594e-05,
+          "upstream_inference_prompt_cost": 1.65e-05,
+          "upstream_inference_completions_cost": 2.944e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0008",
+    "domain": "economics",
+    "context": "A city launched a new recycling program in one neighborhood. Shortly after, the neighborhood's property values increased. Some residents attributed the rise in property values to the recycling program.",
+    "question": "Based on the information, what can be concluded about the relationship between the recycling program and the increase in property values?",
+    "possible_fallacy": "False cause / causal fallacy",
+    "possible_reasoning": "The recycling program was introduced before the property values went up, so the program must have caused the increase. However, other factors like overall market trends or new developments could have been responsible.",
+    "possible_misconception": "The recycling program caused the increase in property values.",
+    "source_schema_id": "mafalda_gold_000010",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "causal oversimplification | false causality",
+    "fallacy_schema": {
+      "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+      "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+      "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 50,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:46:57.735147+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176808-KEaUViCntp9bEcxF5lyF",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 746,
+        "completion_tokens": 148,
+        "total_tokens": 894,
+        "cost": 4.606e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.606e-05,
+          "upstream_inference_prompt_cost": 2.238e-05,
+          "upstream_inference_completions_cost": 2.368e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0009",
+    "domain": "biology",
+    "context": "In a biology class, students observed two groups of plants over four weeks. Group A was placed near a window and watered daily with a diluted fertilizer solution. Group B was placed in a dark cupboard and watered daily with plain water. At the end of the experiment, Group A had grown significantly taller and had greener leaves than Group B. The teacher reminded the class that correlation does not imply causation.",
+    "question": "Based on the observation, what can be concluded about the effect of sunlight and fertilizer on plant growth?",
+    "possible_fallacy": "False cause / causal fallacy",
+    "possible_reasoning": "Group A got both sunlight and fertilizer, and it grew well. Group B lacked both, and it grew poorly. So if I give any plant sunlight and fertilizer, it will definitely grow well, because that combination caused the growth in Group A. The fact that Group B was also in the dark and got no fertilizer doesn't matter—it's the combination that made the difference.",
+    "possible_misconception": "Fertilizer and sunlight together are necessary and sufficient for plant growth.",
+    "source_schema_id": "mafalda_gold_000097",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "causal oversimplification",
+    "fallacy_schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 51,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:47:09.489505+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176818-KyVYwimekLzAlCSQhaif",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 236,
+        "total_tokens": 777,
+        "cost": 5.399e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 5.399e-05,
+          "upstream_inference_prompt_cost": 1.623e-05,
+          "upstream_inference_completions_cost": 3.776e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0010",
+    "domain": "biology",
+    "context": "In a marine biology unit, students learn about coral bleaching. They read a case study of a reef where a sudden rise in water temperature was followed by a loss of symbiotic algae from the corals, causing them to turn white. The same reef also experienced increased fishing pressure during that period. The study notes that the corals had been healthy before these events.",
+    "question": "What can you conclude about the cause of the coral bleaching in this reef?",
+    "possible_fallacy": "False cause / causal fallacy",
+    "possible_reasoning": "The water temperature rose and then the corals bleached. So the temperature rise must have caused the bleaching. If the water temperature rises again, the corals will bleach again, because that's what happened here.",
+    "possible_misconception": "A single environmental change, such as temperature rise, is always the direct and sufficient cause of coral bleaching.",
+    "source_schema_id": "mafalda_gold_000097",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "causal oversimplification",
+    "fallacy_schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 52,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:47:12.180816+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176830-g3eSTkVkDmmX5hQITKoI",
+      "provider": "Baidu",
+      "usage": {
+        "prompt_tokens": 1046,
+        "completion_tokens": 192,
+        "total_tokens": 1238,
+        "cost": 0.000114184,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000114184,
+          "upstream_inference_prompt_cost": 6.0424e-05,
+          "upstream_inference_completions_cost": 5.376e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0011",
+    "domain": "economics",
+    "context": "In a small country, the government implemented a new training program for unemployed workers. After the program, the country's overall productivity increased. The program was expensive, but the government reported that the increased productivity was a direct result of the training.",
+    "question": "Based on the information, what can be concluded about the effect of the training program on productivity?",
+    "possible_fallacy": "False cause / causal fallacy",
+    "possible_reasoning": "The government implemented the training program, and then productivity increased. So, the training program must have caused the increase in productivity. Therefore, if other countries implement the same training program, they will also see their productivity increase.",
+    "possible_misconception": "Government training programs for unemployed workers are a guaranteed way to increase national productivity.",
+    "source_schema_id": "mafalda_gold_000097",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "causal oversimplification",
+    "fallacy_schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 53,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:47:14.992396+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176832-eFsGHwg20ZGp8S5J2R2O",
+      "provider": "Together",
+      "usage": {
+        "prompt_tokens": 541,
+        "completion_tokens": 171,
+        "total_tokens": 712,
+        "cost": 0.00012362,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00012362,
+          "upstream_inference_prompt_cost": 7.574e-05,
+          "upstream_inference_completions_cost": 4.788e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0012",
+    "domain": "economics",
+    "context": "A city introduced a new recycling program and, in the same year, the local unemployment rate dropped. The city council highlighted the recycling program as a reason for the improved employment figures.",
+    "question": "Based on the information, what can be concluded about the effect of the recycling program on unemployment?",
+    "possible_fallacy": "False cause / causal fallacy",
+    "possible_reasoning": "The recycling program was introduced and then unemployment dropped. So the recycling program must have caused the drop in unemployment. Therefore, any city that starts a recycling program will see its unemployment rate fall.",
+    "possible_misconception": "Recycling programs cause unemployment rates to drop.",
+    "source_schema_id": "mafalda_gold_000097",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "causal oversimplification",
+    "fallacy_schema": {
+      "premise_pattern": "A person did X and Y, and then achieved O.",
+      "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+      "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 54,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:47:24.243017+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176835-eXTxuZ3xsPp38SYhbJb6",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 725,
+        "completion_tokens": 146,
+        "total_tokens": 871,
+        "cost": 4.511e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.511e-05,
+          "upstream_inference_prompt_cost": 2.175e-05,
+          "upstream_inference_completions_cost": 2.336e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0013",
+    "domain": "psychology",
+    "context": "In a developmental psychology course, students learn about the formation of early attachments. The instructor presents a case study of a 2-year-old child, Maya, who has recently been adopted from an orphanage. Maya shows little distress when her new mother leaves the room and does not seek comfort from her when she returns. The instructor explains that this pattern of behavior is often seen in children who have experienced early institutional care. The class is asked to consider what factors might contribute to Maya's attachment style.",
+    "question": "Based on the case study, what might explain Maya's lack of distress and lack of comfort-seeking behavior?",
+    "possible_fallacy": "False dilemma",
+    "possible_reasoning": "Maya's behavior is clearly a result of her early institutional care. The only possible explanations are that she has developed an avoidant attachment style due to neglect, or that she has a reactive attachment disorder from the lack of a consistent caregiver. So, it must be either one of those.",
+    "possible_misconception": "Attachment difficulties in children who have experienced institutional care are always due to either avoidant attachment or reactive attachment disorder, ignoring other potential factors such as temperament, current caregiving environment, or the possibility of disorganized attachment.",
+    "source_schema_id": "mafalda_gold_000095",
+    "source_schema_decision": "REVISE",
+    "original_fallacy": "false dilemma",
+    "fallacy_schema": {
+      "premise_pattern": "Result R occurred.",
+      "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+      "conclusion_pattern": "It must be either because C or because D."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 55,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:47:37.360965+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176845-NOJck2p1SZffmFuyKLOB",
+      "provider": "Makora",
+      "usage": {
+        "prompt_tokens": 494,
+        "completion_tokens": 263,
+        "total_tokens": 757,
+        "cost": 9.5745e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 9.5745e-05,
+          "upstream_inference_prompt_cost": 4.446e-05,
+          "upstream_inference_completions_cost": 5.1285e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0014",
+    "domain": "psychology",
+    "context": "In a cognitive psychology lecture, the class is examining how people make decisions under uncertainty. The professor presents a scenario about a new medication for a chronic illness. The medication has a 10% chance of causing a severe side effect. The professor asks the students to consider how patients might perceive the risk of this side effect compared to a 90% chance of no side effect. The class is then asked to think about how the way the information is presented might influence a patient's choice.",
+    "question": "How might the way a doctor presents the risk of side effects influence a patient's decision to take the medication?",
+    "possible_fallacy": "False dilemma",
+    "possible_reasoning": "The patient's decision to take the medication must be based on either the 10% chance of side effects or the 90% chance of no side effects. So, the way the doctor presents the risk, either as a 10% chance of harm or a 90% chance of safety, is the only thing that matters.",
+    "possible_misconception": "The way a choice is framed is the only factor that determines a person's decision, and that people always choose the option that is presented as a gain rather than a loss.",
+    "source_schema_id": "mafalda_gold_000095",
+    "source_schema_decision": "REVISE",
+    "original_fallacy": "false dilemma",
+    "fallacy_schema": {
+      "premise_pattern": "Result R occurred.",
+      "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+      "conclusion_pattern": "It must be either because C or because D."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 56,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:48:11.622819+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176858-rK8Vl8Soss48Xz33KItC",
+      "provider": "Sail Research",
+      "usage": {
+        "prompt_tokens": 937,
+        "completion_tokens": 256,
+        "total_tokens": 1193,
+        "cost": 0.000106985,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000106985,
+          "upstream_inference_prompt_cost": 6.0905e-05,
+          "upstream_inference_completions_cost": 4.608e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0015",
+    "domain": "general science",
+    "context": "In a closed ecosystem experiment, a researcher measures the population of a certain species of fish in a lake over several years. The data show a steady decline in the fish population. The lake receives water from two main sources: a river that has been polluted by nearby industrial runoff, and a stream that has been affected by agricultural fertilizer runoff. No other significant changes in the lake environment were recorded during the study period.",
+    "question": "Based on the information provided, what are the possible reasons for the decline in the fish population?",
+    "possible_fallacy": "False dilemma",
+    "possible_reasoning": "The fish population declined, so the cause must be either the industrial pollution from the river or the agricultural fertilizer from the stream. There is no other possibility.",
+    "possible_misconception": "A decline in a fish population in a lake can only be caused by pollution from its incoming water sources.",
+    "source_schema_id": "mafalda_gold_000095",
+    "source_schema_decision": "REVISE",
+    "original_fallacy": "false dilemma",
+    "fallacy_schema": {
+      "premise_pattern": "Result R occurred.",
+      "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+      "conclusion_pattern": "It must be either because C or because D."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 57,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:48:27.582438+00:00",
+      "attempts": 2,
+      "response_id": "gen-1788176906-LcDORXy3MCmRmhtr1RgI",
+      "provider": "Baidu",
+      "usage": {
+        "prompt_tokens": 784,
+        "completion_tokens": 195,
+        "total_tokens": 979,
+        "cost": 0.000107016,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 512,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000107016,
+          "upstream_inference_prompt_cost": 5.2416e-05,
+          "upstream_inference_completions_cost": 5.46e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0016",
+    "domain": "general science",
+    "context": "A class is studying a local pond ecosystem. They measure the pond's temperature, oxygen level, and water clarity each week. Over the past month, the oxygen level has dropped noticeably. The pond receives water from a small stream and from rainwater runoff. The class also notices that the pond has more algae than usual and that some fallen leaves have accumulated near the inflow.",
+    "question": "Based on the observations, what could explain the drop in oxygen level in the pond?",
+    "possible_fallacy": "False dilemma",
+    "possible_reasoning": "The oxygen level dropped, so it must be because either the algae increased or the leaves are decaying. Those are the only two things that could cause it.",
+    "possible_misconception": "A drop in oxygen in a pond must be caused by either increased algae or decaying leaves.",
+    "source_schema_id": "mafalda_gold_000095",
+    "source_schema_decision": "REVISE",
+    "original_fallacy": "false dilemma",
+    "fallacy_schema": {
+      "premise_pattern": "Result R occurred.",
+      "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+      "conclusion_pattern": "It must be either because C or because D."
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 58,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:48:42.398385+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176908-9sBB5fPXtveWCHtpKVAu",
+      "provider": "Inceptron",
+      "usage": {
+        "prompt_tokens": 703,
+        "completion_tokens": 180,
+        "total_tokens": 883,
+        "cost": 0.00014179,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00014179,
+          "upstream_inference_prompt_cost": 9.139e-05,
+          "upstream_inference_completions_cost": 5.04e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0017",
+    "domain": "general science",
+    "context": "In a biology class, students are learning about the classification of living organisms. The teacher explains that the current system groups organisms based on evolutionary relationships, which are determined by comparing physical traits and genetic data. The teacher also mentions that this system is widely accepted by scientists because it reflects the actual history of life on Earth. The class is now discussing why scientists use this particular classification system rather than older ones based only on appearance.",
+    "question": "Why do scientists use the evolutionary classification system?",
+    "possible_fallacy": "Circular reasoning",
+    "possible_reasoning": "Scientists use the evolutionary classification system because that system is the one that scientists use, and that is the correct system to use because it is the system that scientists use.",
+    "possible_misconception": "The evolutionary classification system is correct simply because it is the one currently used by scientists, without needing to consider the evidence that supports it.",
+    "source_schema_id": "mafalda_gold_000036",
+    "source_schema_decision": "REVISE",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+      "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+      "conclusion_pattern": "One should do action X"
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 59,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:48:44.609294+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176923-wejnbnBUHTwNSl1UjmQj",
+      "provider": "Together",
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 196,
+        "total_tokens": 712,
+        "cost": 0.00012712,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00012712,
+          "upstream_inference_prompt_cost": 7.224e-05,
+          "upstream_inference_completions_cost": 5.488e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0018",
+    "domain": "general science",
+    "context": "In a general science class, students are learning about the water cycle. The teacher explains that evaporation is the process by which liquid water turns into water vapor and rises into the atmosphere. The teacher also notes that this process is driven by the sun's energy. The class is now discussing why evaporation is considered a key part of the water cycle.",
+    "question": "Why is evaporation considered a key part of the water cycle?",
+    "possible_fallacy": "Circular reasoning",
+    "possible_reasoning": "Evaporation is a key part of the water cycle because the water cycle includes evaporation as one of its main processes, and that is the correct view because the water cycle is defined to include evaporation.",
+    "possible_misconception": "The water cycle is defined by its processes, so evaporation is important simply because it is listed as a process, rather than because of the actual movement of water driven by energy.",
+    "source_schema_id": "mafalda_gold_000036",
+    "source_schema_decision": "REVISE",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+      "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+      "conclusion_pattern": "One should do action X"
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 60,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:48:52.190851+00:00",
+      "attempts": 2,
+      "response_id": "gen-1788176930-ZyGDRS1ZHCFglMIjvKiz",
+      "provider": "Venice",
+      "usage": {
+        "prompt_tokens": 753,
+        "completion_tokens": 197,
+        "total_tokens": 950,
+        "cost": 0.000129045,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 512,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000129045,
+          "upstream_inference_prompt_cost": 6.0095e-05,
+          "upstream_inference_completions_cost": 6.895e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0019",
+    "domain": "economics",
+    "context": "In a small country, the government has enacted a law requiring all citizens to pay an annual 'Digital Services Tax' of 2% of their online purchases. The law was passed by the parliament and signed by the president. A citizen, Maria, is upset about this new tax and asks her friend, a law student, why she must pay it. The law student replies, 'You must pay the Digital Services Tax because the law says you must pay it.'",
+    "question": "Based on the law student's response, why does Maria have to pay the Digital Services Tax?",
+    "possible_fallacy": "Circular reasoning",
+    "possible_reasoning": "Maria is required to pay the tax because the law mandates it, and the law must be followed because it is the law. The justification for the obligation is simply the existence of the law, which is the same as the obligation itself.",
+    "possible_misconception": "The law itself is the sole and sufficient justification for why citizens must obey it, without any need for further reasoning or external justification.",
+    "source_schema_id": "mafalda_gold_000036",
+    "source_schema_decision": "REVISE",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+      "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+      "conclusion_pattern": "One should do action X"
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 61,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:49:27.778427+00:00",
+      "attempts": 3,
+      "response_id": "gen-1788176956-rHsWW5kd9Y5iQHD9lHH0",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 546,
+        "completion_tokens": 230,
+        "total_tokens": 776,
+        "cost": 5.318e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 5.318e-05,
+          "upstream_inference_prompt_cost": 1.638e-05,
+          "upstream_inference_completions_cost": 3.68e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0020",
+    "domain": "economics",
+    "context": "A local government has introduced a new environmental regulation that requires all businesses in the city to submit a monthly waste report. The regulation was approved by the city council and is now part of the municipal code. A small business owner, Priya, is wondering why she has to submit these reports. She asks her accountant, who says, 'You must submit the monthly waste report because the regulation requires it.'",
+    "question": "According to the accountant's statement, why must Priya submit the monthly waste report?",
+    "possible_fallacy": "Circular reasoning",
+    "possible_reasoning": "Priya must submit the monthly waste report because the regulation requires it, and the regulation must be followed because it is the regulation. The obligation to submit the report is justified by the regulation itself, which is the same as the obligation.",
+    "possible_misconception": "A regulation's existence is enough to justify why businesses must comply with it, without considering the authority or purpose behind the regulation.",
+    "source_schema_id": "mafalda_gold_000036",
+    "source_schema_decision": "REVISE",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+      "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+      "conclusion_pattern": "One should do action X"
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 62,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:49:31.471108+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176968-paL69i4Xfq1wngGDK4mn",
+      "provider": "SiliconFlow",
+      "usage": {
+        "prompt_tokens": 757,
+        "completion_tokens": 212,
+        "total_tokens": 969,
+        "cost": 0.00030646,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00030646,
+          "upstream_inference_prompt_cost": 0.00016654,
+          "upstream_inference_completions_cost": 0.00013992
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0021",
+    "domain": "general science",
+    "context": "In a physics class, students are learning about forces. They read that 'an object at rest stays at rest unless acted upon by an external force.' The teacher then shows a video of a book resting on a table and asks, 'Why does the book stay on the table?'",
+    "question": "Why does the book stay on the table?",
+    "possible_fallacy": "Circular reasoning",
+    "possible_reasoning": "The book stays on the table because it is at rest. Since an object at rest stays at rest, the book's being at rest is the reason it remains at rest. So, the book doesn't move because it doesn't move.",
+    "possible_misconception": "The book stays on the table because it is at rest, and being at rest means it stays at rest.",
+    "source_schema_id": "mafalda_gold_000089",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 63,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:49:54.976927+00:00",
+      "attempts": 2,
+      "response_id": "gen-1788176985-XjvcsTpCMrjoyRr25onW",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 516,
+        "completion_tokens": 178,
+        "total_tokens": 694,
+        "cost": 4.396e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.396e-05,
+          "upstream_inference_prompt_cost": 1.548e-05,
+          "upstream_inference_completions_cost": 2.848e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0022",
+    "domain": "general science",
+    "context": "In an ecology unit, students learn that a species is classified as 'invasive' when it is non-native and causes harm to the local ecosystem. The class examines a local wetland where purple loosestrife has spread widely, and the teacher asks, 'Why is purple loosestrife considered invasive in this wetland?'",
+    "question": "Why is purple loosestrife considered invasive in this wetland?",
+    "possible_fallacy": "Circular reasoning",
+    "possible_reasoning": "Purple loosestrife is invasive because it is an invasive species. Since it is classified as invasive, it must be causing harm, so that is why it is considered invasive here.",
+    "possible_misconception": "A species is invasive simply because it is labeled as invasive, regardless of its actual effects on the ecosystem.",
+    "source_schema_id": "mafalda_gold_000089",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 64,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:49:58.029220+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176995-n6KSoPytQCzclXYWbrI5",
+      "provider": "DeepInfra",
+      "usage": {
+        "prompt_tokens": 680,
+        "completion_tokens": 176,
+        "total_tokens": 856,
+        "cost": 8.608e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 8.608e-05,
+          "upstream_inference_prompt_cost": 5.44e-05,
+          "upstream_inference_completions_cost": 3.168e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0023",
+    "domain": "economics",
+    "context": "In a unit on market structures, students learn that a monopoly is a market where a single firm controls the entire supply of a good or service. The teacher provides examples of monopolies, such as a local water company or a patented drug. The class discusses how monopolies can lead to higher prices and less consumer choice. A student is asked to evaluate whether a particular firm, which is the only provider of a certain software in the country, is a good monopoly.",
+    "question": "Based on the definition of a monopoly, do you think the software firm, being the only provider, is a good monopoly? Explain your reasoning.",
+    "possible_fallacy": "Circular reasoning",
+    "possible_reasoning": "The software firm is a monopoly because it is the only provider. Since it is a monopoly, it must be a good monopoly, because being a monopoly means it is good.",
+    "possible_misconception": "A monopoly is inherently good because it is a monopoly.",
+    "source_schema_id": "mafalda_gold_000089",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 65,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:50:00.397686+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788176998-PCwmFnja7KG1ZeE9BgIC",
+      "provider": "Baidu",
+      "usage": {
+        "prompt_tokens": 744,
+        "completion_tokens": 210,
+        "total_tokens": 954,
+        "cost": 0.000105616,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 512,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000105616,
+          "upstream_inference_prompt_cost": 4.6816e-05,
+          "upstream_inference_completions_cost": 5.88e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0024",
+    "domain": "economics",
+    "context": "In a lesson on economic systems, students learn that a market economy is one where supply and demand determine production and prices. The teacher gives examples of countries with market economies and discusses how they allocate resources. A student is asked to evaluate whether a country with a market economy is an efficient economy.",
+    "question": "Based on the definition of a market economy, do you think a country with a market economy is an efficient economy? Explain your reasoning.",
+    "possible_fallacy": "Circular reasoning",
+    "possible_reasoning": "A market economy is efficient because it is a market economy. Since it is a market economy, it must be efficient, because being a market economy means being efficient.",
+    "possible_misconception": "A market economy is efficient simply because it is a market economy.",
+    "source_schema_id": "mafalda_gold_000089",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is a Y",
+      "invalid_inference": "X is a Y, therefore X is a good Y",
+      "conclusion_pattern": "X is a good Y"
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 66,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:50:14.708486+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788177001-MK69otLMXwaUJrefaseG",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 710,
+        "completion_tokens": 173,
+        "total_tokens": 883,
+        "cost": 4.898e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.898e-05,
+          "upstream_inference_prompt_cost": 2.13e-05,
+          "upstream_inference_completions_cost": 2.768e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0025",
+    "domain": "general science",
+    "context": "In a biology class, students are learning about the classification of living things. They are told that all mammals are warm-blooded and have hair or fur. They are also given a chart showing that whales, dolphins, and porpoises are classified as mammals. The chart includes a note that these animals breathe air and give birth to live young.",
+    "question": "Based on the information provided, why are whales considered mammals?",
+    "possible_fallacy": "Circular reasoning",
+    "possible_reasoning": "Whales are mammals because they are classified as mammals, and the classification says they are mammals.",
+    "possible_misconception": "Being classified as a mammal is the reason an animal is a mammal, rather than the classification being based on shared characteristics.",
+    "source_schema_id": "mafalda_gold_000118",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is P",
+      "invalid_inference": "X is P because X is P",
+      "conclusion_pattern": "X is P"
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 67,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:50:16.820387+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788177015-ryd2fSDg2A6P4D8j4jHw",
+      "provider": "Baidu",
+      "usage": {
+        "prompt_tokens": 738,
+        "completion_tokens": 167,
+        "total_tokens": 905,
+        "cost": 9.2736e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 512,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 9.2736e-05,
+          "upstream_inference_prompt_cost": 4.5976e-05,
+          "upstream_inference_completions_cost": 4.676e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0026",
+    "domain": "general science",
+    "context": "In an environmental science class, students are learning about the water cycle. They are told that evaporation is the process by which liquid water becomes water vapor. They are also shown a diagram of the water cycle with arrows labeled 'evaporation' from an ocean to clouds. The diagram includes a note that the sun's energy drives evaporation.",
+    "question": "Based on the information provided, why does water evaporate from the ocean?",
+    "possible_fallacy": "Circular reasoning",
+    "possible_reasoning": "Water evaporates because it turns into vapor, and it turns into vapor because it evaporates.",
+    "possible_misconception": "Evaporation occurs because water vapor rises, and water vapor rises because evaporation occurs.",
+    "source_schema_id": "mafalda_gold_000118",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is P",
+      "invalid_inference": "X is P because X is P",
+      "conclusion_pattern": "X is P"
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 68,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:50:26.336876+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788177017-tkwAgwe1K2jvcteamQAP",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 661,
+        "completion_tokens": 158,
+        "total_tokens": 819,
+        "cost": 4.511e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.511e-05,
+          "upstream_inference_prompt_cost": 1.983e-05,
+          "upstream_inference_completions_cost": 2.528e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0027",
+    "domain": "economics",
+    "context": "A local bakery's sales of sourdough loaves increased by 20% last month after they introduced a loyalty card program. The bakery owner also noticed that the average price of a loaf remained unchanged during that period. In an economics class, students are discussing factors that influence demand for a product.",
+    "question": "Based on the bakery's experience, what can be concluded about the demand for sourdough loaves?",
+    "possible_fallacy": "Circular reasoning",
+    "possible_reasoning": "The loyalty card increased sales, so demand must have increased because more loaves were sold. The increase in sales is the evidence that demand increased, and the increase in demand is the reason sales increased.",
+    "possible_misconception": "A change in quantity demanded is the same as a change in demand.",
+    "source_schema_id": "mafalda_gold_000118",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is P",
+      "invalid_inference": "X is P because X is P",
+      "conclusion_pattern": "X is P"
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 69,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:50:36.559823+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788177027-p3Cj1WPTuq1zVfaoHzAJ",
+      "provider": "OpenInference",
+      "usage": {
+        "prompt_tokens": 480,
+        "completion_tokens": 177,
+        "total_tokens": 657,
+        "cost": 4.272e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 4.272e-05,
+          "upstream_inference_prompt_cost": 1.44e-05,
+          "upstream_inference_completions_cost": 2.832e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "id": "case_0028",
+    "domain": "economics",
+    "context": "In a small town, the local government is considering a new tax on sugary drinks to reduce consumption. A recent study found that after a similar tax was introduced in a neighboring town, the price of sugary drinks rose by 10% and the quantity sold fell by 15%. In an economics class, students are learning about how taxes affect market outcomes.",
+    "question": "Based on the neighboring town's experience, what can be concluded about the effect of the tax on the market for sugary drinks?",
+    "possible_fallacy": "Circular reasoning",
+    "possible_reasoning": "The tax caused the price to rise and the quantity to fall, so the tax must have reduced the demand for sugary drinks. The reduction in quantity sold is the evidence that demand decreased, and the decrease in demand is the reason the quantity sold fell.",
+    "possible_misconception": "A movement along the demand curve is the same as a shift of the demand curve.",
+    "source_schema_id": "mafalda_gold_000118",
+    "source_schema_decision": "ACCEPT",
+    "original_fallacy": "circular reasoning",
+    "fallacy_schema": {
+      "premise_pattern": "X is P",
+      "invalid_inference": "X is P because X is P",
+      "conclusion_pattern": "X is P"
+    },
+    "generation_metadata": {
+      "research_formulation": "context_first_misconception_generation",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "requested_model": "deepseek/deepseek-v4-flash-0731",
+      "temperature": 0.2,
+      "seed": 70,
+      "prompt_version": "stage3-context-first-generation-v4",
+      "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115",
+      "timestamp": "2026-08-31T11:50:39.059836+00:00",
+      "attempts": 1,
+      "response_id": "gen-1788177037-WnLY6t4SyGrPdNPTaHFm",
+      "provider": "Baidu",
+      "usage": {
+        "prompt_tokens": 928,
+        "completion_tokens": 205,
+        "total_tokens": 1133,
+        "cost": 0.000158648,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 256,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000158648,
+          "upstream_inference_prompt_cost": 0.000101248,
+          "upstream_inference_completions_cost": 5.74e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+]

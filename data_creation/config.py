@@ -63,6 +63,7 @@ STAGE_2_6_PROMPT_VERSION = "stage2.6-strict-adjudication-v1"
 STAGE_3_PROMPT_VERSION = "stage3-case-generation-v1"
 STAGE_3_5_MODEL = STAGE_2_6_MODEL
 STAGE_3_5_PROMPT_VERSION = "stage3.5-case-validation-v3"
+STAGE_3_CONTEXT_PROMPT_VERSION = "stage3-context-first-generation-v5"
 
 
 @dataclass(frozen=True)
@@ -125,3 +126,12 @@ class PipelineConfig:
     stage_3_5_max_tokens: int = 1400
     stage_3_5_prompt_version: str = STAGE_3_5_PROMPT_VERSION
     stage_3_5_prompt_path: Path = PROMPTS_DIR / "case_validation_prompt.txt"
+    stage_3_context_model: str = STAGE_2_MODEL
+    stage_3_context_temperature: float = 0.2
+    stage_3_context_seed: int = 42
+    stage_3_context_domains_per_schema: int = 2
+    stage_3_context_cases_per_domain: int = 2
+    stage_3_context_max_retries: int = 3
+    stage_3_context_max_tokens: int = 800
+    stage_3_context_prompt_version: str = STAGE_3_CONTEXT_PROMPT_VERSION
+    stage_3_context_prompt_path: Path = PROMPTS_DIR / "context_case_generation_prompt.txt"

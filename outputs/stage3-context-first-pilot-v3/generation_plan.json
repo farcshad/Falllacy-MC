@@ -1,0 +1,450 @@
+[
+  {
+    "case_id": "case_0001",
+    "schema": {
+      "source_id": "mafalda_gold_000123",
+      "canonical_fallacy": "Hasty generalization",
+      "original_fallacy": "hasty generalization",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+        "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+        "conclusion_pattern": "Therefore, X does not cause Y."
+      }
+    },
+    "domain": "biology",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0002",
+    "schema": {
+      "source_id": "mafalda_gold_000123",
+      "canonical_fallacy": "Hasty generalization",
+      "original_fallacy": "hasty generalization",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+        "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+        "conclusion_pattern": "Therefore, X does not cause Y."
+      }
+    },
+    "domain": "biology",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0003",
+    "schema": {
+      "source_id": "mafalda_gold_000123",
+      "canonical_fallacy": "Hasty generalization",
+      "original_fallacy": "hasty generalization",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+        "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+        "conclusion_pattern": "Therefore, X does not cause Y."
+      }
+    },
+    "domain": "psychology",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0004",
+    "schema": {
+      "source_id": "mafalda_gold_000123",
+      "canonical_fallacy": "Hasty generalization",
+      "original_fallacy": "hasty generalization",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "A specific individual has engaged in X for a long time, and that individual does not have Y.",
+        "invalid_inference": "Because one instance of X is not followed by Y, X does not cause Y.",
+        "conclusion_pattern": "Therefore, X does not cause Y."
+      }
+    },
+    "domain": "psychology",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0005",
+    "schema": {
+      "source_id": "mafalda_gold_000010",
+      "canonical_fallacy": "False cause / causal fallacy",
+      "original_fallacy": "causal oversimplification | false causality",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+        "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+        "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+      }
+    },
+    "domain": "biology",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0006",
+    "schema": {
+      "source_id": "mafalda_gold_000010",
+      "canonical_fallacy": "False cause / causal fallacy",
+      "original_fallacy": "causal oversimplification | false causality",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+        "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+        "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+      }
+    },
+    "domain": "biology",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0007",
+    "schema": {
+      "source_id": "mafalda_gold_000010",
+      "canonical_fallacy": "False cause / causal fallacy",
+      "original_fallacy": "causal oversimplification | false causality",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+        "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+        "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+      }
+    },
+    "domain": "economics",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0008",
+    "schema": {
+      "source_id": "mafalda_gold_000010",
+      "canonical_fallacy": "False cause / causal fallacy",
+      "original_fallacy": "causal oversimplification | false causality",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "In the past, one instance of event A (with property P) was followed by outcome O.",
+        "invalid_inference": "Assuming that because event A with property P was followed by outcome O in one past case, event A with property P will necessarily be followed by outcome O in the current case, without considering other factors or sufficient evidence.",
+        "conclusion_pattern": "Therefore, the current event A (with property P) will be followed by outcome O."
+      }
+    },
+    "domain": "economics",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0009",
+    "schema": {
+      "source_id": "mafalda_gold_000097",
+      "canonical_fallacy": "False cause / causal fallacy",
+      "original_fallacy": "causal oversimplification",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "A person did X and Y, and then achieved O.",
+        "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+        "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+      }
+    },
+    "domain": "biology",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0010",
+    "schema": {
+      "source_id": "mafalda_gold_000097",
+      "canonical_fallacy": "False cause / causal fallacy",
+      "original_fallacy": "causal oversimplification",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "A person did X and Y, and then achieved O.",
+        "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+        "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+      }
+    },
+    "domain": "biology",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0011",
+    "schema": {
+      "source_id": "mafalda_gold_000097",
+      "canonical_fallacy": "False cause / causal fallacy",
+      "original_fallacy": "causal oversimplification",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "A person did X and Y, and then achieved O.",
+        "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+        "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+      }
+    },
+    "domain": "economics",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0012",
+    "schema": {
+      "source_id": "mafalda_gold_000097",
+      "canonical_fallacy": "False cause / causal fallacy",
+      "original_fallacy": "causal oversimplification",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "A person did X and Y, and then achieved O.",
+        "invalid_inference": "The fact that a person did X and Y and achieved O does not establish that doing X and Y is sufficient for O, nor that O is caused by X and Y, because other factors or alternative explanations may be involved.",
+        "conclusion_pattern": "Therefore, if a person does X and Y, they will achieve O."
+      }
+    },
+    "domain": "economics",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0013",
+    "schema": {
+      "source_id": "mafalda_gold_000095",
+      "canonical_fallacy": "False dilemma",
+      "original_fallacy": "false dilemma",
+      "adjudication_decision": "REVISE",
+      "final_schema": {
+        "premise_pattern": "Result R occurred.",
+        "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+        "conclusion_pattern": "It must be either because C or because D."
+      }
+    },
+    "domain": "psychology",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0014",
+    "schema": {
+      "source_id": "mafalda_gold_000095",
+      "canonical_fallacy": "False dilemma",
+      "original_fallacy": "false dilemma",
+      "adjudication_decision": "REVISE",
+      "final_schema": {
+        "premise_pattern": "Result R occurred.",
+        "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+        "conclusion_pattern": "It must be either because C or because D."
+      }
+    },
+    "domain": "psychology",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0015",
+    "schema": {
+      "source_id": "mafalda_gold_000095",
+      "canonical_fallacy": "False dilemma",
+      "original_fallacy": "false dilemma",
+      "adjudication_decision": "REVISE",
+      "final_schema": {
+        "premise_pattern": "Result R occurred.",
+        "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+        "conclusion_pattern": "It must be either because C or because D."
+      }
+    },
+    "domain": "general science",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0016",
+    "schema": {
+      "source_id": "mafalda_gold_000095",
+      "canonical_fallacy": "False dilemma",
+      "original_fallacy": "false dilemma",
+      "adjudication_decision": "REVISE",
+      "final_schema": {
+        "premise_pattern": "Result R occurred.",
+        "invalid_inference": "Presupposing without justification that the only possible causes for R are C or D.",
+        "conclusion_pattern": "It must be either because C or because D."
+      }
+    },
+    "domain": "general science",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0017",
+    "schema": {
+      "source_id": "mafalda_gold_000036",
+      "canonical_fallacy": "Circular reasoning",
+      "original_fallacy": "circular reasoning",
+      "adjudication_decision": "REVISE",
+      "final_schema": {
+        "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+        "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+        "conclusion_pattern": "One should do action X"
+      }
+    },
+    "domain": "general science",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0018",
+    "schema": {
+      "source_id": "mafalda_gold_000036",
+      "canonical_fallacy": "Circular reasoning",
+      "original_fallacy": "circular reasoning",
+      "adjudication_decision": "REVISE",
+      "final_schema": {
+        "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+        "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+        "conclusion_pattern": "One should do action X"
+      }
+    },
+    "domain": "general science",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0019",
+    "schema": {
+      "source_id": "mafalda_gold_000036",
+      "canonical_fallacy": "Circular reasoning",
+      "original_fallacy": "circular reasoning",
+      "adjudication_decision": "REVISE",
+      "final_schema": {
+        "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+        "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+        "conclusion_pattern": "One should do action X"
+      }
+    },
+    "domain": "economics",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0020",
+    "schema": {
+      "source_id": "mafalda_gold_000036",
+      "canonical_fallacy": "Circular reasoning",
+      "original_fallacy": "circular reasoning",
+      "adjudication_decision": "REVISE",
+      "final_schema": {
+        "premise_pattern": "Action X is required by law L, and law L must be followed because law L is law L",
+        "invalid_inference": "Relying on a tautological assertion about the law to justify an obligation to perform an action required by that law",
+        "conclusion_pattern": "One should do action X"
+      }
+    },
+    "domain": "economics",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0021",
+    "schema": {
+      "source_id": "mafalda_gold_000089",
+      "canonical_fallacy": "Circular reasoning",
+      "original_fallacy": "circular reasoning",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "X is a Y",
+        "invalid_inference": "X is a Y, therefore X is a good Y",
+        "conclusion_pattern": "X is a good Y"
+      }
+    },
+    "domain": "general science",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0022",
+    "schema": {
+      "source_id": "mafalda_gold_000089",
+      "canonical_fallacy": "Circular reasoning",
+      "original_fallacy": "circular reasoning",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "X is a Y",
+        "invalid_inference": "X is a Y, therefore X is a good Y",
+        "conclusion_pattern": "X is a good Y"
+      }
+    },
+    "domain": "general science",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0023",
+    "schema": {
+      "source_id": "mafalda_gold_000089",
+      "canonical_fallacy": "Circular reasoning",
+      "original_fallacy": "circular reasoning",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "X is a Y",
+        "invalid_inference": "X is a Y, therefore X is a good Y",
+        "conclusion_pattern": "X is a good Y"
+      }
+    },
+    "domain": "economics",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0024",
+    "schema": {
+      "source_id": "mafalda_gold_000089",
+      "canonical_fallacy": "Circular reasoning",
+      "original_fallacy": "circular reasoning",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "X is a Y",
+        "invalid_inference": "X is a Y, therefore X is a good Y",
+        "conclusion_pattern": "X is a good Y"
+      }
+    },
+    "domain": "economics",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0025",
+    "schema": {
+      "source_id": "mafalda_gold_000118",
+      "canonical_fallacy": "Circular reasoning",
+      "original_fallacy": "circular reasoning",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "X is P",
+        "invalid_inference": "X is P because X is P",
+        "conclusion_pattern": "X is P"
+      }
+    },
+    "domain": "general science",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0026",
+    "schema": {
+      "source_id": "mafalda_gold_000118",
+      "canonical_fallacy": "Circular reasoning",
+      "original_fallacy": "circular reasoning",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "X is P",
+        "invalid_inference": "X is P because X is P",
+        "conclusion_pattern": "X is P"
+      }
+    },
+    "domain": "general science",
+    "variation": 2
+  },
+  {
+    "case_id": "case_0027",
+    "schema": {
+      "source_id": "mafalda_gold_000118",
+      "canonical_fallacy": "Circular reasoning",
+      "original_fallacy": "circular reasoning",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "X is P",
+        "invalid_inference": "X is P because X is P",
+        "conclusion_pattern": "X is P"
+      }
+    },
+    "domain": "economics",
+    "variation": 1
+  },
+  {
+    "case_id": "case_0028",
+    "schema": {
+      "source_id": "mafalda_gold_000118",
+      "canonical_fallacy": "Circular reasoning",
+      "original_fallacy": "circular reasoning",
+      "adjudication_decision": "ACCEPT",
+      "final_schema": {
+        "premise_pattern": "X is P",
+        "invalid_inference": "X is P because X is P",
+        "conclusion_pattern": "X is P"
+      }
+    },
+    "domain": "economics",
+    "variation": 2
+  }
+]

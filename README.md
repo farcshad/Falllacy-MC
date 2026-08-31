@@ -1,8 +1,18 @@
-# Extracting Student Misconceptions through Fallacious Reasoning Patterns
+# Generating Potential Student Misconceptions through Fallacious Reasoning Patterns
 
-This repository builds a synthetic educational dataset whose primary target is
-the misconception revealed by a student's context, reasoning, and answer. A
-fallacy is retained as an intermediate explanatory signal.
+The current research task forecasts plausible fallacious reasoning and resulting
+misconceptions from learner-facing material alone:
+
+```text
+Educational context + question
+    -> possible fallacy
+    -> possible student reasoning
+    -> possible misconception
+```
+
+The eventual model input will not contain an observed student answer or reasoning
+trace. Fallacy schemas from Stages 1–2.6 provide controlled seed pathways; they
+are not assumed to be the only plausible interpretation of a context.
 
 ## Current milestone: Stage 1
 
@@ -91,11 +101,12 @@ The default is `google/gemini-3.7-flash`, temperature 0, seed 42, and low
 reasoning effort. Decision-specific invariants are checked locally before any
 record is accepted into the adjudication output.
 
-## Stage 3 pilot
+## Previous Stage 3 pilot (archived formulation)
 
-Stage 3 uses only ACCEPT and REVISE outcomes to generate small educational
-misconception cases. The default pilot chooses two preferred domains per schema
-and creates two distinct cases per domain:
+The earlier formulation generated complete student situations, reasoning, and
+answers for later misconception extraction. Its code and immutable artifacts are
+preserved for provenance, but they are not the final dataset for the current
+research task:
 
 ```bash
 python -m data_creation.generate_case \
@@ -107,7 +118,7 @@ and retry settings are configurable. Rejected schemas are counted and ignored.
 Only structural validation is performed at this stage; semantic case validation
 is intentionally deferred until the pilot has been reviewed.
 
-## Stage 3.5 pilot
+## Previous Stage 3.5 pilot (archived formulation)
 
 Stage 3.5 independently checks schema faithfulness, student plausibility, answer
 consistency, misconception quality/generalization, and internal consistency. It
@@ -123,3 +134,18 @@ The default validator is `google/gemini-3.7-flash` at temperature 0 with low
 reasoning effort. Every run is immutable and includes the complete adjudication,
 separate accepted/revised/rejected files, raw responses, failures, a manifest,
 and a compact human-readable review. Stage 3 generation is not invoked.
+
+## Context-first Stage 3 pilot (current formulation)
+
+The new Stage 3 uses only ACCEPT and REVISE schemas from Stage 2.6. It generates
+a neutral educational context and question plus one controlled seed pathway:
+
+```bash
+python3 -m data_creation.generate_context_case \
+  --input outputs/stage2-6-strict-pilot-v1/adjudicated_schemas.json
+```
+
+By default, the pilot selects two suitable domains per usable schema and creates
+two cases per domain. Local structural checks enforce the exact seed label,
+non-empty structured fields, neutral learner-facing input, and duplicate
+rejection. Semantic validation is deliberately left for the next reviewed stage.

@@ -1,0 +1,44 @@
+Generate one context-first educational misconception case using the supplied seed pathway.
+
+Seed fallacy: {{FALLACY}}
+Validated reasoning schema:
+{{FALLACY_SCHEMA}}
+Educational domain: {{DOMAIN}}
+Variation: {{VARIATION_NUMBER}} of {{VARIATIONS_TOTAL}}
+
+Return only valid JSON with exactly:
+{
+  "context": "...",
+  "question": "...",
+  "possible_fallacy": "{{FALLACY}}",
+  "possible_reasoning": "...",
+  "possible_misconception": "..."
+}
+
+The context and question are the learner-facing input. They must:
+- be neutral, educational, and understandable;
+- contain only evidence or information available to the learner;
+- not name or hint at the fallacy;
+- not contain an already-written student reasoning trace;
+- not state the faulty conclusion or final misconception;
+- not describe a student thinking, arguing, concluding, or answering;
+- not quote or paraphrase any resident, official, teacher, expert, narrator, or other speaker making the intended faulty inference;
+- not contain a self-justifying statement such as "follow it because it is the rule/law";
+- not ask the learner to identify, diagnose, or critique a fallacy or flawed argument.
+
+The possible reasoning must:
+- sincerely instantiate the supplied schema in the voice of a student making the inference;
+- be a plausible response to the exact context and question;
+- not use evaluator language, name the fallacy, or explain why the reasoning is flawed.
+- stop after sincerely making the faulty inference; do not append caveats, alternative causes, missing evidence, or a critique of that inference.
+
+The possible misconception must:
+- be a concise declarative false or importantly incomplete belief;
+- describe WHAT is believed about the educational domain, not HOW the fallacy works;
+- be broader than the exact answer implied by this case and plausibly affect related questions;
+- not begin with framing such as "Students may believe", "The student thinks", or "The learner fails to understand".
+
+The seed pathway is one controlled plausible outcome, not the only possible interpretation of the context.
+Make this variation materially different from earlier cases in topic, entities, evidence, question, and misconception.
+
+{{NOVELTY_CONTEXT}}

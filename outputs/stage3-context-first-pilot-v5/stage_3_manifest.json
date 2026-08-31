@@ -1,0 +1,104 @@
+{
+  "run_id": "stage3-context-first-pilot-v5",
+  "stage": 3,
+  "stage_name": "context_first_misconception_generation",
+  "research_task": "(context, question) -> possible fallacy -> possible reasoning -> possible misconception",
+  "created_at": "2026-08-31T11:59:20.076997+00:00",
+  "input": {
+    "path": "/Users/Farshad/Documents/Academic/Falllacy MC/outputs/stage2-6-strict-pilot-v1/adjudicated_schemas.json",
+    "sha256": "5cc898287f20ce650b9ebd01c0d8bdea222410142cc7e705e56b6c67caf2a5b8",
+    "usable_schema_count": 7,
+    "ignored_rejected_schema_count": 8,
+    "usable_source_ids": [
+      "mafalda_gold_000123",
+      "mafalda_gold_000010",
+      "mafalda_gold_000097",
+      "mafalda_gold_000095",
+      "mafalda_gold_000036",
+      "mafalda_gold_000089",
+      "mafalda_gold_000118"
+    ]
+  },
+  "pilot_design": {
+    "available_domains": [
+      "biology",
+      "physics",
+      "psychology",
+      "economics",
+      "general science"
+    ],
+    "domains_per_schema": 2,
+    "cases_per_domain": 2,
+    "domain_assignments": {
+      "mafalda_gold_000123": [
+        "biology",
+        "psychology"
+      ],
+      "mafalda_gold_000010": [
+        "biology",
+        "economics"
+      ],
+      "mafalda_gold_000097": [
+        "biology",
+        "economics"
+      ],
+      "mafalda_gold_000095": [
+        "psychology",
+        "general science"
+      ],
+      "mafalda_gold_000036": [
+        "general science",
+        "economics"
+      ],
+      "mafalda_gold_000089": [
+        "general science",
+        "economics"
+      ],
+      "mafalda_gold_000118": [
+        "general science",
+        "economics"
+      ]
+    }
+  },
+  "generation": {
+    "provider": "OpenRouter",
+    "requested_model": "deepseek/deepseek-v4-flash-0731",
+    "temperature": 0.2,
+    "base_seed": 42,
+    "seed_strategy": "base_seed + one-based planned case position",
+    "max_tokens": 800,
+    "max_attempts_per_case": 3,
+    "prompt_version": "stage3-context-first-generation-v5",
+    "prompt_path": "/Users/Farshad/Documents/Academic/Falllacy MC/data_creation/prompts/context_case_generation_prompt.txt",
+    "prompt_sha256": "acfccd5b3409d5545f2e4c53685def25988a9bff9be9b88f381181ddfaa5b115"
+  },
+  "structural_validation": {
+    "required_fields_nonempty": true,
+    "fallacy_must_match_source_schema": true,
+    "exact_duplicate_rejection": true,
+    "learner_input_fallacy_label_rejection": true,
+    "learner_input_direct_misconception_rejection": true,
+    "learner_input_direct_reasoning_trace_rejection": true,
+    "semantic_validation_deferred": true
+  },
+  "total_requested": 28,
+  "successfully_generated": 28,
+  "failure_count": 0,
+  "retry_count": 4,
+  "duplicate_attempt_count": 0,
+  "final_exact_duplicate_count": 0,
+  "raw_attempt_count": 32,
+  "usage_totals": {
+    "prompt_tokens": 21721,
+    "completion_tokens": 6400,
+    "total_tokens": 28121,
+    "cost": 0.0030534752500000002
+  },
+  "outputs": {
+    "generated_cases": "generated_cases.json",
+    "generation_plan": "generation_plan.json",
+    "raw_responses": "raw_responses.jsonl",
+    "failures": "stage_3_failures.jsonl",
+    "review": "stage_3_review.md"
+  }
+}
