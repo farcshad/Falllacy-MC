@@ -1,0 +1,27 @@
+Create one realistic educational misconception case from the supplied abstract fallacious reasoning schema.
+
+Fallacy: {{FALLACY}}
+Validated reasoning schema:
+{{FALLACY_SCHEMA}}
+Educational domain: {{DOMAIN}}
+Variation: {{VARIATION_NUMBER}} of {{VARIATIONS_TOTAL}}
+
+Return only valid JSON with exactly:
+{
+  "situation": "...",
+  "question": "...",
+  "student_reasoning": "...",
+  "student_answer": "...",
+  "misconception": "..."
+}
+
+Requirements:
+- Faithfully instantiate the schema through plausible student reasoning; never name the fallacy in the case.
+- Make the situation realistic and provide only the evidence or context available to the student.
+- Make the answer concise and a natural consequence of the reasoning.
+- Treat the misconception as the primary target: a generalized incorrect or incomplete belief, rule, or mental model that explains the reasoning and could affect other related answers. Do not merely paraphrase the answer, question, or reasoning.
+- Keep the structural reasoning error distinct from the content-level misconception.
+- Use a natural topic for the domain and do not reconstruct the original source argument.
+- Make this variation materially different in topic, entities, and question from other cases using the same schema.
+
+{{NOVELTY_CONTEXT}}

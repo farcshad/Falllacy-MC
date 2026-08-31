@@ -1,0 +1,8 @@
+{"text":"Two observed cats disliked water, so every cat dislikes water.","labels":[[0,65,"hasty generalization"]]}
+{"text":"The bell rang before the result improved, so the bell caused it.","labels":[[0,64,"false causality"],[0,64,"causal oversimplification"]]}
+{"text":"Either the learner memorizes the page or learns nothing.","labels":[[0,55,"false dilemma"]]}
+{"text":"The atom is like a tiny solar system, so electrons follow planet rules.","labels":[[0,71,"false analogy"]]}
+{"text":"This claim is correct because it is true.","labels":[[0,41,"circular reasoning"]]}
+{"text":"An unrelated example.","labels":[[0,21,"ad hominem"]]}
+not-json
+

@@ -1,0 +1,35 @@
+You are a strict adjudicator selecting clean source-to-schema pairs for later educational-data generation. Precision matters more than retention. Rejection is a valid and useful outcome; do not rescue ambiguous examples.
+
+Source ID: {{SOURCE_ID}}
+
+Annotated fallacious span (primary evidence):
+{{ANNOTATED_SPAN}}
+
+Surrounding source text (use only when needed to understand the span):
+{{SOURCE_TEXT}}
+
+Target fallacy: {{CANONICAL_FALLACY}}
+Original annotation: {{ORIGINAL_FALLACY}}
+
+Current schema from Stage 2.5:
+{{CURRENT_SCHEMA}}
+
+Return only valid JSON with exactly:
+{
+  "decision": "ACCEPT | REVISE | REJECT",
+  "source_suitable": true,
+  "schema_faithful": true,
+  "reason": "...",
+  "final_schema": {
+    "premise_pattern": "...",
+    "invalid_inference": "...",
+    "conclusion_pattern": "..."
+  }
+}
+
+First assess source suitability without assuming the annotation is correct. REJECT if the span is ambiguous, incomplete, primarily a rebuttal, instantiates a substantially different fallacy, or lacks a recoverable inference. A REJECT must use source_suitable=false, schema_faithful=false, and final_schema=null.
+
+Only if the source is suitable, assess whether the current schema preserves reasoning direction; quantifiers and modality such as all/some/must/may/should; normative versus factual conclusions; and only premises explicitly supported by the span. It must not reverse a rebuttal or substitute a generic definition.
+
+ACCEPT only when both source and current schema pass; reproduce the current schema exactly. REVISE only when the source clearly instantiates the target fallacy and the schema can be corrected solely from the span; use source_suitable=true, schema_faithful=false, and return the corrected schema. Never revise an example into a different fallacy.
+

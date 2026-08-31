@@ -1,0 +1,58 @@
+Strictly validate one synthetic educational misconception case. Precision matters more than retention. A REJECT decision is a valid outcome.
+
+Case ID: {{CASE_ID}}
+Fallacy: {{FALLACY}}
+Educational domain: {{DOMAIN}}
+
+Required fallacy schema:
+{{FALLACY_SCHEMA}}
+
+Current case:
+{{CURRENT_CASE}}
+
+Evaluate the CURRENT case on six independent checks:
+1. schema_faithful: the student's reasoning instantiates the supplied schema in the same direction and with the same important qualifiers.
+2. student_reasoning_plausible: it sounds like a sincere student's reasoning. It must not name, diagnose, explain, or self-critique the fallacy and must not speak as an evaluator.
+3. answer_consistent: the answer naturally follows from the student's stated reasoning.
+4. misconception_valid: the misconception is a content-level incorrect or incomplete belief, rule, or mental model that explains the reasoning and answer. It is not a fallacy label, reasoning critique, or mere description of what the student did.
+5. misconception_generalized: the misconception is broader than a paraphrase of this answer and could affect related questions.
+6. internally_consistent: situation, question, reasoning, answer, fallacy, schema, and misconception cohere.
+
+Decision rules:
+- ACCEPT only when all six checks are true and no field needs editing. Return revised_case=null.
+- REVISE only when the intended educational scenario and supplied schema can be preserved with targeted edits. Mark checks against the CURRENT case, list every problem, and return the complete repaired five-field case. Change only fields needed for repair.
+- REJECT when the case actually uses a substantially different fallacy, has a fundamental schema/scenario mismatch, has no inferable content misconception, or would require replacing most of the case. Return revised_case=null.
+
+Revision boundary:
+- Preserve the original topic, named people or objects, intervention/exposure, observed outcome, and central educational setup. Do not substitute a new example merely because it fits the schema better.
+- A revision may rephrase an evaluator-style question/reasoning into sincere student form, resolve a local inconsistency, or normalize the misconception while retaining those anchors.
+- If faithfulness can be achieved only by changing core anchors (for example, replacing lifeguards and drownings with startup marketing, or replacing one scientific theory with another), choose REJECT.
+- Likewise, do not change the evidence or observed outcome to manufacture the schema. For example, do not turn simultaneous lifeguard/rescue counts into a new story about two safety measures eliminating rescues, and do not turn a question about unexplained high prices into a question about how a market is classified. Those require REJECT.
+- If schema_faithful is false because the current reasoning uses a materially different inference, choose REJECT. Use REVISE for schema faithfulness only when the intended inference is already recoverable in the current situation/reasoning and needs local clarification.
+- Check whether the student answer responds to the literal question asked. A prompt asking the student to identify a flaw is inconsistent with an answer that commits the flaw unless a targeted rephrasing preserves the same scenario.
+
+Misconception style is part of validity. In ACCEPT or the final REVISE output, it must be a concise declarative belief. Do not begin with framing such as "The student believes", "Students may believe", or "A learner thinks". Do not merely name the fallacy.
+
+Do not make a case pass merely by describing its reasoning more favorably. Do not alter the supplied fallacy or schema. Return only JSON with exactly this structure:
+{
+  "decision": "ACCEPT | REVISE | REJECT",
+  "checks": {
+    "schema_faithful": true,
+    "student_reasoning_plausible": true,
+    "answer_consistent": true,
+    "misconception_valid": true,
+    "misconception_generalized": true,
+    "internally_consistent": true
+  },
+  "issues": ["..."],
+  "revised_case": null
+}
+
+When decision is REVISE, revised_case must instead be:
+{
+  "situation": "...",
+  "question": "...",
+  "student_reasoning": "...",
+  "student_answer": "...",
+  "misconception": "..."
+}

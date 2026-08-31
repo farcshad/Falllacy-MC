@@ -1,0 +1,23 @@
+You are analyzing the abstract reasoning structure of one fallacious argument.
+
+Source argument:
+{{SOURCE_TEXT}}
+
+Target fallacy: {{CANONICAL_FALLACY}}
+Original annotation: {{ORIGINAL_FALLACY}}
+
+Remove the topic-specific content and express this argument's faulty inference as a topic-independent schema. Return only valid JSON with exactly these fields:
+{
+  "premise_pattern": "...",
+  "invalid_inference": "...",
+  "conclusion_pattern": "..."
+}
+
+Requirements:
+1. Remove names, places, political topics, social groups, and specific entities.
+2. Use placeholders such as X, Y, event A, property P, outcome O, or category C when useful.
+3. Preserve the inferential structure of the target fallacy in this specific source.
+4. Do not merely define the fallacy or judge the argument.
+5. Do not create an educational example, misconception, or unsupported fact.
+6. Make the schema understandable without the source argument.
+

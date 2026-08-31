@@ -1,0 +1,25 @@
+You are validating whether an abstract schema faithfully represents the specific annotated fallacy in a source argument.
+
+Source argument:
+{{SOURCE_TEXT}}
+
+Annotated fallacious span (prefer this when present):
+{{ANNOTATED_SPAN}}
+
+Target fallacy: {{CANONICAL_FALLACY}}
+Original annotation: {{ORIGINAL_FALLACY}}
+
+Generated schema:
+{{GENERATED_SCHEMA}}
+
+Return only valid JSON with exactly these fields:
+{
+  "valid": true,
+  "issue": null,
+  "revised_schema": null
+}
+
+If invalid, set valid to false, briefly explain the concrete mismatch in issue, and provide revised_schema with exactly premise_pattern, invalid_inference, and conclusion_pattern.
+
+Judge whether the schema captures this source's particular annotated reasoning—not merely a generic definition. Check that it follows the annotated span rather than a rebuttal or another speaker, introduces no unsupported premise or conclusion, remains topic-independent, preserves normative versus factual conclusions, and expresses the important inferential structure. Do not judge factual truth. If valid, keep the schema unchanged by returning null for revised_schema.
+
